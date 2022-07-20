@@ -200,6 +200,10 @@ int main() {
 	leetcodetest762();
 #endif // LEETCODE_762
 
+#ifdef LEETCODE_814
+	leetcodetest814();
+#endif // LEETCODE_814
+
 #ifdef LEETCODE_829
 	leetcodetest829();
 #endif // LEETCODE_829

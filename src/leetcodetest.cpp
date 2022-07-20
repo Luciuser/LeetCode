@@ -447,6 +447,13 @@ int leetcodetest762()
 }
 #endif // LEETCODE_762
 
+#ifdef LEETCODE_814
+int leetcodetest814()
+{
+	return 0;
+}
+#endif // LEETCODE_814
+
 #ifdef LEETCODE_829
 int leetcodetest829()
 {

@@ -52,6 +52,7 @@ src/leetcode745.h
 src/leetcode747.h
 src/leetcode749.h
 src/leetcode762.h
+src/leetcode814.h
 src/leetcode829.h
 src/leetcode875.h
 src/leetcode890.h
