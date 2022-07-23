@@ -340,5 +340,9 @@ int main() {
 	swordOfferII114();
 #endif // SWORD_OFFER_II_114
 
+#ifdef SWORD_OFFER_II_115
+	swordOfferII115();
+#endif // SWORD_OFFER_II_115
+
 	return 0;
 }

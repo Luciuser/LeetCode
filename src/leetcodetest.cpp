@@ -816,4 +816,9 @@ int swordOfferII114()
 }
 #endif // SWORD_OFFER_II_114
 
-
+#ifdef SWORD_OFFER_II_115
+int swordOfferII115()
+{
+	return 0;
+}
+#endif // SWORD_OFFER_II_115

@@ -86,9 +86,11 @@ src/leetcode2104.h
 src/leetcode2119.h
 src/swordOfferII041.h
 src/swordOfferII114.h
+src/swordOfferII115.h
 src/leetcodetest.h
 src/leetcodetest.cpp
 src/main.cpp)
 
 link_directories(${PROJECT_SOURCE_DIR}/lib)
 add_executable(leetCode ${SOURCES})
+target_include_directories(${PROJECT_NAME} PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}/src/DataManage)
