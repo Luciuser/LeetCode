@@ -57,6 +57,7 @@
 //#define LEETCODE_1162
 //#define LEETCODE_1172
 //#define LEETCODE_1175
+#define LEETCODE_1184
 //#define LEETCODE_1185
 //#define LEETCODE_1200
 //#define LEETCODE_1252
@@ -72,7 +73,7 @@
 //#define LEETCODE_2104_AUDITION_17_11__
 //#define SWORD_OFFER_II_041
 //#define SWORD_OFFER_II_114
-#define SWORD_OFFER_II_115
+//#define SWORD_OFFER_II_115
 
 #ifdef LEETCODE_2
 #include"leetcode2.h"
@@ -358,6 +359,11 @@ int leetcodetest1172();
 #include"leetcode1175.h"
 int leetcodetest1175();
 #endif // LEETCODE_1175
+
+#ifdef LEETCODE_1184
+#include"leetcode1184.h"
+int leetcodetest1184();
+#endif // LEETCODE_1184
 
 #ifdef LEETCODE_1185
 #include"leetcode1185.h"
