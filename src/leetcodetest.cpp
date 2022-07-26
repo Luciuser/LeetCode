@@ -493,6 +493,22 @@ int leetcodetest890()
 }
 #endif // LEETCODE_890
 
+#ifdef LEETCODE_919
+int leetcodetest919()
+{
+	TreeNode *root = new TreeNode(1);
+	//TreeNode *node1 = new TreeNode(2);
+	//root->left = node1;
+
+	CBTInserter *solution = new CBTInserter(root);
+	std::cout << solution->insert(3);
+	std::cout << solution->insert(3);
+	std::cout << solution->insert(4);
+
+	return 0;
+}
+#endif // LEETCODE_919
+
 #ifdef LEETCODE_926
 int leetcodetest926()
 {
@@ -702,6 +718,13 @@ int leetcodetest1200()
 	return 0;
 }
 #endif // LEETCODE_1200
+
+#ifdef LEETCODE_1206
+int leetcodetest1206()
+{
+	return 0;
+}
+#endif // LEETCODE_1206
 
 #ifdef LEETCODE_1252
 int leetcodetest1252()
