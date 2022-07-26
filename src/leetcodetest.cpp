@@ -255,6 +255,16 @@ int leetcodetest535()
 }
 #endif // LEETCODE_535
 
+#ifdef LEETCODE_592
+int leetcodetest592()
+{
+	Solution solution;
+	std::cout << solution.fractionAddition("-1/2+1/2") << std::endl;
+
+	return 0;
+}
+#endif // LEETCODE_592
+
 
 #ifdef LEETCODE_668
 int leetcodetest668()
