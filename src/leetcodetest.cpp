@@ -750,6 +750,12 @@ int leetcodetest1260()
 }
 #endif // LEETCODE_1260
 
+#ifdef LEETCODE_1331
+int leetcodetest1331()
+{
+	return 0;
+}
+#endif // LEETCODE_1331
 
 #ifdef LEETCODE_1399
 int leetcodetest1399()
