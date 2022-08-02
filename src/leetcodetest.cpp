@@ -265,6 +265,28 @@ int leetcodetest592()
 }
 #endif // LEETCODE_592
 
+#ifdef LEETCODE_622
+int leetcodetest622()
+{
+	MyCircularQueue *solution = new MyCircularQueue(6);
+	std::cout << solution->enQueue(6) << std::endl;
+	std::cout << solution->Rear() << std::endl;
+	std::cout << solution->deQueue() << std::endl;
+	std::cout << solution->enQueue(5) << std::endl;
+	std::cout << solution->Rear() << std::endl;
+	std::cout << solution->deQueue() << std::endl;
+	std::cout << solution->Front() << std::endl;
+	std::cout << solution->deQueue() << std::endl;
+	std::cout << solution->deQueue() << std::endl;
+	std::cout << solution->deQueue() << std::endl;
+
+
+
+
+	return 0;
+}
+#endif // LEETCODE_622
+
 
 #ifdef LEETCODE_668
 int leetcodetest668()
