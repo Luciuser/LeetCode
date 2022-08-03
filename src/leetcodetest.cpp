@@ -33,6 +33,13 @@ int leetcodetest30()
 }
 #endif // LEETCODE_30
 
+#ifdef LEETCODE_49
+int leetcodetest49()
+{
+	return 0;
+}
+#endif // LEETCODE_49
+
 #ifdef LEETCODE_94
 int leetcodetest94()
 {
