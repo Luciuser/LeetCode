@@ -87,6 +87,7 @@ endif()
  	src/leetcode1331.h
  	src/leetcode1374.h
  	src/leetcode1399.h
+ 	src/leetcode1403.h
  	src/leetcode1728.h
  	src/leetcode1781.h
  	src/leetcode1786.h

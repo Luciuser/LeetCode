@@ -438,6 +438,11 @@ int leetcodetest1374();
 int leetcodetest1399();
 #endif // LEETCODE_1399
 
+#ifdef LEETCODE_1403
+#include"leetcode1403.h"
+int leetcodetest1403();
+#endif // LEETCODE_1403
+
 #ifdef LEETCODE_1728
 #include"leetcode1728.h"
 int leetcodetest1728();
