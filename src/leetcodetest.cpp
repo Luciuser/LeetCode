@@ -827,6 +827,19 @@ int leetcodetest1403()
 }
 #endif // LEETCODE_1403
 
+#ifdef LEETCODE_1408
+int leetcodetest1408()
+{
+	Solution *solution = new Solution();
+	
+	std::vector<std::string> temp = { "mass", "as", "hero", "superhero" };
+
+	solution->stringMatching(temp);
+
+	return 0;
+}
+#endif // LEETCODE_1408
+
 #ifdef LEETCODE_1728
 int leetcodetest1728()
 {
