@@ -308,6 +308,18 @@ int leetcodetest623()
 }
 #endif // LEETCODE_623
 
+#ifdef LEETCODE_636
+int leetcodetest636()
+{
+	Solution *solution = new Solution();
+	std::vector<std::string> temp = { "0:start:0","0:start:2","0:end:5","0:start:6","0:end:6","0:end:7" };
+
+	solution->exclusiveTime(1, temp);
+
+	return 0;
+}
+#endif // LEETCODE_636
+
 #ifdef LEETCODE_668
 int leetcodetest668()
 {
