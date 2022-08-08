@@ -504,6 +504,18 @@ int leetcodetest749()
 }
 #endif // LEETCODE_749
 
+#ifdef LEETCODE_761
+int leetcodetest761()
+{
+	Solution *solution = new Solution();
+
+	std::cout << solution->makeLargestSpecial("11011000");
+
+
+	return 0;
+}
+#endif // LEETCODE_761
+
 #ifdef LEETCODE_762
 int leetcodetest762()
 {
