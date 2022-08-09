@@ -360,6 +360,10 @@ int main() {
 	leetcodetest1408();
 #endif // LEETCODE_1408
 
+#ifdef LEETCODE_1413
+	leetcodetest1413();
+#endif // LEETCODE_1413
+
 #ifdef LEETCODE_1728
 	leetcodetest1728();
 #endif

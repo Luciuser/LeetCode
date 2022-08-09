@@ -20,7 +20,7 @@ int leetcodetest2()
 int leetcodetest5()
 {
 	Solution solution;
-	std::cout << solution.longestPalindrome("abababa").c_str() << std::endl;
+	std::cout << solution.longestPalindrome("cbbd").c_str() << std::endl;
 
 	return 0;
 }
@@ -863,6 +863,13 @@ int leetcodetest1408()
 	return 0;
 }
 #endif // LEETCODE_1408
+
+#ifdef LEETCODE_1413
+int leetcodetest1413()
+{
+	return 0;
+}
+#endif // LEETCODE_1413
 
 #ifdef LEETCODE_1728
 int leetcodetest1728()
