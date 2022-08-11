@@ -47,6 +47,13 @@ int leetcodetest94()
 }
 #endif
 
+#ifdef LEETCODE_171
+int leetcodetest171()
+{
+	return 0;
+}
+#endif // LEETCODE_171
+
 #ifdef LEETCODE_174
 int leetcodetest174()
 {
@@ -319,6 +326,17 @@ int leetcodetest636()
 	return 0;
 }
 #endif // LEETCODE_636
+
+#ifdef LEETCODE_640
+int leetcodetest640()
+{
+	Solution *solution = new Solution();
+
+	solution->solveEquation("x+5-3+x=6+x-2");
+
+	return 0;
+}
+#endif // LEETCODE_640
 
 #ifdef LEETCODE_668
 int leetcodetest668()
@@ -870,6 +888,17 @@ int leetcodetest1413()
 	return 0;
 }
 #endif // LEETCODE_1413
+
+#ifdef LEETCODE_1417
+int leetcodetest1417()
+{
+	Solution *solution = new Solution();
+
+	std::cout << solution->reformat("a") << std::endl;
+
+	return 0;
+}
+#endif // LEETCODE_1417
 
 #ifdef LEETCODE_1728
 int leetcodetest1728()
