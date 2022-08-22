@@ -338,6 +338,25 @@ int leetcodetest640()
 }
 #endif // LEETCODE_640
 
+#ifdef LEETCODE_654
+int leetcodetest654()
+{
+	Solution solution;
+	std::vector<int> temp = { 3, 6, 7, 5, 1, 2, 8, 9 };
+	solution.constructMaximumBinaryTree(temp);
+
+	return 0;
+}
+#endif // LEETCODE_654
+
+#ifdef LEETCODE_655
+int leetcodetest655()
+{
+	Solution solution;
+	return 0;
+}
+#endif // LEETCODE_655
+
 #ifdef LEETCODE_668
 int leetcodetest668()
 {
@@ -840,6 +859,13 @@ int leetcodetest1260()
 	return 0;
 }
 #endif // LEETCODE_1260
+
+#ifdef LEETCODE_1282
+int leetcodetest1282()
+{
+	return 0;
+}
+#endif // LEETCODE_1282
 
 #ifdef LEETCODE_1331
 int leetcodetest1331()

@@ -175,6 +175,14 @@ int main() {
 	leetcodetest640();
 #endif // LEETCODE_640
 
+#ifdef LEETCODE_654
+	leetcodetest654();
+#endif // LEETCODE_654
+
+#ifdef LEETCODE_655
+	leetcodetest655();
+#endif // LEETCODE_655
+
 #ifdef LEETCODE_668
 	leetcodetest668();
 #endif
@@ -347,6 +355,10 @@ int main() {
 #ifdef LEETCODE_1260
 	leetcodetest1260();
 #endif // LEETCODE_1260
+
+#ifdef LEETCODE_1282
+	leetcodetest1282();
+#endif // LEETCODE_1282
 
 #ifdef LEETCODE_1331
 	leetcodetest1331();
