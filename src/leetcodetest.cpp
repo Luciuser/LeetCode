@@ -964,6 +964,13 @@ int leetcodetest1455()
 	return 0;
 }
 
+int leetcodetest1456()
+{
+#ifdef LEETCODE_1656
+#endif // LEETCODE_1656
+	return 0;
+}
+
 int leetcodetest1728()
 {
 #ifdef LEETCODE_1728
@@ -1158,6 +1165,7 @@ int leetcodeTest() {
 	leetcodetest1417();
 	leetcodetest1422();
 	leetcodetest1455();
+	leetcodetest1656();
 	leetcodetest1728();
 	leetcodetest1781();
 	leetcodetest1786();
