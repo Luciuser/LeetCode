@@ -1,8 +1,8 @@
 #include  "leetcodetest.h"
 
-#ifdef LEETCODE_2
 int leetcodetest2()
 {
+#ifdef LEETCODE_2
 	ListNode *l13 = new ListNode(3);
 	ListNode *l12 = new ListNode(4, l13);
 	ListNode *l11 = new ListNode(2, l12);
@@ -12,81 +12,91 @@ int leetcodetest2()
 
 	Solution solution;
 	std::cout << solution.addTwoNumbers(l11, l21) << std::endl;
-	return 0;
-}
 #endif // LEETCODE_2
 
-#ifdef LEETCODE_5
+	return 0;
+}
+
 int leetcodetest5()
 {
+#ifdef LEETCODE_5
 	Solution solution;
 	std::cout << solution.longestPalindrome("cbbd").c_str() << std::endl;
-
-	return 0;
-}
 #endif // LEETCODE_5
 
-#ifdef LEETCODE_30
+	return 0;
+}
+
 int leetcodetest30()
 {
-	return 0;
-}
+#ifdef LEETCODE_30
 #endif // LEETCODE_30
 
-#ifdef LEETCODE_49
+	return 0;
+}
+
 int leetcodetest49()
 {
+#ifdef LEETCODE_49
+#endif // LEETCODE_49
+	
 	return 0;
 }
-#endif // LEETCODE_49
 
-#ifdef LEETCODE_94
 int leetcodetest94()
 {
-	return 0;
-}
+#ifdef LEETCODE_94
 #endif
 
-#ifdef LEETCODE_171
-int leetcodetest171()
-{
 	return 0;
 }
+
+int leetcodetest171()
+{
+#ifdef LEETCODE_171
 #endif // LEETCODE_171
 
-#ifdef LEETCODE_174
+	return 0;
+}
+
 int leetcodetest174()
 {
+#ifdef LEETCODE_174
+
 	std::vector<std::vector<int>> temp = { {-2, -3, 3},{-5, -10, 1},{10,30,-5} };
 
 	Solution solution;
 	std::cout << solution.calculateMinimumHP(temp) << std::endl;
+#endif // LEETCODE_174
 
 	return 0;
 }
-#endif // LEETCODE_174
 
-#ifdef LEETCODE_215
 int leetcodetest215()
 {
+#ifdef LEETCODE_215
+
 	std::vector<int> temp = { 2,1};
 
 	Solution solution;
 	std::cout << solution.findKthLargest(temp, 1) << std::endl;
-	return 0;
-}
 #endif // LEETCODE_215
 
-#ifdef LEETCODE_287
-int leetcodetest287()
-{
 	return 0;
 }
+
+int leetcodetest287()
+{
+#ifdef LEETCODE_287
 #endif // LEETCODE_287
 
-#ifdef LEETCODE_324
+	return 0;
+}
+
 int leetcodetest324()
 {
+#ifdef LEETCODE_324
+
 	std::vector<int> temp = {1,1,2,1,2,2};
 	Solution solution;
 	solution.wiggleSort(temp);
@@ -94,23 +104,26 @@ int leetcodetest324()
 	for (int i = 0; i < temp.size(); i++) {
 		std::cout << temp[i] << std::endl;
 	}
-
-	return 0;
-}
 #endif // LEETCODE_324
 
-#ifdef LEETCODE_326
-int leetcodetest326()
-{
-	Solution solution;
-	solution.isPowerOfThree(243);
 	return 0;
 }
+
+int leetcodetest326()
+{
+#ifdef LEETCODE_326
+
+	Solution solution;
+	solution.isPowerOfThree(243);
 #endif // LEETCODE_326
 
-#ifdef LEETCODE_427
+	return 0;
+}
+
 int leetcodetest427()
 {
+#ifdef LEETCODE_427
+
 	std::vector<int> a;
 	std::vector<int> b;
 	a.push_back(0);
@@ -124,21 +137,22 @@ int leetcodetest427()
 
 	Solution solution;
 	Node *root = solution.construct(test);
-
-	return 0;
-}
 #endif
 
-#ifdef LEETCODE_434
-int leetcodetest434()
-{
 	return 0;
 }
+
+int leetcodetest434()
+{
+#ifdef LEETCODE_434
 #endif // LEETCODE_434
 
-#ifdef LEETCODE_436
+	return 0;
+}
+
 int leetcodetest436()
 {
+#ifdef LEETCODE_436
 	std::vector<std::vector<int>> temp = { {1,1},{3,4} };
 
 	Solution solution;
@@ -147,14 +161,14 @@ int leetcodetest436()
 	for (int i = 0; i < result.size(); i++) {
 		std::cout << result[i] << std::endl;
 	}
+#endif // LEETCODE_436
 
 	return 0;
 }
-#endif // LEETCODE_436
 
-#ifdef LEETCODE_450
 int leetcodetest450()
 {
+#ifdef LEETCODE_450
 	TreeNode* node2 = new TreeNode(2);
 	TreeNode* node4 = new TreeNode(4);
 	TreeNode* node3 = new TreeNode(3, node2, node4);
@@ -166,47 +180,47 @@ int leetcodetest450()
 	Solution solution;
 
 	solution.deleteNode(root, 3);
-
-	return 0;
-}
 #endif // LEETCODE_450
 
-#ifdef LEETCODE_462
+	return 0;
+}
+
 int leetcodetest462()
 {
+#ifdef LEETCODE_462
+#endif // LEETCODE_462
 	return 0;
 }
-#endif // LEETCODE_462
 
-#ifdef LEETCODE_464
 int leetcodetest464()
 {
+#ifdef LEETCODE_464
+#endif // LEETCODE_464
 	return 0;
 }
-#endif // LEETCODE_464
 
-#ifdef LEETCODE_467
 int leetcodetest467()
 {
+#ifdef LEETCODE_467
 	Solution solution;
 	std::cout << solution.findSubstringInWraproundString("zaba") << std::endl;
+#endif // LEETCODE_467
 	return 0;
 }
-#endif // LEETCODE_467
 
-#ifdef LEETCODE_468
 int leetcodetest468()
 {
+#ifdef LEETCODE_468
 	Solution solution;
 	std::cout << solution.validIPAddress("1.00.1.1").c_str();
+#endif // LEETCODE_468
 
 	return 0;
 }
-#endif // LEETCODE_468
 
-#ifdef LEETCODE_473
 int leetcodetest473()
 {
+#ifdef LEETCODE_473
 	Solution solution;
 	std::vector<int> temp = {6961655, 6721573, 5852338, 4455955, 7980746, 4533546, 1148969, 101844, 9721301, 4048728, 4397033, 2520627, 2522511, 6094454, 1023140};
 	// 6, 7, 8, 8, 6, 7, 8]
@@ -221,74 +235,74 @@ int leetcodetest473()
 	else {
 		std::cout << "false" << std::endl;
 	}
-
-	return 0;
-}
 #endif // LEETCODE_473
 
-#ifdef LEETCODE_497
+	return 0;
+}
+
 int leetcodetest497()
 {
+#ifdef LEETCODE_497
+#endif // LEETCODE_497
 	return 0;
 }
-#endif // LEETCODE_497
 
-#ifdef LEETCODE_498
 int leetcodetest498()
 {
+#ifdef LEETCODE_498
+#endif // LEETCODE_498
 	return 0;
 }
-#endif // LEETCODE_498
 
-#ifdef LEETCODE_513
 int leetcodetest513()
 {
+#ifdef LEETCODE_513
+#endif // LEETCODE_513
 	return 0;
 }
-#endif // LEETCODE_513
 
-#ifdef LEETCODE_522
 int leetcodetest522()
 {
+#ifdef LEETCODE_522
 	std::vector<std::string> temp = { "aaa","aaa","aa" };
 	Solution solution;
 	std::cout << solution.findLUSlength(temp) << std::endl;
+#endif // LEETCODE_522
 
 	return 0;
 }
-#endif // LEETCODE_522
 
-#ifdef LEETCODE_532
 int leetcodetest532()
 {
+#ifdef LEETCODE_532
 	std::vector<int> temp = { 1,3,1,5,4 };
 	Solution solution;
 	std::cout << solution.findPairs(temp, 0) << std::endl;
-
-	return 0;
-}
 #endif // LEETCODE_532
 
-#ifdef LEETCODE_535
-int leetcodetest535()
-{
 	return 0;
 }
-#endif // LEETCODE_535
 
-#ifdef LEETCODE_592
+int leetcodetest535()
+{
+#ifdef LEETCODE_535
+#endif // LEETCODE_535
+	return 0;
+}
+
 int leetcodetest592()
 {
+#ifdef LEETCODE_592
 	Solution solution;
 	std::cout << solution.fractionAddition("-1/2+1/2") << std::endl;
 
+#endif // LEETCODE_592
 	return 0;
 }
-#endif // LEETCODE_592
 
-#ifdef LEETCODE_622
 int leetcodetest622()
 {
+#ifdef LEETCODE_622
 	MyCircularQueue *solution = new MyCircularQueue(6);
 	std::cout << solution->enQueue(6) << std::endl;
 	std::cout << solution->Rear() << std::endl;
@@ -300,88 +314,85 @@ int leetcodetest622()
 	std::cout << solution->deQueue() << std::endl;
 	std::cout << solution->deQueue() << std::endl;
 	std::cout << solution->deQueue() << std::endl;
-
-
-
-
-	return 0;
-}
 #endif // LEETCODE_622
 
-#ifdef LEETCODE_623
-int leetcodetest623()
-{
 	return 0;
 }
-#endif // LEETCODE_623
 
-#ifdef LEETCODE_636
+int leetcodetest623()
+{
+#ifdef LEETCODE_623
+#endif // LEETCODE_623
+	return 0;
+}
+
 int leetcodetest636()
 {
+#ifdef LEETCODE_636
 	Solution *solution = new Solution();
 	std::vector<std::string> temp = { "0:start:0","0:start:2","0:end:5","0:start:6","0:end:6","0:end:7" };
 
 	solution->exclusiveTime(1, temp);
+#endif // LEETCODE_636
 
 	return 0;
 }
-#endif // LEETCODE_636
 
-#ifdef LEETCODE_640
 int leetcodetest640()
 {
+#ifdef LEETCODE_640
 	Solution *solution = new Solution();
 
 	solution->solveEquation("x+5-3+x=6+x-2");
 
+#endif // LEETCODE_640
 	return 0;
 }
-#endif // LEETCODE_640
 
-#ifdef LEETCODE_654
 int leetcodetest654()
 {
+#ifdef LEETCODE_654
 	Solution solution;
 	std::vector<int> temp = { 3, 6, 7, 5, 1, 2, 8, 9 };
 	solution.constructMaximumBinaryTree(temp);
 
+#endif // LEETCODE_654
 	return 0;
 }
-#endif // LEETCODE_654
 
-#ifdef LEETCODE_655
 int leetcodetest655()
 {
+#ifdef LEETCODE_655
 	Solution solution;
+#endif // LEETCODE_655
 	return 0;
 }
-#endif // LEETCODE_655
 
-#ifdef LEETCODE_668
 int leetcodetest668()
 {
+#ifdef LEETCODE_668
 	Solution solution;
 	std::cout << solution.findKthNumber(3, 3, 5) << std::endl;
+#endif // LEETCODE_668
 	return 0;
 }
-#endif // LEETCODE_668
 
-#ifdef LEETCODE_675
 int leetcodetest675()
 {
+#ifdef LEETCODE_675
 	std::vector<std::vector<int>> temp = { {4,2,3},{0,0,1},{7,6,5} };
 
 	Solution solution;
 	std::cout << solution.cutOffTree(temp) << std::endl;
 	return 0;
+#endif // LEETCODE_675
 
 	return 0;
 }
-#endif // LEETCODE_675
 
-#ifdef LEETCODE_676
 int leetcodetest676()
 {
+#ifdef LEETCODE_676
 	std::vector<std::string>temp = { "hello","leetcode" };
 
 	MagicDictionary *md = new MagicDictionary();
@@ -391,12 +402,12 @@ int leetcodetest676()
 	std::cout << md->search("hell") << std::endl;
 	std::cout << md->search("leetcoded") << std::endl;
 
+#endif // LEETCODE_676
 	return 0;
 }
-#endif // LEETCODE_676
 
-#ifdef LEETCODE_699
 int leetcodetest699() {
+#ifdef LEETCODE_699
 	std::vector<std::vector<int>> temp = { {1,2},{2,3},{6,1} };
 
 	Solution solution;
@@ -405,13 +416,13 @@ int leetcodetest699() {
 	for (int i = 0; i < result.size(); i++) {
 		std::cout << result[i] << std::endl;
 	}
+#endif // LEETCODE_699
 	return 0;
 }
-#endif // LEETCODE_699
 
-#ifdef LEETCODE_715
 int leetcodetest715()
 {
+#ifdef LEETCODE_715
 	RangeModule *rm = new RangeModule();
 	//rm->addRange(10, 20);
 	//rm->removeRange(14, 16);
@@ -429,40 +440,40 @@ int leetcodetest715()
 	std::cout << rm->queryRange(2, 3) << std::endl;
 	rm->removeRange(4, 9);
 
+#endif // LEETCODE_715
 	return 0;
 }
-#endif // LEETCODE_715
 
-#ifdef LEETCODE_719
 int leetcodetest719()
 {
+#ifdef LEETCODE_719
 	Solution solution;
 
 	std::vector<int> temp = { 1,6,1 };
 
 	std::cout << solution.smallestDistancePair(temp, 5000) << std::endl;
 
+#endif // LEETCODE_719
 	return 0;
 }
-#endif // LEETCODE_719
 
-#ifdef LEETCODE_730
 int leetcodetest730()
 {
+#ifdef LEETCODE_730
+#endif // LEETCODE_730
 	return 0;
 }
-#endif // LEETCODE_730
 
-#ifdef DEBUG
 int leetcodetest731()
 {
+#ifdef LEETCODE_731
+#endif // LEETCODE_731
 	return 0;
 }
-#endif // DEBUG
 
-#ifdef LEETCODE_732
 int leetcodetest732()
 {
+#ifdef LEETCODE_732
 	std::vector<int> temp = { 93, 90, 50, 50, 40, 2};
 
 	SegmentTree *segmentTree = new SegmentTree();
@@ -486,13 +497,13 @@ int leetcodetest732()
 	//std::cout << solution->book(5, 10) << std::endl;
 	//std::cout << solution->book(25, 55) << std::endl;
 
+#endif // LEETCODE_732
 	return 0;
 }
-#endif // LEETCODE_732
 
-#ifdef LEETCODE_735
 int leetcodetest735()
 {
+#ifdef LEETCODE_735
 	std::vector<int> temp = { -2,-2,1,-2 };
 
 	Solution *solution = new Solution();
@@ -501,35 +512,35 @@ int leetcodetest735()
 		std::cout << result[i] << std::endl;
 	}
 
+#endif // LEETCODE_735
 	return 0;
 }
-#endif // LEETCODE_735
 
-#ifdef LEETCODE_745
 int leetcodetest745()
 {
+#ifdef LEETCODE_745
 
 	std::vector<std::string> temp = { "apple", "bsize", "hello", "abcd", "ab", "hellp", "hellp", "a", "basize" };
 	WordFilter *wordFilter = new WordFilter(temp);
 	wordFilter->f("a", "e");
 
+#endif // LEETCODE_745
 	return 0;
 }
-#endif // LEETCODE_745
 
-#ifdef LEETCODE_747
 int leetcodetest747()
 {
+#ifdef LEETCODE_747
 	Solution solution;
 	std::vector<int> test = { 1,0 };
 	std::cout << solution.dominantIndex(test) << std::endl;
+#endif // LEETCODE_747
 	return 0;
 }
-#endif // LEETCODE_747
 
-#ifdef LEETCODE_749
 int leetcodetest749()
 {
+#ifdef LEETCODE_749
 	//std::vector<std::vector<int>> temp = { {0,1,0,0,0,0,0,1},{0,1,0,0,0,0,0,1},{0,0,0,0,0,0,0,1},{0,0,0,0,0,0,0,0} };
 	std::vector<std::vector<int>> temp = { {1, 1, 1, 0, 0, 0, 0, 0, 0},{1, 0, 1, 0, 1, 1, 1, 1, 1},{1, 1, 1, 0, 0, 0, 0, 0, 0} };
 
@@ -537,70 +548,70 @@ int leetcodetest749()
 	Solution solution;
 	std::cout << solution.containVirus(temp);
 
+#endif // LEETCODE_749
 	return 0;
 }
-#endif // LEETCODE_749
 
-#ifdef LEETCODE_761
 int leetcodetest761()
 {
+#ifdef LEETCODE_761
 	Solution *solution = new Solution();
 
 	std::cout << solution->makeLargestSpecial("11011000");
 
 
+#endif // LEETCODE_761
 	return 0;
 }
-#endif // LEETCODE_761
 
-#ifdef LEETCODE_762
 int leetcodetest762()
 {
+#ifdef LEETCODE_762
+#endif // LEETCODE_762
 	return 0;
 }
-#endif // LEETCODE_762
 
-#ifdef LEETCODE_782
 int leetcodetest782()
 {
+#ifdef LEETCODE_782
+#endif // LEETCODE_782
 	return 0;
 }
-#endif // LEETCODE_782
 
-#ifdef LEETCODE_814
 int leetcodetest814()
 {
+#ifdef LEETCODE_814
+#endif // LEETCODE_814
 	return 0;
 }
-#endif // LEETCODE_814
 
-#ifdef LEETCODE_829
 int leetcodetest829()
 {
+#ifdef LEETCODE_829
 	Solution solution;
 
 	std::cout << solution.consecutiveNumbersSum(6) << std::endl;
 
+#endif // LEETCODE_829
 	return 0;
 }
-#endif // LEETCODE_829
 
-#ifdef LEETCODE_875
 int leetcodetest875()
 {
+#ifdef LEETCODE_875
 	std::vector<int> temp = { 3 };
 	Solution solution;
 
 	std::cout << solution.minEatingSpeed(temp, 3) << std::endl;
 
+#endif // LEETCODE_875
 	return 0;
 }
-#endif // LEETCODE_875
 
-#ifdef LEETCODE_890
 int leetcodetest890()
 {
-	
+#ifdef LEETCODE_890
+
 	std::vector<std::string> temp = { "yzmyr", "fhufq", "lghlq", "oahot", "ueiuq" };
 	Solution solution;
 
@@ -609,20 +620,20 @@ int leetcodetest890()
 		std::cout << result[i].c_str() << std::endl;
 	}
 
+#endif // LEETCODE_890
 	return 0;
 }
-#endif // LEETCODE_890
 
-#ifdef LEETCODE_899
 int leetcodetest899()
 {
+#ifdef LEETCODE_899
+#endif // LEETCODE_899
 	return 0;
 }
-#endif // LEETCODE_899
 
-#ifdef LEETCODE_919
 int leetcodetest919()
 {
+#ifdef LEETCODE_919
 	TreeNode *root = new TreeNode(1);
 	//TreeNode *node1 = new TreeNode(2);
 	//root->left = node1;
@@ -632,25 +643,25 @@ int leetcodetest919()
 	std::cout << solution->insert(3);
 	std::cout << solution->insert(4);
 
+#endif // LEETCODE_919
 	return 0;
 }
-#endif // LEETCODE_919
 
-#ifdef LEETCODE_926
 int leetcodetest926()
 {
+#ifdef LEETCODE_926
 	Solution solution;
 	std::string s = "1";
 
 	std::cout << solution.minFlipsMonoIncr(s) << std::endl;
 	
+#endif // LEETCODE_926
 	return 0;
 }
-#endif // LEETCODE_926
 
-#ifdef LEETCODE_942
 int leetcodetest942()
 {
+#ifdef LEETCODE_942
 	string str = "IDID";
 	Solution solution;
 
@@ -658,21 +669,21 @@ int leetcodetest942()
 	for (int i = 0; i < result.size(); i++) {
 		std::cout << result[i] << " " << std::endl;
 	}
-
-	return 0;
-}
 #endif
 
-#ifdef LEETCODE_951
-int leetcodetest951()
-{
 	return 0;
 }
-#endif // LEETCODE_951
 
-#ifdef LEETCODE_953
+int leetcodetest951()
+{
+#ifdef LEETCODE_951
+#endif // LEETCODE_951
+	return 0;
+}
+
 int leetcodetest953()
 {
+#ifdef LEETCODE_953
 	std::vector<std::string> words;
 	std::string str = "word";
 	words.push_back(str);
@@ -686,69 +697,69 @@ int leetcodetest953()
 
 	std::cout << solution.isAlienSorted(words, str) << std::endl;
 
+#endif
 	return 0;
 }
-#endif
 
-#ifdef LEETCODE_961
 int leetcodetest961()
 {
+#ifdef LEETCODE_961
+#endif
 	return 0;
 }
-#endif
 
-#ifdef LEETCODE_965
 int leetcodetest965()
 {
+#ifdef LEETCODE_965
+#endif // LEETCODE_965
 	return 0;
 }
-#endif // LEETCODE_965
 
-#ifdef LEETCODE_1021
 int leetcodetest1021()
 {
+#ifdef LEETCODE_1021
+#endif // LEETCODE_1021
 	return 0;
 }
-#endif // LEETCODE_1021
 
-#ifdef LEETCODE_1108
 int leetcodetest1108()
 {
+#ifdef LEETCODE_1108
+#endif // LEETCODE_1108
 	return 0;
 }
-#endif // LEETCODE_1108
 
-#ifdef LEETCODE_1022
 int leetcodetest1022()
 {
+#ifdef LEETCODE_1022
+#endif // LEETCODE_1022
 	return 0;
 }
-#endif // LEETCODE_1022
 
-#ifdef LEETCODE_1037
 int leetcodetest1037()
 {
+#ifdef LEETCODE_1037
+#endif // LEETCODE_1037
 	return 0;
 }
-#endif // LEETCODE_1037
 
-#ifdef LEETCODE_1051
 int leetcodetest1051()
 {
+#ifdef LEETCODE_1051
+#endif // LEETCODE_1051
 	return 0;
 }
-#endif // LEETCODE_1051
 
-#ifdef LEETCODE_1052
 int leetcodetest1052()
 {
+#ifdef LEETCODE_1052
+#endif // LEETCODE_1052
 	return 0;
 }
-#endif // LEETCODE_1052
 
-#ifdef LEETCODE_1089
 int leetcodetest1089()
 {
+#ifdef LEETCODE_1089
 	std::vector<int> temp = { 1,0,0,0,0,0 };
 
 	Solution solution;
@@ -757,14 +768,14 @@ int leetcodetest1089()
 	for (int i = 0; i < temp.size(); i++) {
 		std::cout << temp[i] << std::endl;
 	}
+#endif // LEETCODE_1089
 
 	return 0;
 }
-#endif // LEETCODE_1089
 
-#ifdef LEETCODE_1162
 int leetcodetest1162()
 {
+#ifdef LEETCODE_1162
 	std::vector<std::vector<int>> temp = { {1, 0, 0, 0, 0, 1, 0, 0, 0, 1}, {1, 1, 0, 1, 1, 1, 0, 1, 1, 0}, {0, 1, 1, 0, 1, 0, 0, 1, 0, 0}, {1, 0, 1, 0, 1, 0, 0, 0, 0, 0}, {0, 1, 0, 0, 0, 1, 1, 0, 1, 1}, {0, 0, 1, 0, 0, 1, 0, 1, 0, 1}, {0, 0, 0, 1, 1, 1, 1, 0, 0, 1}, {0, 1, 0, 0, 1, 0, 0, 1, 0, 0}, {0, 0, 0, 0, 0, 1, 1, 1, 0, 0}, {1, 1, 0, 1, 1, 1, 1, 1, 0, 0}};
 	Solution solution;
 
@@ -776,14 +787,14 @@ int leetcodetest1162()
 	}
 
 	std::cout << solution.maxDistance(temp) << std::endl;
+#endif // LEETCODE_1162
 
 	return 0;
 }
-#endif // LEETCODE_1162
 
-#ifdef LEETCODE_1172
 int leetcodetest1172()
 {
+#ifdef LEETCODE_1172
 	DinnerPlates* dinnerPlates = new DinnerPlates(2);
 	int success;
 	dinnerPlates->push(1);
@@ -810,169 +821,169 @@ int leetcodetest1172()
 	success = dinnerPlates->pop();
 	std::cout << success << std::endl;
 
+#endif // LEETCODE_1172
 	return 0;
 }
-#endif // LEETCODE_1172
 
-#ifdef LEETCODE_1175
 int leetcodetest1175()
 {
+#ifdef LEETCODE_1175
 	Solution solution;
 	std::cout << solution.numPrimeArrangements(5) << std::endl;
+#endif // LEETCODE_1175
 	return 0;
 }
-#endif // LEETCODE_1175
 
-#ifdef LEETCODE_1184
 int leetcodetest1184()
 {
+#ifdef LEETCODE_1184
+#endif // LEETCODE_1184
 	return 0;
 }
-#endif // LEETCODE_1184
 
-#ifdef LEETCODE_1185
 int leetcodetest1185()
 {
+#ifdef LEETCODE_1185
+#endif // LEETCODE_1185
 	return 0;
 }
-#endif // LEETCODE_1185
 
-#ifdef LEETCODE_1200
 int leetcodetest1200()
 {
+#ifdef LEETCODE_1200
+#endif // LEETCODE_1200
 	return 0;
 }
-#endif // LEETCODE_1200
 
-#ifdef LEETCODE_1206
 int leetcodetest1206()
 {
+#ifdef LEETCODE_1206
+#endif // LEETCODE_1206
 	return 0;
 }
-#endif // LEETCODE_1206
 
-#ifdef LEETCODE_1252
 int leetcodetest1252()
 {
+#ifdef LEETCODE_1252
+#endif // LEETCODE_1252
 	return 0;
 }
-#endif // LEETCODE_1252
 
-#ifdef LEETCODE_1260
 int leetcodetest1260()
 {
+#ifdef LEETCODE_1260
+#endif // LEETCODE_1260
 	return 0;
 }
-#endif // LEETCODE_1260
 
-#ifdef LEETCODE_1282
 int leetcodetest1282()
 {
+#ifdef LEETCODE_1282
+#endif // LEETCODE_1282
 	return 0;
 }
-#endif // LEETCODE_1282
 
-#ifdef LEETCODE_1331
 int leetcodetest1331()
 {
+#ifdef LEETCODE_1331
+#endif // LEETCODE_1331
 	return 0;
 }
-#endif // LEETCODE_1331
 
-#ifdef LEETCODE_1374
 int leetcodetest1374()
 {
+#ifdef LEETCODE_1374
+#endif // LEETCODE_1374
 	return 0;
 }
-#endif // LEETCODE_1374
 
-#ifdef LEETCODE_1399
 int leetcodetest1399()
 {
+#ifdef LEETCODE_1399
+#endif // LEETCODE_1399
 	return 0;
 }
-#endif // LEETCODE_1399
 
-#ifdef LEETCODE_1403
 int leetcodetest1403()
 {
+#ifdef LEETCODE_1403
+#endif // LEETCODE_1403
 	return 0;
 }
-#endif // LEETCODE_1403
 
-#ifdef LEETCODE_1408
 int leetcodetest1408()
 {
+#ifdef LEETCODE_1408
 	Solution *solution = new Solution();
 	
 	std::vector<std::string> temp = { "mass", "as", "hero", "superhero" };
 
 	solution->stringMatching(temp);
 
+#endif // LEETCODE_1408
 	return 0;
 }
-#endif // LEETCODE_1408
 
-#ifdef LEETCODE_1413
 int leetcodetest1413()
 {
+#ifdef LEETCODE_1413
+#endif // LEETCODE_1413
 	return 0;
 }
-#endif // LEETCODE_1413
 
-#ifdef LEETCODE_1417
 int leetcodetest1417()
 {
+#ifdef LEETCODE_1417
 	Solution *solution = new Solution();
 
 	std::cout << solution->reformat("a") << std::endl;
+#endif // LEETCODE_1417
 
 	return 0;
 }
-#endif // LEETCODE_1417
 
-#ifdef LEETCODE_1422
 int leetcodetest1422()
 {
+#ifdef LEETCODE_1422
 	Solution solution;
 
 	std::cout << solution.maxScore("110000") << std::endl;
+#endif // LEETCODE_1422
 
 	return 0;
 }
-#endif // LEETCODE_1422
 
-#ifdef LEETCODE_1455
 int leetcodetest1455()
 {
+#ifdef LEETCODE_1455
 	Solution solution;
 
 	std::cout << solution.isPrefixOfWord("i love eating burger", "burg") << std::endl;
 
+#endif // LEETCODE_1455
 	return 0;
 }
-#endif // LEETCODE_1455
 
-#ifdef LEETCODE_1728
 int leetcodetest1728()
 {
+#ifdef LEETCODE_1728
+#endif
 	return 0;
 }
-#endif
 
-#ifdef LEETCODE_1781
 int leetcodetest1781()
 {
+#ifdef LEETCODE_1781
 	Solution solution;
 	std::cout << solution.beautySum("aabcb") << std::endl;
+#endif // LEETCODE_1781
 
 	return 0;
 }
-#endif // LEETCODE_1781
 
-#ifdef LEETCODE_1786
 int leetcodetest1786()
 {
+#ifdef LEETCODE_1786
 	int n = 6;
 	Solution solution;
 
@@ -980,81 +991,184 @@ int leetcodetest1786()
 
 	std::cout << solution.countRestrictedPaths(n, temp) << std::endl;
 
+#endif // LEETCODE_1786
 	return 0;
 }
-#endif // LEETCODE_1786
 
-#ifdef LEETCODE_1909
 int leetcodetest1909()
 {
+#ifdef LEETCODE_1909
 	vector<int> num = { 1,1,1 };
 	Solution solution;
 
 	std::cout << solution.canBeIncreasing(num) << std::endl;
 
+#endif
 	return 0;
 }
-#endif
 
-#ifdef LEETCODE_2104
 int leetcodetest2104()
 {
+#ifdef LEETCODE_2104
 	vector<int> num = { 4,-2,-3,4,1 };
 	Solution solution;
 
 	std::cout << solution.subArrayRanges(num) << std::endl;
 
+#endif
 	return 0;
 }
-#endif
 
-#ifdef LEETCODE_2119
 int leetcodetest2119()
 {
+#ifdef LEETCODE_2119
 	int num = 12300;
 	Solution solution;
 
 	std::cout << solution.isSameAfterReversals(num) << std::endl;
+#endif // LEETCODE_2119
 	return 0;
 }
-#endif // LEETCODE_2119
 
-#ifdef LEETCODE_2104_AUDITION_04_06__
 int leetcodetestaudition0406()
 {
+#ifdef LEETCODE_2104_AUDITION_04_06__
+#endif
 	return 0;
 }
-#endif
 
-#ifdef DELEETCODE_2104_AUDITION_17_11__BUG
 int leetcodetestaudition1711()
 {
+#ifdef DELEETCODE_2104_AUDITION_17_11__BUG
+#endif // DELEETCODE_2104_AUDITION_17_11__BUG
 	return 0;
 }
-#endif // DELEETCODE_2104_AUDITION_17_11__BUG
 
-#ifdef SWORD_OFFER_II_041
 int swordOfferII041()
 {
+#ifdef SWORD_OFFER_II_041
+#endif // SWORD_OFFER_II_041
 	return 0;
 }
-#endif // SWORD_OFFER_II_041
 
-#ifdef SWORD_OFFER_II_114
 int swordOfferII114()
 {
+#ifdef SWORD_OFFER_II_114
 	std::vector<std::string> temp = { "wdaaajlzzz", "asfas", "afawef" };
 
 	Solution solution;
 	std::cout << solution.alienOrder(temp).c_str() << std::endl;
 
+#endif // SWORD_OFFER_II_114
 	return 0;
 }
-#endif // SWORD_OFFER_II_114
 
-#ifdef SWORD_OFFER_II_115
 int swordOfferII115()
 {
+#ifdef SWORD_OFFER_II_115
+#endif // SWORD_OFFER_II_115	return 0;
 	return 0;
 }
-#endif // SWORD_OFFER_II_115
+
+int leetcodeTest() {
+	leetcodetest2();
+	leetcodetest5();
+	leetcodetest30();
+	leetcodetest49();
+	leetcodetest94();
+	leetcodetest171();
+	leetcodetest174();
+	leetcodetest215();
+	leetcodetest287();
+	leetcodetest324();
+	leetcodetest326();
+	leetcodetest427();
+	leetcodetest434();
+	leetcodetest436();
+	leetcodetest450();
+	leetcodetest462();
+	leetcodetest464();
+	leetcodetest467();
+	leetcodetest468();
+	leetcodetest473();
+	leetcodetest497();
+	leetcodetest498();
+	leetcodetest513();
+	leetcodetest522();
+	leetcodetest532();
+	leetcodetest535();
+	leetcodetest592();
+	leetcodetest622();
+	leetcodetest623();
+	leetcodetest636();
+	leetcodetest640();
+	leetcodetest654();
+	leetcodetest655();
+	leetcodetest668();
+	leetcodetest675();
+	leetcodetest676();
+	leetcodetest699();
+	leetcodetest715();
+	leetcodetest719();
+	leetcodetest730();
+	leetcodetest731();
+	leetcodetest732();
+	leetcodetest735();
+	leetcodetest745();
+	leetcodetest747();
+	leetcodetest749();
+	leetcodetest761();
+	leetcodetest762();
+	leetcodetest782();
+	leetcodetest814();
+	leetcodetest829();
+	leetcodetest875();
+	leetcodetest890();
+	leetcodetest899();
+	leetcodetest919();
+	leetcodetest926();
+	leetcodetest942();
+	leetcodetest951();
+	leetcodetest953();
+	leetcodetest961();
+	leetcodetest965();
+	leetcodetest1021();
+	leetcodetest1022();
+	leetcodetest1037();
+	leetcodetest1051();
+	leetcodetest1052();
+	leetcodetest1089();
+	leetcodetest1108();
+	leetcodetest1162();
+	leetcodetest1172();
+	leetcodetest1175();
+	leetcodetest1184();
+	leetcodetest1185();
+	leetcodetest1200();
+	leetcodetest1206();
+	leetcodetest1252();
+	leetcodetest1260();
+	leetcodetest1282();
+	leetcodetest1331();
+	leetcodetest1374();
+	leetcodetest1399();
+	leetcodetest1403();
+	leetcodetest1408();
+	leetcodetest1413();
+	leetcodetest1417();
+	leetcodetest1422();
+	leetcodetest1455();
+	leetcodetest1728();
+	leetcodetest1781();
+	leetcodetest1786();
+	leetcodetest1909();
+	leetcodetest2104();
+	leetcodetest2119();
+	leetcodetestaudition0406();
+	leetcodetestaudition1711();
+	swordOfferII041();
+	swordOfferII114();
+	swordOfferII115();
+
+	return 0;
+}
