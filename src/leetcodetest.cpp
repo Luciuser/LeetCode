@@ -560,6 +560,13 @@ int leetcodetest762()
 }
 #endif // LEETCODE_762
 
+#ifdef LEETCODE_782
+int leetcodetest782()
+{
+	return 0;
+}
+#endif // LEETCODE_782
+
 #ifdef LEETCODE_814
 int leetcodetest814()
 {
@@ -823,8 +830,6 @@ int leetcodetest1184()
 }
 #endif // LEETCODE_1184
 
-
-
 #ifdef LEETCODE_1185
 int leetcodetest1185()
 {
@@ -925,6 +930,28 @@ int leetcodetest1417()
 	return 0;
 }
 #endif // LEETCODE_1417
+
+#ifdef LEETCODE_1422
+int leetcodetest1422()
+{
+	Solution solution;
+
+	std::cout << solution.maxScore("110000") << std::endl;
+
+	return 0;
+}
+#endif // LEETCODE_1422
+
+#ifdef LEETCODE_1455
+int leetcodetest1455()
+{
+	Solution solution;
+
+	std::cout << solution.isPrefixOfWord("i love eating burger", "burg") << std::endl;
+
+	return 0;
+}
+#endif // LEETCODE_1455
 
 #ifdef LEETCODE_1728
 int leetcodetest1728()
