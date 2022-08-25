@@ -1,13 +1,13 @@
 /*
  * @Author: Bingyang Jin
- * @Date: 2022-08-234 12:10:56
+ * @Date: 2022-08-24 12:10:56
  * @Editor: Bingyang Jin
  * @FilePath: /src/leetcode1460.h
  * @Description: create the file
  */
 
  /*
- * @EditTime: 2022-08-23 12:17:23
+ * @EditTime: 2022-08-24 12:17:23
  * @Editor: Bingyang Jin
  * @Description: create NORMAL, TIME 20ms, 9.88%, MEMORY 15MB and 22.75%
  */
