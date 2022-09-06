@@ -413,6 +413,14 @@ int leetcodetest676()
 	return 0;
 }
 
+int leetcodetest687()
+{
+#ifdef LEETCODE_687
+
+#endif // LEETCODE_687
+	return 0;
+}
+
 int leetcodetest699() {
 #ifdef LEETCODE_699
 	std::vector<std::vector<int>> temp = { {1,2},{2,3},{6,1} };
@@ -589,6 +597,15 @@ int leetcodetest814()
 {
 #ifdef LEETCODE_814
 #endif // LEETCODE_814
+	return 0;
+}
+
+int leetcodetest828()
+{
+#ifdef LEETCODE_828
+	Solution solution;
+	solution.uniqueLetterString("ABC");
+#endif // LEETCODE_828
 	return 0;
 }
 
@@ -992,6 +1009,13 @@ int leetcodetest1460()
 	return 0;
 }
 
+int leetcodetest1475()
+{
+#ifdef LEETCODE_1475
+#endif // LEETCODE_1475
+	return 0;
+}
+
 int leetcodetest1656()
 {
 #ifdef LEETCODE_1656
@@ -1143,6 +1167,7 @@ int leetcodeTest() {
 	leetcodetest668();
 	leetcodetest675();
 	leetcodetest676();
+	leetcodetest687();
 	leetcodetest699();
 	leetcodetest715();
 	leetcodetest719();
@@ -1157,6 +1182,7 @@ int leetcodeTest() {
 	leetcodetest762();
 	leetcodetest782();
 	leetcodetest814();
+	leetcodetest828();
 	leetcodetest829();
 	leetcodetest875();
 	leetcodetest890();
@@ -1197,6 +1223,7 @@ int leetcodeTest() {
 	leetcodetest1450();
 	leetcodetest1455();
 	leetcodetest1460();
+	leetcodetest1475();
 	leetcodetest1656();
 	leetcodetest1728();
 	leetcodetest1781();
