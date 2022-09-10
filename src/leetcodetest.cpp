@@ -349,6 +349,32 @@ int leetcodetest640()
 	return 0;
 }
 
+int leetcodetest646()
+{
+#ifdef LEETCODE_646
+	Solution solution;
+	std::vector<std::vector<int>> temp = { {1,2},{2,3},{3,4} };
+	solution.findLongestChain(temp);
+#endif // LEETCODE_646
+	return 0;
+}
+
+int leetcodetest652()
+{
+#ifdef LEETCODE_652
+
+	TreeNode *left = new TreeNode(1);
+	TreeNode *right = new TreeNode(1);
+
+	TreeNode *root = new TreeNode(2, left, right);
+
+	Solution solution;
+	solution.findDuplicateSubtrees(root);
+
+#endif // LEETCODE_652
+	return 0;
+}
+
 int leetcodetest654()
 {
 #ifdef LEETCODE_654
@@ -375,12 +401,26 @@ int leetcodetest658()
 	return 0;
 }
 
+int leetcodetest667()
+{
+#ifdef LEETCODE_667
+#endif // LEETCODE_667
+	return 0;
+}
+
 int leetcodetest668()
 {
 #ifdef LEETCODE_668
 	Solution solution;
 	std::cout << solution.findKthNumber(3, 3, 5) << std::endl;
 #endif // LEETCODE_668
+	return 0;
+}
+
+int leetcodetest669()
+{
+#ifdef LEETCODE_669
+#endif // LEETCODE_669
 	return 0;
 }
 
@@ -1016,6 +1056,20 @@ int leetcodetest1475()
 	return 0;
 }
 
+int leetcodetest1582()
+{
+#ifdef LEETCODE_1582
+#endif // LEETCODE_1582
+	return 0;
+}
+
+int leetcodetest1592()
+{
+#ifdef LEETCODE_1592
+#endif // LEETCODE_1592
+	return 0;
+}
+
 int leetcodetest1656()
 {
 #ifdef LEETCODE_1656
@@ -1161,10 +1215,14 @@ int leetcodeTest() {
 	leetcodetest623();
 	leetcodetest636();
 	leetcodetest640();
+	leetcodetest646();
+	leetcodetest652();
 	leetcodetest654();
 	leetcodetest655();
 	leetcodetest658();
+	leetcodetest667();
 	leetcodetest668();
+	leetcodetest669();
 	leetcodetest675();
 	leetcodetest676();
 	leetcodetest687();
@@ -1224,6 +1282,8 @@ int leetcodeTest() {
 	leetcodetest1455();
 	leetcodetest1460();
 	leetcodetest1475();
+	leetcodetest1582();
+	leetcodetest1592();
 	leetcodetest1656();
 	leetcodetest1728();
 	leetcodetest1781();
