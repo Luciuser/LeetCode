@@ -31,7 +31,7 @@
 //#define LEETCODE_636
 //#define LEETCODE_640
 //#define LEETCODE_646
-#define LEETCODE_652
+//#define LEETCODE_652
 //#define LEETCODE_654
 //#define LEETCODE_655
 //#define LEETCODE_658
@@ -57,6 +57,7 @@
 //#define LEETCODE_814
 //#define LEETCODE_828
 //#define LEETCODE_829
+#define LEETCODE_857
 //#define LEETCODE_875
 //#define LEETCODE_890
 //#define LEETCODE_899
@@ -343,6 +344,10 @@
 #include"leetcode829.h"
 #endif // LEETCODE_829
 
+#ifdef LEETCODE_857
+#include"leetcode857.h"
+#endif // LEETCODE_857
+
 #ifdef LEETCODE_875
 #include"leetcode875.h"
 #endif // LEETCODE_875
@@ -617,6 +622,7 @@ int leetcodetest782();
 int leetcodetest814();
 int leetcodetest828();
 int leetcodetest829();
+int leetcodetest857();
 int leetcodetest875();
 int leetcodetest890();
 int leetcodetest899();

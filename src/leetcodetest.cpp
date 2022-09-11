@@ -660,6 +660,20 @@ int leetcodetest829()
 	return 0;
 }
 
+int leetcodetest857()
+{
+#ifdef LEETCODE_857
+
+	std::vector<int> quality = { 3,1,10,10,1 };
+	std::vector<int> wage = { 4,8,2,2,7 };
+
+	Solution solution;
+	std::cout << solution.mincostToHireWorkers(quality, wage, 3) << std::endl;
+
+#endif // LEETCODE_857
+	return 0;
+}
+
 int leetcodetest875()
 {
 #ifdef LEETCODE_875
@@ -1242,6 +1256,7 @@ int leetcodeTest() {
 	leetcodetest814();
 	leetcodetest828();
 	leetcodetest829();
+	leetcodetest857();
 	leetcodetest875();
 	leetcodetest890();
 	leetcodetest899();
