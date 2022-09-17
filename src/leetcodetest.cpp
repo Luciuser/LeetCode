@@ -424,6 +424,13 @@ int leetcodetest669()
 	return 0;
 }
 
+int leetcodetest672()
+{
+#ifdef LEETCODE_672
+#endif // LEETCODE_672
+	return 0;
+}
+
 int leetcodetest675()
 {
 #ifdef LEETCODE_675
@@ -657,6 +664,19 @@ int leetcodetest829()
 	std::cout << solution.consecutiveNumbersSum(6) << std::endl;
 
 #endif // LEETCODE_829
+	return 0;
+}
+
+int leetcodetest850()
+{
+#ifdef LEETCODE_850
+
+	//std::vector<std::vector<int>> temp = { {0, 0, 2, 2},{1, 0, 2, 3},{1, 0, 3, 1 } };
+	std::vector<std::vector<int>> temp = { {0, 0, 1000000000, 1000000000} };
+	Solution solution;
+	std::cout << solution.rectangleArea(temp);
+
+#endif // LEETCODE_850
 	return 0;
 }
 
@@ -1098,6 +1118,13 @@ int leetcodetest1608()
 	return 0;
 }
 
+int leetcodetest1624()
+{
+#ifdef LEETCODE_1624
+#endif // LEETCODE_1624
+	return 0;
+}
+
 int leetcodetest1656()
 {
 #ifdef LEETCODE_1656
@@ -1251,6 +1278,7 @@ int leetcodeTest() {
 	leetcodetest667();
 	leetcodetest668();
 	leetcodetest669();
+	leetcodetest672();
 	leetcodetest675();
 	leetcodetest676();
 	leetcodetest687();
@@ -1270,6 +1298,7 @@ int leetcodeTest() {
 	leetcodetest814();
 	leetcodetest828();
 	leetcodetest829();
+	leetcodetest850();
 	leetcodetest857();
 	leetcodetest875();
 	leetcodetest890();
@@ -1315,6 +1344,7 @@ int leetcodeTest() {
 	leetcodetest1582();
 	leetcodetest1592();
 	leetcodetest1608();
+	leetcodetest1624();
 	leetcodetest1656();
 	leetcodetest1728();
 	leetcodetest1781();
