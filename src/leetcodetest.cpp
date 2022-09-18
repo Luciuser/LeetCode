@@ -647,6 +647,16 @@ int leetcodetest814()
 	return 0;
 }
 
+int leetcodetest827()
+{
+#ifdef LEETCODE_827
+	std::vector<std::vector<int>> temp = { {1,0, 1},{0,1, 1},{1,0,0} };
+	Solution solution;
+	std::cout << solution.largestIsland(temp);
+#endif // LEETCODE_827
+	return 0;
+}
+
 int leetcodetest828()
 {
 #ifdef LEETCODE_828
@@ -1296,6 +1306,7 @@ int leetcodeTest() {
 	leetcodetest762();
 	leetcodetest782();
 	leetcodetest814();
+	leetcodetest827();
 	leetcodetest828();
 	leetcodetest829();
 	leetcodetest850();
