@@ -13,6 +13,8 @@ endif()
  	src/audition0406.h
  	src/audition1711.h
  	src/leetcode2.h
+ 	src/leetcode3.h
+ 	src/leetcode4.h
  	src/leetcode5.h
  	src/leetcode30.h
  	src/leetcode49.h
@@ -58,6 +60,7 @@ endif()
  	src/leetcode675.h
  	src/leetcode676.h
 	src/leetcode687.h
+ 	src/leetcode698.h
  	src/leetcode699.h
  	src/leetcode715.h
  	src/leetcode719.h
@@ -125,6 +128,7 @@ endif()
 	src/leetcode1598.h
 	src/leetcode1608.h
 	src/leetcode1624.h
+	src/leetcode1636.h
 	src/leetcode1656.h
  	src/leetcode1728.h
  	src/leetcode1781.h

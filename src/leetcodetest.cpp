@@ -468,6 +468,19 @@ int leetcodetest687()
 	return 0;
 }
 
+int leetcodetest698()
+{
+#ifdef LEETCODE_698
+
+	std::vector<int> temp = { 4,3,2,3,5,2,1 };
+	Solution solution;
+
+	solution.canPartitionKSubsets(temp, 4);
+
+#endif // LEETCODE_698
+	return 0;
+}
+
 int leetcodetest699() {
 #ifdef LEETCODE_699
 	std::vector<std::vector<int>> temp = { {1,2},{2,3},{6,1} };
@@ -1299,6 +1312,7 @@ int leetcodeTest() {
 	leetcodetest675();
 	leetcodetest676();
 	leetcodetest687();
+	leetcodetest698();
 	leetcodetest699();
 	leetcodetest715();
 	leetcodetest719();
