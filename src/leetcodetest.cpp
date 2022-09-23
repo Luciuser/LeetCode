@@ -495,6 +495,28 @@ int leetcodetest699() {
 	return 0;
 }
 
+int leetcodetest707()
+{
+#ifdef LEETCODE_707
+
+	//["MyLinkedList", "addAtHead", "addAtTail", "addAtIndex", "get", "deleteAtIndex", "get"]
+	//[[], [1], [3], [1, 2], [1], [0], [0]]
+
+	//["MyLinkedList", "addAtHead", "addAtIndex", "get"]
+	//[[], [2], [0, 1], [1]]
+
+	MyLinkedList linkedList;
+	linkedList.addAtHead(2);
+	//linkedList.addAtTail(3);
+	linkedList.addAtIndex(0, 1);   //链表变为1-> 2-> 3
+	linkedList.get(1);            //返回2
+	//linkedList.deleteAtIndex(0);  //现在链表是1-> 3
+	//linkedList.get(0);            //返回3
+
+#endif // LEETCODE_707
+	return 0;
+}
+
 int leetcodetest715()
 {
 #ifdef LEETCODE_715
@@ -700,6 +722,13 @@ int leetcodetest850()
 	std::cout << solution.rectangleArea(temp);
 
 #endif // LEETCODE_850
+	return 0;
+}
+
+int leetcodetest854()
+{
+#ifdef LEETCODE_854
+#endif // LEETCODE_854
 	return 0;
 }
 
@@ -1155,6 +1184,13 @@ int leetcodetest1636()
 	return 0;
 }
 
+int leetcodetest1640()
+{
+#ifdef LEETCODE_1640
+#endif // LEETCODE_1640
+	return 0;
+}
+
 int leetcodetest1656()
 {
 #ifdef LEETCODE_1656
@@ -1314,6 +1350,7 @@ int leetcodeTest() {
 	leetcodetest687();
 	leetcodetest698();
 	leetcodetest699();
+	leetcodetest707();
 	leetcodetest715();
 	leetcodetest719();
 	leetcodetest730();
@@ -1331,6 +1368,7 @@ int leetcodeTest() {
 	leetcodetest828();
 	leetcodetest829();
 	leetcodetest850();
+	leetcodetest854();
 	leetcodetest857();
 	leetcodetest875();
 	leetcodetest890();
@@ -1378,6 +1416,7 @@ int leetcodeTest() {
 	leetcodetest1608();
 	leetcodetest1624();
 	leetcodetest1636();
+	leetcodetest1640();
 	leetcodetest1656();
 	leetcodetest1728();
 	leetcodetest1781();

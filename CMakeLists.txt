@@ -62,6 +62,7 @@ endif()
 	src/leetcode687.h
  	src/leetcode698.h
  	src/leetcode699.h
+ 	src/leetcode707.h
  	src/leetcode715.h
  	src/leetcode719.h
  	src/leetcode730.h
@@ -80,6 +81,7 @@ endif()
  	src/leetcode828.h
  	src/leetcode829.h
 	src/leetcode850.h
+	src/leetcode854.h
 	src/leetcode857.h
  	src/leetcode875.h
  	src/leetcode890.h
@@ -129,6 +131,7 @@ endif()
 	src/leetcode1608.h
 	src/leetcode1624.h
 	src/leetcode1636.h
+	src/leetcode1640.h
 	src/leetcode1656.h
  	src/leetcode1728.h
  	src/leetcode1781.h
