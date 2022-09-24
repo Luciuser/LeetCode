@@ -1191,6 +1191,16 @@ int leetcodetest1640()
 	return 0;
 }
 
+int leetcodetest1652()
+{
+#ifdef LEETCODE_1652
+	std::vector<int> temp = { 2,4,9,3 };
+	Solution solution;
+	solution.decrypt(temp, -2);
+#endif // LEETCODE_1652
+	return 0;
+}
+
 int leetcodetest1656()
 {
 #ifdef LEETCODE_1656
@@ -1417,6 +1427,7 @@ int leetcodeTest() {
 	leetcodetest1624();
 	leetcodetest1636();
 	leetcodetest1640();
+	leetcodetest1652();
 	leetcodetest1656();
 	leetcodetest1728();
 	leetcodetest1781();
