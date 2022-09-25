@@ -675,6 +675,20 @@ int leetcodetest782()
 	return 0;
 }
 
+int leetcodetest788()
+{
+#ifdef LEETCODE_788
+	std::vector<std::string> names = { "Mary","John","Emma" };
+	std::vector<int> heights = { 180, 165, 170 };
+
+
+	Solution solution;
+	solution.sortPeople(names, heights);
+	//solution.rotatedDigits(2);
+#endif // LEETCODE_788
+	return 0;
+}
+
 int leetcodetest814()
 {
 #ifdef LEETCODE_814
@@ -1373,6 +1387,7 @@ int leetcodeTest() {
 	leetcodetest761();
 	leetcodetest762();
 	leetcodetest782();
+	leetcodetest788();
 	leetcodetest814();
 	leetcodetest827();
 	leetcodetest828();
