@@ -12,6 +12,7 @@ endif()
  set(SOURCES
  	src/audition0406.h
  	src/audition1711.h
+	src/audition1719.h
  	src/leetcode2.h
  	src/leetcode3.h
  	src/leetcode4.h

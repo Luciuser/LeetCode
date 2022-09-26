@@ -1302,6 +1302,16 @@ int leetcodetestaudition1711()
 	return 0;
 }
 
+int leetcodetestaudition1719()
+{
+#ifdef AUDITION_17_19
+	std::vector<int> temp = { 1, 2, 3, 4, 6, 7, 9, 10 };
+	Solution solution;
+	solution.missingTwo(temp);
+#endif // AUDITION_17_19
+	return 0;
+}
+
 int swordOfferII041()
 {
 #ifdef SWORD_OFFER_II_041
@@ -1452,6 +1462,7 @@ int leetcodeTest() {
 	leetcodetest2119();
 	leetcodetestaudition0406();
 	leetcodetestaudition1711();
+	leetcodetestaudition1719();
 	swordOfferII041();
 	swordOfferII114();
 	swordOfferII115();

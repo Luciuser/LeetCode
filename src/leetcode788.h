@@ -7,7 +7,7 @@
  */
 
  /*
- * @EditTime: 2022-09-24 10:22:14
+ * @EditTime: 2022-09-25 10:22:14
  * @Editor: Bingyang Jin
  * @Description: create ENUM_METHOD, TIME 12ms, 41.62%, MEMORY 5.9MB and 31.89%
  */
