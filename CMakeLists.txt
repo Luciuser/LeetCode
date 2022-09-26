@@ -10,6 +10,7 @@ if(NOT CMAKE_BUILD_TYPE)
 endif()
 
  set(SOURCES
+ 	src/audition0102.h
  	src/audition0406.h
  	src/audition1711.h
 	src/audition1719.h

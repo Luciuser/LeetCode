@@ -29,7 +29,6 @@
 //#define HASH_MAP_METHOD // 哈希表进行存储，时间复杂度O(n)，空间复杂度O(n)，TIME 56ms, 5.96%, MEMORY 32.4MB and 5.10%
 #define MATH_METHOD // 数学法，时间复杂度O(n)，空间复杂度O(1)，TIME 36ms, 17.45%, MEMORY 21.8MB and 39.36%
 
-
 #ifdef HASH_MAP_METHOD
 class Solution {
 public:
@@ -55,11 +54,12 @@ public:
 };
 #endif // HASH_MAP_METHOD
 
+#ifdef MATH_METHOD
 class Solution {
 public:
 	std::vector<int> missingTwo(std::vector<int>& nums) {
 		int n = nums.size();
-		int realSum = (n + 3)*(n+2) / 2;
+		int realSum = (n + 3)*(n + 2) / 2;
 		int sum = std::accumulate(nums.begin(), nums.end(), 0);
 
 		// 设缺少的两个数为 a、b，且满足 a > b，因此有：
@@ -83,7 +83,7 @@ public:
 		if (a_add_b - 1 > (n + 2)) {
 			end = n + 2;
 		}
-		int aSum = (right + end) * ( - right + end + 1) / 2;
+		int aSum = (right + end) * (-right + end + 1) / 2;
 		int bSum = (1 + left) * (1 + left - 1) / 2;
 		int aRealSum = 0, bRealSum = 0;
 		for (int i = 0; i < n; i++) {
@@ -103,5 +103,6 @@ public:
 		return result;
 	}
 };
+#endif // MATH_METHOD
 
 #endif // __leet_code_audition_17_19__

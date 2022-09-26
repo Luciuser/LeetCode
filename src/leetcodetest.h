@@ -119,9 +119,10 @@
 //#define LEETCODE_1909
 //#define LEETCODE_2104
 //#define LEETCODE_2119
+#define LEETCODE_2104_AUDITION_01_02__
 //#define LEETCODE_2104_AUDITION_04_06__
 //#define LEETCODE_2104_AUDITION_17_11__
-#define AUDITION_17_19
+//#define LEETCODE_2104_AUDITION_17_19__
 //#define SWORD_OFFER_II_041
 //#define SWORD_OFFER_II_114
 //#define SWORD_OFFER_II_115
@@ -610,6 +611,10 @@
 #include"leetcode2119.h"
 #endif // LEETCODE_2119
 
+#ifdef LEETCODE_2104_AUDITION_01_02__
+#include"audition0102.h"
+#endif // LEETCODE_2104_AUDITION_01_02__
+
 #ifdef LEETCODE_2104_AUDITION_04_06__
 #include"audition0406.h"
 #endif // LEETCODE_2104_AUDITION_04_06__
@@ -618,9 +623,9 @@
 #include"audition1711.h"
 #endif // LEETCODE_2104_AUDITION_17_11__
 
-#ifdef AUDITION_17_19
+#ifdef LEETCODE_2104_AUDITION_17_19__
 #include"audition1719.h"
-#endif // AUDITION_17_19
+#endif // LEETCODE_2104_AUDITION_17_19__
 
 #ifdef SWORD_OFFER_II_041
 #include"swordOfferII041.h"
@@ -755,6 +760,7 @@ int leetcodetest1786();
 int leetcodetest1909();
 int leetcodetest2104();
 int leetcodetest2119();
+int leetcodetestaudition0102();
 int leetcodetestaudition0406();
 int leetcodetestaudition1711();
 int leetcodetestaudition1719();
