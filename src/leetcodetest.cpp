@@ -401,6 +401,22 @@ int leetcodetest658()
 	return 0;
 }
 
+int leetcodetest662()
+{
+#ifdef LEETCODE_662
+
+	TreeNode node6(6);
+	TreeNode node5(5, &node6, nullptr);
+	TreeNode node3(3, &node5, nullptr);
+	TreeNode root(1, &node3, nullptr);
+
+	Solution solution;
+	solution.widthOfBinaryTree(&root);
+
+#endif // LEETCODE_662
+	return 0;
+}
+
 int leetcodetest667()
 {
 #ifdef LEETCODE_667
@@ -1382,6 +1398,7 @@ int leetcodeTest() {
 	leetcodetest654();
 	leetcodetest655();
 	leetcodetest658();
+	leetcodetest662();
 	leetcodetest667();
 	leetcodetest668();
 	leetcodetest669();
