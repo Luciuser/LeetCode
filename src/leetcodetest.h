@@ -35,7 +35,7 @@
 //#define LEETCODE_654
 //#define LEETCODE_655
 //#define LEETCODE_658
-#define LEETCODE_662
+//#define LEETCODE_662
 //#define LEETCODE_667
 //#define LEETCODE_668
 //#define LEETCODE_669
@@ -122,6 +122,7 @@
 //#define LEETCODE_2119
 //#define LEETCODE_2104_AUDITION_01_02__
 //#define LEETCODE_2104_AUDITION_04_06__
+#define LEETCODE_2104_AUDITION_17_09__
 //#define LEETCODE_2104_AUDITION_17_11__
 //#define LEETCODE_2104_AUDITION_17_19__
 //#define SWORD_OFFER_II_041
@@ -624,6 +625,10 @@
 #include"audition0406.h"
 #endif // LEETCODE_2104_AUDITION_04_06__
 
+#ifdef LEETCODE_2104_AUDITION_17_09__
+#include"audition1709.h"
+#endif // LEETCODE_2104_AUDITION_17_09__
+
 #ifdef LEETCODE_2104_AUDITION_17_11__
 #include"audition1711.h"
 #endif // LEETCODE_2104_AUDITION_17_11__
@@ -768,6 +773,7 @@ int leetcodetest2104();
 int leetcodetest2119();
 int leetcodetestaudition0102();
 int leetcodetestaudition0406();
+int leetcodetestaudition1709();
 int leetcodetestaudition1711();
 int leetcodetestaudition1719();
 int swordOfferII041();

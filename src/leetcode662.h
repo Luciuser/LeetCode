@@ -1,13 +1,13 @@
 /*
  * @Author: Bingyang Jin
- * @Date: 2022-09-25 09:11:03
+ * @Date: 2022-09-27 09:11:03
  * @Editor: Bingyang Jin
  * @FilePath: /src/leetcode662.h
  * @Description: create the file
  */
 
  /*
- * @EditTime: 2022-09-25 10:02:02
+ * @EditTime: 2022-09-27 10:02:02
  * @Editor: Bingyang Jin
  * @Description: create BFS_METHOD, TIME 28ms, 13.31%, MEMORY 29.3MB and 5.00%
  */

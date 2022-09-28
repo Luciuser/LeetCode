@@ -1318,6 +1318,16 @@ int leetcodetestaudition0406()
 	return 0;
 }
 
+int leetcodetestaudition1709()
+{
+#ifdef LEETCODE_2104_AUDITION_17_09__
+
+	Solution solution;
+	solution.getKthMagicNumber(18);
+#endif // LEETCODE_2104_AUDITION_17_09__
+	return 0;
+}
+
 int leetcodetestaudition1711()
 {
 #ifdef DELEETCODE_2104_AUDITION_17_11__BUG
@@ -1486,6 +1496,7 @@ int leetcodeTest() {
 	leetcodetest2119();
 	leetcodetestaudition0102();
 	leetcodetestaudition0406();
+	leetcodetestaudition1709();
 	leetcodetestaudition1711();
 	leetcodetestaudition1719();
 	swordOfferII041();
