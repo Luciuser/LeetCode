@@ -1311,6 +1311,18 @@ int leetcodetestaudition0102()
 	return 0;
 }
 
+int leetcodetestaudition0109()
+{
+#ifdef LEETCODE_2104_AUDITION_01_09__
+
+	std::string s1 = "waterbottle";
+	std::string s2 = "erbottlewat";
+	Solution solution;
+	solution.isFlipedString(s1, s2);
+#endif // LEETCODE_2104_AUDITION_01_09__
+	return 0;
+}
+
 int leetcodetestaudition0406()
 {
 #ifdef LEETCODE_2104_AUDITION_04_06__
@@ -1495,6 +1507,7 @@ int leetcodeTest() {
 	leetcodetest2104();
 	leetcodetest2119();
 	leetcodetestaudition0102();
+	leetcodetestaudition0109();
 	leetcodetestaudition0406();
 	leetcodetestaudition1709();
 	leetcodetestaudition1711();
