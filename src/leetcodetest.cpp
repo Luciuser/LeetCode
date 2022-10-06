@@ -839,6 +839,20 @@ int leetcodetest926()
 	return 0;
 }
 
+int leetcodetest927()
+{
+#ifdef LEETCODE_927
+
+	std::vector<int> temp = { 1, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 1, 1, 1, 1, 1, 1, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 1, 1, 1, 1, 1, 1, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 1, 1, 1, 1, 1, 1, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 1, 0, 0, 0, 1, 1, 1, 1, 1, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0 };
+	Solution solution;
+	
+	std::vector<int> result = solution.threeEqualParts(temp);
+	std::cout << result[0] << " " << result[1] << std::endl;
+
+#endif // LEETCODE_927
+	return 0;
+}
+
 int leetcodetest942()
 {
 #ifdef LEETCODE_942
@@ -1456,6 +1470,7 @@ int leetcodeTest() {
 	leetcodetest899();
 	leetcodetest919();
 	leetcodetest926();
+	leetcodetest927();
 	leetcodetest942();
 	leetcodetest951();
 	leetcodetest953();

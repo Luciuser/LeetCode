@@ -11,6 +11,7 @@ endif()
 
  set(SOURCES
  	src/audition0102.h
+	src/audition0109.h
  	src/audition0406.h
  	src/audition1709.h
  	src/audition1711.h
@@ -71,7 +72,7 @@ endif()
  	src/leetcode719.h
  	src/leetcode730.h
  	src/leetcode731.h
- 	src/leetcode732.h
+ 	src/leetcode732.h 
  	src/leetcode735.h
  	src/leetcode745.h
  	src/leetcode747.h
@@ -93,6 +94,7 @@ endif()
  	src/leetcode899.h
  	src/leetcode919.h
  	src/leetcode926.h
+	src/leetcode927.h
  	src/leetcode942.h
  	src/leetcode951.h
  	src/leetcode953.h
