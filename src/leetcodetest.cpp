@@ -705,6 +705,13 @@ int leetcodetest788()
 	return 0;
 }
 
+int leetcodetest811()
+{
+#ifdef LEETCODE_811
+#endif // LEETCODE_811
+	return 0;
+}
+
 int leetcodetest814()
 {
 #ifdef LEETCODE_814
@@ -773,6 +780,19 @@ int leetcodetest857()
 	std::cout << solution.mincostToHireWorkers(quality, wage, 3) << std::endl;
 
 #endif // LEETCODE_857
+	return 0;
+}
+
+int leetcodetest870()
+{
+#ifdef LEETCODE_870
+
+	std::vector<int> nums1 = { 2,7,11,15 };
+	std::vector<int> nums2 = { 1,10,4,11 };
+
+	Solution solution;
+	solution.advantageCount(nums1, nums2);
+#endif // LEETCODE_870
 	return 0;
 }
 
@@ -1465,6 +1485,7 @@ int leetcodeTest() {
 	leetcodetest762();
 	leetcodetest782();
 	leetcodetest788();
+	leetcodetest811();
 	leetcodetest814();
 	leetcodetest827();
 	leetcodetest828();
@@ -1472,6 +1493,7 @@ int leetcodeTest() {
 	leetcodetest850();
 	leetcodetest854();
 	leetcodetest857();
+	leetcodetest870();
 	leetcodetest875();
 	leetcodetest890();
 	leetcodetest899();
