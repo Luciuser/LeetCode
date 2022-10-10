@@ -9,7 +9,13 @@
  /*
  * @EditTime: 2022-09-08 10:18:24
  * @Editor: Bingyang Jin
- * @Description: create NORMAL_METHOD，TIME 20ms, 47.44%, MEMORY 12.6MB and 62.94%
+ * @Description: create VIOLENCE_METHOD，TIME 20ms, 47.44%, MEMORY 12.6MB and 62.94%
+ */
+
+ /*
+ * @EditTime: 2022-10-10 14:17:56
+ * @Editor: Bingyang Jin
+ * @Description: create COLUMN_TAG_METHOD，TIME 16ms, 85.26%, MEMORY 12.4MB and 99.01%
  */
 
 #ifndef __leet_code_1582__
@@ -18,6 +24,11 @@
 #include<iostream>
 #include<vector>
 
+//#define VIOLENCE_METHOD // 蛮力法，暴力求解，TIME 20ms, 47.44%, MEMORY 12.6MB and 62.94%
+//#define ENUM_METHOD // 枚举法，先计算每行每列的和，再枚举，TIME 20ms, 47.55%, MEMORY 12.8MB and 7.22%
+#define COLUMN_TAG_METHOD // 列标记法，TIME 16ms, 85.26%, MEMORY 12.4MB and 99.01%
+
+#ifdef VIOLENCE_METHOD
 class Solution {
 public:
 	int numSpecial(std::vector<std::vector<int>>& mat) {
@@ -61,5 +72,69 @@ public:
 		return result;
 	}
 };
+#endif // NORMAL_METHOD
+
+#ifdef ENUM_METHOD
+class Solution {
+public:
+	int numSpecial(std::vector<std::vector<int>>& mat) {
+		int result = 0;
+
+		std::vector<int> rowSum(mat.size(), 0);
+		std::vector<int> columnSum(mat[0].size(), 0);
+		for (int i = 0; i < mat.size(); i++) {
+			for (int j = 0; j < mat[i].size(); j++) {
+				columnSum[j] += mat[i][j];
+				rowSum[i] += mat[i][j];
+			}
+		}
+
+		for (int i = 0; i < mat.size(); i++) {
+			for (int j = 0; j < mat[i].size(); j++) {
+				if (mat[i][j] == 1 && columnSum[j] == 1 && rowSum[i] == 1) {
+					result++;
+				}
+			}
+		}
+		
+		return result;
+	}
+};
+#endif // ENUM_METHOD
+
+#ifdef COLUMN_TAG_METHOD
+class Solution {
+public:
+	int numSpecial(std::vector<std::vector<int>>& mat) {
+		int m = mat.size(), n = mat[0].size();
+		for (int i = 0; i < m; i++) {
+			int cnt1 = 0;
+			for (int j = 0; j < n; j++) {
+				if (mat[i][j] == 1) {
+					cnt1++;
+				}
+			}
+			if (i == 0) {
+				cnt1--;
+			}
+			if (cnt1 > 0) {
+				for (int j = 0; j < n; j++) {
+					if (mat[i][j] == 1) {
+						mat[0][j] += cnt1;
+					}
+				}
+			}
+		}
+		int sum = 0;
+		for (int i = 0; i < n; i++) {
+			if (mat[0][i] == 1) {
+				sum++;
+			}
+		}
+		return sum;
+	}
+};
+#endif // COLUMN_TAG_METHOD
+
 
 #endif // __leet_code_1582__

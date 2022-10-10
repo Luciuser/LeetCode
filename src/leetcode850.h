@@ -23,18 +23,18 @@ class Solution {
 public:
 	int rectangleArea(std::vector<std::vector<int>>& rectangles) {
 
-		// °´ y Öá£¬½¨Á¢ÏàÓ¦map£¬O(n)
-		std::map<int, std::vector<int>> yBoundary; // y ·½ÏòµÄ±ß½ç
+		// ï¿½ï¿½ y ï¿½á£¬ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ó¦mapï¿½ï¿½O(n)
+		std::map<int, std::vector<int>> yBoundary; // y ï¿½ï¿½ï¿½ï¿½Ä±ß½ï¿½
 		for (int i = 0; i < rectangles.size(); i++) {
 			yBoundary[rectangles[i][1]].push_back(i);
 			yBoundary[rectangles[i][3]].push_back(i);
 		}
 		
-		// É¨ÃèÏß½øÐÐÉ¨Ãè
+		// É¨ï¿½ï¿½ï¿½ß½ï¿½ï¿½ï¿½É¨ï¿½ï¿½
 		auto iter = yBoundary.begin();
-		std::map<int, int> parts; // µ±Ç°É¨Ãèµ½µÄ³¤·½ÐÎµÄÐòºÅ
-		// ¶ÁÈë y ×îÐ¡ÖµÇé¿öÏÂÉ¨Ãèµ½µÄ³¤·½ÐÎ£¬O(n)
-		int before = (*iter).first; // Ç°Ò»¸ùÉ¨ÃèÏßµÄ y Öµ
+		std::map<int, int> parts; // ï¿½ï¿½Ç°É¨ï¿½èµ½ï¿½Ä³ï¿½ï¿½ï¿½ï¿½Îµï¿½ï¿½ï¿½ï¿½
+		// ï¿½ï¿½ï¿½ï¿½ y ï¿½ï¿½Ð¡Öµï¿½ï¿½ï¿½ï¿½ï¿½É¨ï¿½èµ½ï¿½Ä³ï¿½ï¿½ï¿½ï¿½Î£ï¿½O(n)
+		int before = (*iter).first; // Ç°Ò»ï¿½ï¿½É¨ï¿½ï¿½ï¿½ßµï¿½ y Öµ
 		for (int i = 0; i < (*iter).second.size(); i++) {
 			parts[(*iter).second[i]] = 1;
 		}
@@ -43,8 +43,8 @@ public:
 		for (; iter != yBoundary.end(); iter++) {
 			long long yLength = (*iter).first - before;
 			before = (*iter).first;
-			// ¼ÆËãµ±Ç°É¨ÃèÏß x ·½ÏòµÄ³¤¶È
-			std::map<int, int>xBoundary; // µ±Ç°É¨ÃèÏßÉ¨µ½ x µÄ±ß½ç
+			// ï¿½ï¿½ï¿½ãµ±Ç°É¨ï¿½ï¿½ï¿½ï¿½ x ï¿½ï¿½ï¿½ï¿½Ä³ï¿½ï¿½ï¿½
+			std::map<int, int>xBoundary; // ï¿½ï¿½Ç°É¨ï¿½ï¿½ï¿½ï¿½É¨ï¿½ï¿½ x ï¿½Ä±ß½ï¿½
 			for (auto partIter = parts.begin(); partIter != parts.end(); partIter++) {
 				if ((*partIter).second != 0) {
 					int xLeft = rectangles[(*partIter).first][0];
@@ -96,7 +96,7 @@ public:
 				result = result % ((int)1e9 + 7);
 			}
 
-			// ¸üÐÂ parts
+			// ï¿½ï¿½ï¿½ï¿½ parts
 			for (int i = 0; i < (*iter).second.size(); i++) {
 				if (parts.count((*iter).second[i]) == 0) {
 					parts[(*iter).second[i]] = 1;
