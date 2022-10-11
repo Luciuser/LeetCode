@@ -1083,6 +1083,16 @@ int leetcodetest1206()
 	return 0;
 }
 
+int leetcodetest1224()
+{
+#ifdef LEETCODE_1224
+	std::vector<int> temp = { 2,2,1,1,5,3,3,5 };
+	Solution solution;
+	solution.maxEqualFreq(temp);
+#endif // LEETCODE_1224
+	return 0;
+}
+
 int leetcodetest1252()
 {
 #ifdef LEETCODE_1252
@@ -1310,6 +1320,13 @@ int leetcodetest1786()
 	return 0;
 }
 
+int leetcodetest1790()
+{
+#ifdef LEETCODE_1790
+#endif // LEETCODE_1790
+	return 0;
+}
+
 int leetcodetest1800()
 {
 #ifdef LEETCODE_1800
@@ -1527,6 +1544,7 @@ int leetcodeTest() {
 	leetcodetest1185();
 	leetcodetest1200();
 	leetcodetest1206();
+	leetcodetest1224();
 	leetcodetest1252();
 	leetcodetest1260();
 	leetcodetest1282();
@@ -1555,6 +1573,7 @@ int leetcodeTest() {
 	leetcodetest1728();
 	leetcodetest1781();
 	leetcodetest1786();
+	leetcodetest1790();
 	leetcodetest1800();
 	leetcodetest1909();
 	leetcodetest2104();
