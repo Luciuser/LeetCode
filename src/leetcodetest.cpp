@@ -524,10 +524,10 @@ int leetcodetest707()
 	MyLinkedList linkedList;
 	linkedList.addAtHead(2);
 	//linkedList.addAtTail(3);
-	linkedList.addAtIndex(0, 1);   //Á´±í±äÎª1-> 2-> 3
-	linkedList.get(1);            //·µ»Ø2
-	//linkedList.deleteAtIndex(0);  //ÏÖÔÚÁ´±íÊÇ1-> 3
-	//linkedList.get(0);            //·µ»Ø3
+	linkedList.addAtIndex(0, 1);   //ï¿½ï¿½ï¿½ï¿½ï¿½Îª1-> 2-> 3
+	linkedList.get(1);            //ï¿½ï¿½ï¿½ï¿½2
+	//linkedList.deleteAtIndex(0);  //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½1-> 3
+	//linkedList.get(0);            //ï¿½ï¿½ï¿½ï¿½3
 
 #endif // LEETCODE_707
 	return 0;
@@ -726,6 +726,13 @@ int leetcodetest814()
 	return 0;
 }
 
+int leetcodetest817()
+{
+#ifdef LEETCODE_817
+#endif // LEETCODE_817
+	return 0;
+}
+
 int leetcodetest827()
 {
 #ifdef LEETCODE_827
@@ -815,6 +822,17 @@ int leetcodetest875()
 	return 0;
 }
 
+int leetcodetest886()
+{
+#ifdef LEETCODE_886
+	std::vector<std::vector<int>> temp = { {1,2},{2,3},{3,4},{4,5},{1,5} };
+	Solution solution;
+	solution.possibleBipartition(5, temp);
+
+#endif // LEETCODE_886
+	return 0;
+}
+
 int leetcodetest890()
 {
 #ifdef LEETCODE_890
@@ -835,6 +853,18 @@ int leetcodetest899()
 {
 #ifdef LEETCODE_899
 #endif // LEETCODE_899
+	return 0;
+}
+
+int leetcodetest904()
+{
+#ifdef LEETCODE_904
+
+	std::vector<int> temp = { 3, 3, 1, 5, 1, 2, 1, 1, 2, 3, 4, 3, 4, 0, 2, 2, 0, 2, 0, 1, 1, 3, 1, 2, 3, 6, 6, 7, 4, 2, 6, 3, 8, 7, 1, 7, 1, 13, 3, 1, 2, 1, 5, 1, 2, 3, 3, 4 };
+	Solution solution;
+	solution.totalFruit(temp);
+
+#endif // LEETCODE_904
 	return 0;
 }
 
@@ -877,6 +907,17 @@ int leetcodetest927()
 	std::cout << result[0] << " " << result[1] << std::endl;
 
 #endif // LEETCODE_927
+	return 0;
+}
+
+int leetcodetest940()
+{
+#ifdef LEETCODE_940
+
+	Solution solution;
+	std::cout << solution.distinctSubseqII("abaacahaiushfqoiwrekjbnzxvjbjkasdfjkahfkjhwqkjgfbasdbgmbdsagbjkfhkjzxjbjkdsahggwiehjoipqorjewhjkadsfnmbnzvmnxbmnbvhzbjhzbhjgjahjqhewjhdfsagjhjkj") << std::endl;
+
+#endif // LEETCODE_940
 	return 0;
 }
 
@@ -1512,6 +1553,7 @@ int leetcodeTest() {
 	leetcodetest801();
 	leetcodetest811();
 	leetcodetest814();
+	leetcodetest817();
 	leetcodetest827();
 	leetcodetest828();
 	leetcodetest829();
@@ -1520,11 +1562,14 @@ int leetcodeTest() {
 	leetcodetest857();
 	leetcodetest870();
 	leetcodetest875();
+	leetcodetest886();
 	leetcodetest890();
 	leetcodetest899();
+	leetcodetest904();
 	leetcodetest919();
 	leetcodetest926();
 	leetcodetest927();
+	leetcodetest940();
 	leetcodetest942();
 	leetcodetest951();
 	leetcodetest953();
