@@ -98,6 +98,7 @@ endif()
  	src/leetcode886.h
  	src/leetcode890.h
  	src/leetcode899.h
+ 	src/leetcode902.h 
  	src/leetcode904.h 
  	src/leetcode919.h 
  	src/leetcode926.h

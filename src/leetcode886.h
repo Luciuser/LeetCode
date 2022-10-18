@@ -12,6 +12,12 @@
  * @Description: create GREEDY_METHOD, TIME 664ms, 5.24%, MEMORY 79.9MB and 5.07%
  */
 
+ /*
+ * @EditTime: 2022-10-18 10:34:19
+ * @Editor: Bingyang Jin
+ * @Description: create DISJOINT_SET_UNION, TIME 236ms, 8.91%, MEMORY 62.8MB and 77.91%
+ */
+
 #ifndef __leet_code_886__
 #define __leet_code_886__
 
@@ -20,8 +26,11 @@
 #include<unordered_set>
 #include<unordered_map>
 
-#define GREEDY_METHOD // 贪心法，每次都尝试判断该点不友好的点是否能成功，TIME 664ms, 5.24%, MEMORY 79.9MB and 5.07%
+//#define GREEDY_METHOD // 贪心法，每次都尝试判断该点不友好的点是否能成功，TIME 664ms, 5.24%, MEMORY 79.9MB and 5.07%
+//#define DFS_METHOD // 深搜，是基于上述贪心法的改进，TIME 244ms, 10.10%, MEMORY 62.9MB and 82.67%
+#define DISJOINT_SET_UNION // 并查集，TIME 236ms, 8.91%, MEMORY 62.8MB and 77.91%
 
+#ifdef GREEDY_METHOD
 struct SimplePairHash {
 	std::size_t operator()(const std::pair<int, int>& p) const {
 		return p.first ^ p.second;
@@ -84,5 +93,104 @@ public:
 		return true;
 	}
 };
+#endif // GREEDY_METHOD
+
+#ifdef DFS_METHOD
+class Solution {
+public:
+
+	bool dfs(int index, int crtGroup) {
+		group[index] = crtGroup;
+		for (int i = 0; i < pairs[index].size(); i++) {
+			int person = pairs[index][i];
+			if (group[person] > 0 && group[person] == crtGroup) {
+				return false;
+			}
+			if (group[person] == 0) {
+				int nxtGroup = crtGroup == 1 ? 2 : 1;
+				if (!dfs(person, nxtGroup)) {
+					return false;
+				}
+			}
+		}
+		return true;
+	}
+
+	bool possibleBipartition(int n, std::vector<std::vector<int>>& dislikes) {
+
+		group = std::vector<int>(n + 1, 0);
+		pairs = std::vector<std::vector<int>>(n + 1);
+		for (int i = 0; i < dislikes.size(); i++) {
+			pairs[dislikes[i][0]].push_back(dislikes[i][1]);
+			pairs[dislikes[i][1]].push_back(dislikes[i][0]);
+		}
+		
+		for (int i = 1; i <= n; i++) {
+			if (group[i] == 0) {
+				if (!dfs(i, 1)) {
+					return false;
+				}
+			}
+		}
+
+		return true;
+	}
+
+private:
+	std::vector<std::vector<int>> pairs;
+	std::vector<int> group;
+};
+#endif // DFS_METHOD
+
+#ifdef DISJOINT_SET_UNION
+class Solution {
+public:
+
+	int find(int x) {
+		return group[x] == -1 ? x : find(group[x]);
+	}
+
+	void merge(int x, int y) {
+		int rootx = find(x);
+		int rooty = find(y);
+		if (rootx == rooty) {
+			return;
+		}
+		group[rooty] = rootx;
+	}
+
+	bool isConnect(int x, int y) {
+		int rootx = find(x);
+		int rooty = find(y);
+		return rootx == rooty;
+	}
+
+	bool possibleBipartition(int n, std::vector<std::vector<int>>& dislikes) {
+
+		group = std::vector<int>(n + 1, -1);
+		pairs = std::vector<std::vector<int>>(n + 1);
+		for (int i = 0; i < dislikes.size(); i++) {
+			pairs[dislikes[i][0]].push_back(dislikes[i][1]);
+			pairs[dislikes[i][1]].push_back(dislikes[i][0]);
+		}
+
+		for (int i = 1; i <= n; i++) {
+			for (int j = 0; j < pairs[i].size(); j++) {
+				merge(pairs[i][0], pairs[i][j]);
+				if (isConnect(i, pairs[i][j])) {
+					return false;
+				}
+			}
+		}
+
+		return true;
+	}
+
+private:
+	std::vector<std::vector<int>> pairs;
+	std::vector<int> group;
+};
+#endif // DISJOINT_SET_UNION
+
 
 #endif // __leet_code_886__
