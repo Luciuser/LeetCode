@@ -684,6 +684,13 @@ int leetcodetest762()
 	return 0;
 }
 
+int leetcodetest779()
+{
+#ifdef LEETCODE_779
+#endif // LEETCODE_779
+	return 0;
+}
+
 int leetcodetest782()
 {
 #ifdef LEETCODE_782
@@ -853,6 +860,13 @@ int leetcodetest899()
 {
 #ifdef LEETCODE_899
 #endif // LEETCODE_899
+	return 0;
+}
+
+int leetcodetest901()
+{
+#ifdef LEETCODE_901
+#endif // LEETCODE_901
 	return 0;
 }
 
@@ -1141,6 +1155,21 @@ int leetcodetest1224()
 	return 0;
 }
 
+int leetcodetest1235()
+{
+#ifdef LEETCODE_1235
+
+	std::vector<int> startTime = { 43,13,36,31,40,5,47,13,28,16,2,11 };
+	std::vector<int> endTime = { 44,22,41,41,47,13,48,35,48,26,21,39 };
+	std::vector<int> profit = { 8,20,3,19,16,8,11,13,2,15,1,1 };
+
+	Solution solution;
+	std::cout << solution.jobScheduling(startTime, endTime, profit) << std::endl;
+
+#endif // LEETCODE_1235
+	return 0;
+}
+
 int leetcodetest1252()
 {
 #ifdef LEETCODE_1252
@@ -1334,6 +1363,13 @@ int leetcodetest1656()
 {
 #ifdef LEETCODE_1656
 #endif // LEETCODE_1656
+	return 0;
+}
+
+int leetcodetest1700()
+{
+#ifdef LEETCODE_1700
+#endif // LEETCODE_1700
 	return 0;
 }
 
@@ -1572,6 +1608,7 @@ int leetcodeTest() {
 	leetcodetest886();
 	leetcodetest890();
 	leetcodetest899();
+	leetcodetest901();
 	leetcodetest902();
 	leetcodetest904();
 	leetcodetest919();
@@ -1598,6 +1635,7 @@ int leetcodeTest() {
 	leetcodetest1200();
 	leetcodetest1206();
 	leetcodetest1224();
+	leetcodetest1235();
 	leetcodetest1252();
 	leetcodetest1260();
 	leetcodetest1282();
@@ -1623,6 +1661,7 @@ int leetcodeTest() {
 	leetcodetest1640();
 	leetcodetest1652();
 	leetcodetest1656();
+	leetcodetest1700();
 	leetcodetest1728();
 	leetcodetest1781();
 	leetcodetest1786();
