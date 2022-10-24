@@ -7,7 +7,7 @@
  */
 
  /*
- * @EditTime: 2022-10-22 11:26:37
+ * @EditTime: 2022-10-23 11:26:37
  * @Editor: Bingyang Jin
  * @Description: create NORMAL_METHOD, TIME 4ms, 24.78%, MEMORY 6.2MB and 33.96%
  */
