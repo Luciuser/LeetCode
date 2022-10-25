@@ -938,6 +938,18 @@ int leetcodetest927()
 	return 0;
 }
 
+int leetcodetest934()
+{
+#ifdef LEETCODE_934
+
+	std::vector<std::vector<int>>temp = { {0,1},{1,0} };
+	Solution solution;
+	solution.shortestBridge(temp);
+
+#endif // LEETCODE_934
+	return 0;
+}
+
 int leetcodetest940()
 {
 #ifdef LEETCODE_940
@@ -1272,6 +1284,13 @@ int leetcodetest1422()
 	std::cout << solution.maxScore("110000") << std::endl;
 #endif // LEETCODE_1422
 
+	return 0;
+}
+
+int leetcodetest1441()
+{
+#ifdef LEETCODE_1441
+#endif // LEETCODE_1441
 	return 0;
 }
 
@@ -1622,6 +1641,7 @@ int leetcodeTest() {
 	leetcodetest919();
 	leetcodetest926();
 	leetcodetest927();
+	leetcodetest934();
 	leetcodetest940();
 	leetcodetest942();
 	leetcodetest951();
@@ -1656,6 +1676,7 @@ int leetcodeTest() {
 	leetcodetest1413();
 	leetcodetest1417();
 	leetcodetest1422();
+	leetcodetest1441();
 	leetcodetest1450();
 	leetcodetest1455();
 	leetcodetest1460();
