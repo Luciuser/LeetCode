@@ -804,6 +804,19 @@ int leetcodetest857()
 	return 0;
 }
 
+int leetcodetest862()
+{
+#ifdef LEETCODE_862
+
+	//std::vector<int> temp = { 2, -1, 2, 2, 3, 2, 6, 1, 5, 2, 2, 3, 2, 6, -1, -1, 3, 2, 6, 1, 5, 1, 5, 2, 2, -1, -1, -1, 3, 2, 6, 1, 5, 2, 2, -1, 2, 3, 2, 6, 1, 5, 2, 2, -1 };
+	std::vector<int> temp = { 2, -1, 2, 2, 3, 2, 6, 1, 5, 2, 2, 3, 2, 6, -1, -1, 3, 2, 6, 1, 5, 1, 5, 2, 2, -1, -1, -1, 3, 2, 6, 1, 5, 2, 2, -1, 2, 3, 2, 6, 1, 5, 2, 2, -1 };
+	Solution solution;
+	solution.shortestSubarray(temp, 5);
+
+#endif // LEETCODE_862
+	return 0;
+}
+
 int leetcodetest870()
 {
 #ifdef LEETCODE_870
@@ -1629,6 +1642,7 @@ int leetcodeTest() {
 	leetcodetest850();
 	leetcodetest854();
 	leetcodetest857();
+	leetcodetest862();
 	leetcodetest870();
 	leetcodetest875();
 	leetcodetest886();
