@@ -902,6 +902,18 @@ int leetcodetest904()
 	return 0;
 }
 
+int leetcodetest907()
+{
+#ifdef LEETCODE_907
+
+	std::vector<int> temp = { 72,40,83 };
+	Solution solution;
+	std::cout << solution.sumSubarrayMins(temp) << std::endl;
+
+#endif // LEETCODE_907
+	return 0;
+}
+
 int leetcodetest915()
 {
 #ifdef LEETCODE_915
@@ -1658,6 +1670,7 @@ int leetcodeTest() {
 	leetcodetest901();
 	leetcodetest902();
 	leetcodetest904();
+	leetcodetest907();
 	leetcodetest915();
 	leetcodetest919();
 	leetcodetest926();
