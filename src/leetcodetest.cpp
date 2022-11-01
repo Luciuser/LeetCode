@@ -691,6 +691,16 @@ int leetcodetest762()
 	return 0;
 }
 
+int leetcodetest769()
+{
+#ifdef LEETCODE_769
+	std::vector<int> temp = { 1,0,2,3,4 };
+	Solution solution;
+	solution.maxChunksToSorted(temp);
+#endif // LEETCODE_769
+	return 0;
+}
+
 int leetcodetest779()
 {
 #ifdef LEETCODE_779
@@ -1699,6 +1709,7 @@ int leetcodeTest() {
 	leetcodetest749();
 	leetcodetest761();
 	leetcodetest762();
+	leetcodetest769();
 	leetcodetest782();
 	leetcodetest784();
 	leetcodetest788();

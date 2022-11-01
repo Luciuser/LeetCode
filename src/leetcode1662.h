@@ -12,12 +12,12 @@
  * @Description: create NORMAL_METHOD, TIME 4ms, 74.94%, MEMORY 11.1MB and 70.97%
  */
 
+#ifndef __leet_code_1662__
+#define __leet_code_1662__
+
 #include<iostream>
 #include<vector>
 #include<string>
-
-#ifndef __leet_code_1662__
-#define __leet_code_1662__
 
 class Solution {
 public:
