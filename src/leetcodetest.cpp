@@ -1424,6 +1424,18 @@ int leetcodetest1608()
 	return 0;
 }
 
+int leetcodetest1620()
+{
+#ifdef LEETCODE_1620
+
+	std::vector<std::vector<int>> temp = { {0, 1, 2},{2, 1, 2},{1, 0, 2},{1, 2, 2} };
+	Solution solution;
+	solution.bestCoordinate(temp, 1);
+
+#endif // LEETCODE_1620
+	return 0;
+}
+
 int leetcodetest1624()
 {
 #ifdef LEETCODE_1624
@@ -1784,6 +1796,7 @@ int leetcodeTest() {
 	leetcodetest1582();
 	leetcodetest1592();
 	leetcodetest1608();
+	leetcodetest1620();
 	leetcodetest1624();
 	leetcodetest1636();
 	leetcodetest1640();
