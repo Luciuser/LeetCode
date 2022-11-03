@@ -1481,6 +1481,20 @@ int leetcodetest1662()
 	return 0;
 }
 
+int leetcodetest1668()
+{
+#ifdef LEETCODE_1668
+
+	std::string sequence = "aaa";
+	std::string word = "a";
+
+	Solution solution;
+	solution.maxRepeating(sequence, word);
+
+#endif // LEETCODE_1668
+	return 0;
+}
+
 int leetcodetest1700()
 {
 #ifdef LEETCODE_1700
@@ -1803,6 +1817,7 @@ int leetcodeTest() {
 	leetcodetest1652();
 	leetcodetest1656();
 	leetcodetest1662();
+	leetcodetest1668();
 	leetcodetest1700();
 	leetcodetest1728();
 	leetcodetest1773();
