@@ -1145,6 +1145,18 @@ int leetcodetest1089()
 	return 0;
 }
 
+int leetcodetest1106()
+{
+#ifdef LEETCODE_1106
+
+	std::string temp = "|(&(t,f,t),!(t))";
+	Solution solution;
+	solution.parseBoolExpr(temp);
+
+#endif // LEETCODE_1106
+	return 0;
+}
+
 int leetcodetest1162()
 {
 #ifdef LEETCODE_1162
@@ -1786,6 +1798,7 @@ int leetcodeTest() {
 	leetcodetest1051();
 	leetcodetest1052();
 	leetcodetest1089();
+	leetcodetest1106();
 	leetcodetest1108();
 	leetcodetest1162();
 	leetcodetest1172();
