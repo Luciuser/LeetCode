@@ -772,10 +772,39 @@ int leetcodetest788()
 	return 0;
 }
 
+int leetcodetest790()
+{
+#ifdef LEETCODE_790
+#endif // LEETCODE_790
+	return 0;
+}
+
+int leetcodetest791()
+{
+#ifdef LEETCODE_791
+#endif // LEETCODE_791
+	return 0;
+}
+
 int leetcodetest801()
 {
 #ifdef LEETCODE_801
 #endif // LEETCODE_801
+	return 0;
+}
+
+int leetcodetest805()
+{
+#ifdef LEETCODE_805
+
+	std::vector<int> temp = { 33, 86, 88, 78, 21, 76, 19, 20, 88, 76, 10, 25, 37, 97, 58, 89, 65, 59, 98, 57, 50, 30, 58, 5, 61, 72, 23, 6 };
+	//std::vector<int> temp = { 1, 3 };
+	//std::vector<int> temp = {1, 2, 3, 4, 5, 6, 7, 8};
+
+	Solution solution;
+	std::cout << solution.splitArraySameAverage(temp) << std::endl;
+
+#endif // LEETCODE_805
 	return 0;
 }
 
@@ -1571,6 +1600,13 @@ int leetcodetest1700()
 	return 0;
 }
 
+int leetcodetest1710()
+{
+#ifdef LEETCODE_1710
+#endif // LEETCODE_1710
+	return 0;
+}
+
 int leetcodetest1728()
 {
 #ifdef LEETCODE_1728
@@ -1811,7 +1847,10 @@ int leetcodeTest() {
 	leetcodetest782();
 	leetcodetest784();
 	leetcodetest788();
+	leetcodetest790();
+	leetcodetest791();
 	leetcodetest801();
+	leetcodetest805();
 	leetcodetest811();
 	leetcodetest814();
 	leetcodetest816();
@@ -1895,6 +1934,7 @@ int leetcodeTest() {
 	leetcodetest1678();
 	leetcodetest1684();
 	leetcodetest1700();
+	leetcodetest1710();
 	leetcodetest1728();
 	leetcodetest1773();
 	leetcodetest1781();
