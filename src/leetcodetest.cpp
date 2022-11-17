@@ -793,6 +793,19 @@ int leetcodetest791()
 	return 0;
 }
 
+int leetcodetest792()
+{
+#ifdef LEETCODE_792
+	std::string s = "abcde";
+	std::vector<std::string> words = { "a", "bb", "acd", "ace" };
+
+	Solution solution;
+	std::cout << solution.numMatchingSubseq(s, words);
+
+#endif // LEETCODE_792
+	return 0;
+}
+
 int leetcodetest801()
 {
 #ifdef LEETCODE_801
@@ -1857,6 +1870,7 @@ int leetcodeTest() {
 	leetcodetest788();
 	leetcodetest790();
 	leetcodetest791();
+	leetcodetest792();
 	leetcodetest801();
 	leetcodetest805();
 	leetcodetest811();
