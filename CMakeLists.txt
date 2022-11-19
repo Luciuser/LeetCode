@@ -93,6 +93,7 @@ endif()
 	src/leetcode788.h
 	src/leetcode790.h
 	src/leetcode791.h
+	src/leetcode792.h
  	src/leetcode801.h
  	src/leetcode805.h
  	src/leetcode811.h
@@ -184,6 +185,7 @@ endif()
 	src/leetcode1700.h
 	src/leetcode1710.h
  	src/leetcode1728.h
+    src/leetcode1732.h
 	src/leetcode1768.h
 	src/leetcode1773.h
  	src/leetcode1781.h
