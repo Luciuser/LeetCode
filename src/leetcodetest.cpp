@@ -813,6 +813,13 @@ int leetcodetest792()
 	return 0;
 }
 
+int leetcodetest799()
+{
+#ifdef LEETCODE_799
+#endif // LEETCODE_799
+	return 0;
+}
+
 int leetcodetest801()
 {
 #ifdef LEETCODE_801
@@ -832,6 +839,17 @@ int leetcodetest805()
 	std::cout << solution.splitArraySameAverage(temp) << std::endl;
 
 #endif // LEETCODE_805
+	return 0;
+}
+
+int leetcodetest808()
+{
+#ifdef LEETCODE_808
+
+	Solution solution;
+	std::cout << solution.soupServings(79) << std::endl;
+
+#endif // LEETCODE_808
 	return 0;
 }
 
@@ -1900,8 +1918,10 @@ int leetcodeTest() {
 	leetcodetest790();
 	leetcodetest791();
 	leetcodetest792();
+	leetcodetest799();
 	leetcodetest801();
 	leetcodetest805();
+	leetcodetest808();
 	leetcodetest811();
 	leetcodetest814();
 	leetcodetest816();
