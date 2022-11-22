@@ -983,6 +983,17 @@ int leetcodetest875()
 	return 0;
 }
 
+int leetcodetest878()
+{
+#ifdef LEETCODE_878
+
+	Solution solution;
+	std::cout << solution.nthMagicalNumber(5, 7, 5) << std::endl;
+
+#endif // LEETCODE_878
+	return 0;
+}
+
 int leetcodetest886()
 {
 #ifdef LEETCODE_886
@@ -1935,6 +1946,7 @@ int leetcodeTest() {
 	leetcodetest862();
 	leetcodetest870();
 	leetcodetest875();
+	leetcodetest878();
 	leetcodetest886();
 	leetcodetest890();
 	leetcodetest891();
