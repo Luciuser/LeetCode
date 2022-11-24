@@ -860,6 +860,20 @@ int leetcodetest808()
 	return 0;
 }
 
+int leetcodetest809()
+{
+#ifdef LEETCODE_809
+
+	std::string s = "heeellooo";
+	std::vector<std::string> words = { "hello", "hi", "helo" };
+
+	Solution solution;
+	std::cout << solution.expressiveWords(s, words) << std::endl;
+
+#endif // LEETCODE_809
+	return 0;
+}
+
 int leetcodetest811()
 {
 #ifdef LEETCODE_811
@@ -1952,6 +1966,7 @@ int leetcodeTest() {
 	leetcodetest801();
 	leetcodetest805();
 	leetcodetest808();
+	leetcodetest809();
 	leetcodetest811();
 	leetcodetest814();
 	leetcodetest816();
