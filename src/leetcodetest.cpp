@@ -813,6 +813,13 @@ int leetcodetest792()
 	return 0;
 }
 
+int leetcodetest795()
+{
+#ifdef LEETCODE_795
+#endif // LEETCODE_795
+	return 0;
+}
+
 int leetcodetest799()
 {
 #ifdef LEETCODE_799
@@ -1691,6 +1698,17 @@ int leetcodetest1732()
 	return 0;
 }
 
+int leetcodetest1742()
+{
+#ifdef LEETCODE_1742
+
+	Solution solution;
+	std::cout << solution.countBalls(9, 103) << std::endl;
+
+#endif // LEETCODE_1742
+	return 0;
+}
+
 int leetcodetest1773()
 {
 #ifdef LEETCODE_1773
@@ -1929,6 +1947,7 @@ int leetcodeTest() {
 	leetcodetest790();
 	leetcodetest791();
 	leetcodetest792();
+	leetcodetest795();
 	leetcodetest799();
 	leetcodetest801();
 	leetcodetest805();
@@ -2022,6 +2041,7 @@ int leetcodeTest() {
 	leetcodetest1710();
 	leetcodetest1728();
 	leetcodetest1732();
+	leetcodetest1742();
 	leetcodetest1773();
 	leetcodetest1781();
 	leetcodetest1786();
