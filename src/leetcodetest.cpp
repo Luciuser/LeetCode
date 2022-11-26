@@ -1022,6 +1022,18 @@ int leetcodetest878()
 	return 0;
 }
 
+int leetcodetest882()
+{
+#ifdef LEETCODE_882
+
+	std::vector<std::vector<int>> temp = { {0, 2, 0},{1, 3, 1},{0, 1, 0},{1, 4, 0},{0, 4, 0},{2, 4, 4},{2, 3, 6},{0, 3, 8},{3, 4, 1},{1, 2, 4} };
+	Solution solution;
+	solution.reachableNodes(temp, 4, 5);
+
+#endif // LEETCODE_882
+	return 0;
+}
+
 int leetcodetest886()
 {
 #ifdef LEETCODE_886
@@ -1988,6 +2000,7 @@ int leetcodeTest() {
 	leetcodetest870();
 	leetcodetest875();
 	leetcodetest878();
+	leetcodetest882();
 	leetcodetest886();
 	leetcodetest890();
 	leetcodetest891();
