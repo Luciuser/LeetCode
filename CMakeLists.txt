@@ -103,6 +103,7 @@ endif()
  	src/leetcode808.h
  	src/leetcode809.h
  	src/leetcode811.h
+ 	src/leetcode813.h
  	src/leetcode814.h
  	src/leetcode816.h
  	src/leetcode817.h

@@ -888,6 +888,18 @@ int leetcodetest811()
 	return 0;
 }
 
+int leetcodetest813()
+{
+#ifdef LEETCODE_813
+
+	std::vector<int> temp = { 9,1,2,3,9 };
+	Solution solution;
+	std::cout << solution.largestSumOfAverages(temp, 3) << std::endl;
+
+#endif // LEETCODE_813
+	return 0;
+}
+
 int leetcodetest814()
 {
 #ifdef LEETCODE_814
@@ -1994,6 +2006,7 @@ int leetcodeTest() {
 	leetcodetest808();
 	leetcodetest809();
 	leetcodetest811();
+	leetcodetest813();
 	leetcodetest814();
 	leetcodetest816();
 	leetcodetest817();
