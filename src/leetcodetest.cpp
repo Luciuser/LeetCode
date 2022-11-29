@@ -1011,6 +1011,19 @@ int leetcodetest870()
 	return 0;
 }
 
+int leetcodetest871()
+{
+#ifdef LEETCODE_871
+
+	//std::vector<std::vector<int>> temp = { {10, 60},{20, 30},{30, 30},{60, 40} };
+	std::vector<std::vector<int>> temp = {{13, 21}, {26, 115}, {100, 47}, {225, 99}, {299, 141}, {444, 198}, {608, 190}, {636, 157}, {647, 255}, {841, 123}};
+	Solution solution;
+	std::cout << solution.minRefuelStops(1000, 299, temp);
+
+#endif // LEETCODE_871
+	return 0;
+}
+
 int leetcodetest875()
 {
 #ifdef LEETCODE_875
@@ -1761,6 +1774,13 @@ int leetcodetest1752()
 	return 0;
 }
 
+int leetcodetest1758()
+{
+#ifdef LEETCODE_1758
+#endif // LEETCODE_1758
+	return 0;
+}
+
 int leetcodetest1773()
 {
 #ifdef LEETCODE_1773
@@ -2018,6 +2038,7 @@ int leetcodeTest() {
 	leetcodetest857();
 	leetcodetest862();
 	leetcodetest870();
+	leetcodetest871();
 	leetcodetest875();
 	leetcodetest878();
 	leetcodetest882();
@@ -2098,6 +2119,7 @@ int leetcodeTest() {
 	leetcodetest1732();
 	leetcodetest1742();
 	leetcodetest1752();
+	leetcodetest1758();
 	leetcodetest1773();
 	leetcodetest1781();
 	leetcodetest1786();
