@@ -297,6 +297,17 @@ int leetcodetest535()
 	return 0;
 }
 
+int leetcodetest556()
+{
+#ifdef LEETCODE_556
+
+	Solution solution;
+	std::cout << solution.nextGreaterElement(230241) << std::endl;
+
+#endif // LEETCODE_556
+	return 0;
+}
+
 int leetcodetest592()
 {
 #ifdef LEETCODE_592
@@ -1090,6 +1101,27 @@ int leetcodetest891()
 {
 #ifdef LEETCODE_891
 #endif // LEETCODE_891
+	return 0;
+}
+
+int leetcodetest895()
+{
+#ifdef LEETCODE_895
+
+	FreqStack freqStack;
+	freqStack.push(5);
+	freqStack.push(7);
+	freqStack.push(5);
+	freqStack.push(7);
+	freqStack.push(4);
+	freqStack.push(5);
+	std::cout << freqStack.pop() << std::endl;
+	std::cout << freqStack.pop() << std::endl;
+	std::cout << freqStack.pop() << std::endl;
+	std::cout << freqStack.pop() << std::endl;
+
+
+#endif // LEETCODE_895
 	return 0;
 }
 
@@ -1975,6 +2007,7 @@ int leetcodeTest() {
 	leetcodetest522();
 	leetcodetest532();
 	leetcodetest535();
+	leetcodetest556();
 	leetcodetest592();
 	leetcodetest622();
 	leetcodetest623();
@@ -2045,6 +2078,7 @@ int leetcodeTest() {
 	leetcodetest886();
 	leetcodetest890();
 	leetcodetest891();
+	leetcodetest895();
 	leetcodetest899();
 	leetcodetest901();
 	leetcodetest902();
