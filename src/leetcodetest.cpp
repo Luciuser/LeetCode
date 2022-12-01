@@ -1820,6 +1820,14 @@ int leetcodetest1773()
 	return 0;
 }
 
+int leetcodetest1779()
+{
+#ifdef LEETCODE_1779
+	Solution solution;
+#endif // LEETCODE_1779
+	return 0;
+}
+
 int leetcodetest1781()
 {
 #ifdef LEETCODE_1781

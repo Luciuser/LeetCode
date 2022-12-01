@@ -26,7 +26,7 @@
 #include<set>
 #include<stack>
 
-#define MAP_SET_METHOD // 用 map 和 set 分别进行存储和排序，push 和 pop 均为 O(logn)，TIME 1200ms, 5.06%, MEMORY 100.5MB and 19.31%
+//#define MAP_SET_METHOD // 用 map 和 set 分别进行存储和排序，push 和 pop 均为 O(logn)，TIME 1200ms, 5.06%, MEMORY 100.5MB and 19.31%
 #define HASH_STACK_METHOD // 用 map 映射一个 stack，push 和 pop 均为 O(1)，TIME 196ms, 72.87%, MEMORY 97.7MB and 43.90%
 
 #ifdef MAP_SET_METHOD
