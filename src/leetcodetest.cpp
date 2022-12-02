@@ -1866,6 +1866,15 @@ int leetcodetest1790()
 	return 0;
 }
 
+int leetcodetest1796()
+{
+#ifdef LEETCODE_1796
+	Solution solution;
+	std::cout << solution.secondHighest("ck077");
+#endif // LEETCODE_1796
+	return 0;
+}
+
 int leetcodetest1800()
 {
 #ifdef LEETCODE_1800
@@ -2174,6 +2183,7 @@ int leetcodeTest() {
 	leetcodetest1781();
 	leetcodetest1786();
 	leetcodetest1790();
+	leetcodetest1796();
 	leetcodetest1800();
 	leetcodetest1822();
 	leetcodetest1909();
