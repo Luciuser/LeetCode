@@ -1827,6 +1827,31 @@ int leetcodetest1773()
 	return 0;
 }
 
+int leetcodetest1774()
+{
+#ifdef LEETCODE_1774
+	Solution solution;
+#endif // LEETCODE_1774
+	return 0;
+}
+
+int leetcodetest1775()
+{
+#ifdef LEETCODE_1775
+
+	//std::vector<int> num1 = { 1, 5, 5, 2, 1, 1, 1, 1, 4, 4, 4, 1, 5, 2, 2, 4, 6, 5, 1, 5, 3, 5, 6, 2, 3, 1, 5, 4, 4, 1, 2, 4, 1, 1, 6, 3, 6, 4, 4, 4, 3, 5, 5, 5, 2, 6, 4, 2, 5, 4, 2, 6, 3, 4, 6, 1, 5, 3, 2, 3, 5, 2, 1, 3, 2, 4, 4, 4, 5, 3, 5, 5, 4, 1, 1, 6, 5, 6, 3, 5, 3, 6, 5, 6, 5, 4, 4, 4, 5, 6, 6, 6, 4, 2, 4, 6, 1, 2, 1, 5, 3, 4, 5, 5, 6, 6, 1, 4, 3, 1, 5, 3, 4, 1, 2, 1, 4, 4, 5, 6, 5, 3, 1, 5, 1, 3, 3, 6, 5, 3, 5, 6, 2, 6, 3, 1, 2, 3, 3, 1, 1, 4, 3, 2, 6, 6, 2, 1, 2, 4, 3, 5, 5, 4, 3, 1, 1, 5, 2, 5, 1, 4, 5, 6, 4, 5, 2, 1, 2, 5, 3, 2, 6, 3, 4, 3, 4, 5, 4, 6, 3, 4, 4, 3, 3, 4, 2, 2, 6, 2, 6, 3, 1, 1, 5, 3, 1, 1, 4, 2, 5, 5, 5, 4, 3, 6, 5, 5, 5, 1, 1, 3, 6, 2, 3, 6, 3, 4, 2, 5, 4, 4, 3, 5, 6, 4, 3, 5, 1, 1, 3, 3, 1, 1, 6, 4, 6, 2, 1, 4, 3, 5, 5 };
+	//std::vector<int> num2 = {1, 2, 5, 4, 3, 3, 5, 1, 1, 6, 2, 5, 4, 4, 5, 6, 6, 4, 2, 5, 6, 2, 3, 4, 5, 2, 4, 4, 3, 6, 6, 5, 4, 1, 2, 1, 2, 3, 3, 2, 6, 1, 1, 1, 1, 3, 5, 6, 2, 1, 1, 1, 4, 6, 5};
+
+	std::vector<int> num1 = { 5, 6, 4, 3, 1, 2 };
+	std::vector<int> num2 = { 6, 3, 3, 1, 4, 5, 3, 4, 1, 3, 4 };
+
+	Solution solution;
+	std::cout << solution.minOperations(num1, num2) << std::endl;
+
+#endif // LEETCODE_1775
+	return 0;
+}
+
 int leetcodetest1779()
 {
 #ifdef LEETCODE_1779
@@ -1879,6 +1904,17 @@ int leetcodetest1800()
 {
 #ifdef LEETCODE_1800
 #endif
+	return 0;
+}
+
+int leetcodetest1805()
+{
+#ifdef LEETCODE_1805
+
+	Solution solution;
+	std::cout << solution.numDifferentIntegers("0i00e") << std::endl;
+
+#endif // LEETCODE_1805
 	return 0;
 }
 
@@ -2180,11 +2216,14 @@ int leetcodeTest() {
 	leetcodetest1758();
 	leetcodetest1769();
 	leetcodetest1773();
+	leetcodetest1774();
+	leetcodetest1775();
 	leetcodetest1781();
 	leetcodetest1786();
 	leetcodetest1790();
 	leetcodetest1796();
 	leetcodetest1800();
+	leetcodetest1805();
 	leetcodetest1822();
 	leetcodetest1909();
 	leetcodetest2104();
