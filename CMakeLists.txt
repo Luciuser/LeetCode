@@ -194,6 +194,7 @@ endif()
 	src/leetcode1668.h
 	src/leetcode1678.h
 	src/leetcode1684.h
+	src/leetcode1687.h
 	src/leetcode1694.h
 	src/leetcode1700.h
 	src/leetcode1704.h
@@ -216,6 +217,8 @@ endif()
  	src/leetcode1796.h
  	src/leetcode1800.h
  	src/leetcode1805.h
+ 	src/leetcode1805.h
+ 	src/leetcode1812.h
  	src/leetcode1822.h
  	src/leetcode1909.h
  	src/leetcode2104.h

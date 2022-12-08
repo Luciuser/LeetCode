@@ -1753,6 +1753,13 @@ int leetcodetest1684()
 	return 0;
 }
 
+int leetcodetest1687()
+{
+#ifdef LEETCODE_1687
+#endif // LEETCODE_1687
+	return 0;
+}
+
 int leetcodetest1700()
 {
 #ifdef LEETCODE_1700
@@ -1915,6 +1922,13 @@ int leetcodetest1805()
 	std::cout << solution.numDifferentIntegers("0i00e") << std::endl;
 
 #endif // LEETCODE_1805
+	return 0;
+}
+
+int leetcodetest1812()
+{
+#ifdef LEETCODE_1812
+#endif // LEETCODE_1812
 	return 0;
 }
 
@@ -2206,6 +2220,7 @@ int leetcodeTest() {
 	leetcodetest1668();
 	leetcodetest1678();
 	leetcodetest1684();
+	leetcodetest1687();
 	leetcodetest1700();
 	leetcodetest1704();
 	leetcodetest1710();
