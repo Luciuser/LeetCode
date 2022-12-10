@@ -1760,6 +1760,19 @@ int leetcodetest1687()
 	return 0;
 }
 
+int leetcodetest1691()
+{
+#ifdef LEETCODE_1691
+
+	std::vector<std::vector<int>> temp1 = { {50, 45, 20},{95, 37, 53},{45, 23, 12 } };
+
+	Solution solution;
+	std::cout << solution.maxHeight(temp1) << std::endl;
+
+#endif // LEETCODE_1691
+	return 0;
+}
+
 int leetcodetest1700()
 {
 #ifdef LEETCODE_1700
@@ -2228,6 +2241,7 @@ int leetcodeTest() {
 	leetcodetest1678();
 	leetcodetest1684();
 	leetcodetest1687();
+	leetcodetest1691();
 	leetcodetest1700();
 	leetcodetest1704();
 	leetcodetest1710();
