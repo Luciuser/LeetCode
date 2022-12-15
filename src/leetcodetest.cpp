@@ -661,6 +661,18 @@ int leetcodetest735()
 	return 0;
 }
 
+int leetcodetest741()
+{
+#ifdef LEETCODE_741
+
+	std::vector<std::vector<int>> temp = { {1, 1, -1},{1, -1, 1},{-1, 1, 1} };
+
+	Solution solution;
+	std::cout << solution.cherryPickup(temp) << std::endl;
+#endif // LEETCODE_7451
+	return 0;
+}
+
 int leetcodetest745()
 {
 #ifdef LEETCODE_745
@@ -1780,6 +1792,21 @@ int leetcodetest1691()
 	return 0;
 }
 
+int leetcodetest1697()
+{
+#ifdef LEETCODE_1697
+
+	int n = 5;
+	std::vector<std::vector<int>> edgeList = { {0, 1, 10},{1, 2, 5},{2, 3, 9},{3, 4, 13} };
+	std::vector<std::vector<int>> queries = { {0, 4, 14},{1, 4, 13} };
+
+	Solution solution;
+	solution.distanceLimitedPathsExist(n, edgeList, queries);
+
+#endif // LEETCODE_1697
+	return 0;
+}
+
 int leetcodetest1700()
 {
 #ifdef LEETCODE_1700
@@ -1992,6 +2019,17 @@ int leetcodetest1909()
 	return 0;
 }
 
+int leetcodetest1945()
+{
+#ifdef LEETCODE_1945
+	std::string temp = "dbvmfhnttvr";
+	Solution solution;
+	solution.getLucky(temp, 5);
+
+#endif // LEETCODE_1945
+	return 0;
+}
+
 int leetcodetest2104()
 {
 #ifdef LEETCODE_2104
@@ -2152,6 +2190,7 @@ int leetcodeTest() {
 	leetcodetest731();
 	leetcodetest732();
 	leetcodetest735();
+	leetcodetest741();
 	leetcodetest745();
 	leetcodetest747();
 	leetcodetest749();
@@ -2264,6 +2303,7 @@ int leetcodeTest() {
 	leetcodetest1684();
 	leetcodetest1687();
 	leetcodetest1691();
+	leetcodetest1697();
 	leetcodetest1700();
 	leetcodetest1704();
 	leetcodetest1710();
@@ -2287,6 +2327,7 @@ int leetcodeTest() {
 	leetcodetest1827();
 	leetcodetest1832();
 	leetcodetest1909();
+	leetcodetest1945();
 	leetcodetest2104();
 	leetcodetest2119();
 	leetcodetestaudition0102();
