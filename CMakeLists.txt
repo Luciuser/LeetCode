@@ -208,6 +208,7 @@ endif()
     src/leetcode1742.h
     src/leetcode1752.h
     src/leetcode1758.h
+	src/leetcode1764.h
 	src/leetcode1768.h
 	src/leetcode1769.h
 	src/leetcode1773.h
