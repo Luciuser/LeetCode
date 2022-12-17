@@ -27,6 +27,24 @@ int leetcodetest5()
 	return 0;
 }
 
+int leetcodetest13()
+{
+#ifdef LEETCODE_13
+	std::string temp = "MCMXCIV";
+	Solution solution;
+	std::cout << solution.romanToInt(temp) << std::endl;;
+
+#endif // LEETCODE_13
+	return 0;
+}
+
+int leetcodetest14()
+{
+#ifdef LEETCODE_14
+#endif // LEETCODE_14
+	return 0;
+}
+
 int leetcodetest30()
 {
 #ifdef LEETCODE_30
@@ -2149,6 +2167,8 @@ int swordOfferII115()
 int leetcodeTest() {
 	leetcodetest2();
 	leetcodetest5();
+	leetcodetest13();
+	leetcodetest14();
 	leetcodetest30();
 	leetcodetest49();
 	leetcodetest94();
