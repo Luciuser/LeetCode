@@ -45,11 +45,24 @@ int leetcodetest14()
 	return 0;
 }
 
+int leetcodetest20()
+{
+#ifdef LEETCODE_20
+#endif // LEETCODE_20
+	return 0;
+}
+
+int leetcodetest21()
+{
+#ifdef LEETCODE_21
+#endif // LEETCODE_21
+	return 0;
+}
+
 int leetcodetest30()
 {
 #ifdef LEETCODE_30
 #endif // LEETCODE_30
-
 	return 0;
 }
 
@@ -1903,6 +1916,21 @@ int leetcodetest1758()
 	return 0;
 }
 
+int leetcodetest1760()
+{
+#ifdef LEETCODE_1760
+
+	//std::vector<int> temp = {431, 922, 158, 60, 192, 14, 788, 146, 788, 775, 772, 792, 68, 143, 376, 375, 877, 516, 595, 82, 56, 704, 160, 403, 713, 504, 67, 332, 26};
+	//int k = 80;
+	std::vector<int> temp = { 9 };
+	int k = 2;
+
+	Solution solution;
+	solution.minimumSize(temp, k);
+#endif // LEETCODE_1760
+	return 0;
+}
+
 int leetcodetest1764()
 {
 #ifdef LEETCODE_1764
@@ -2194,6 +2222,8 @@ int leetcodeTest() {
 	leetcodetest5();
 	leetcodetest13();
 	leetcodetest14();
+	leetcodetest20();
+	leetcodetest21();
 	leetcodetest30();
 	leetcodetest49();
 	leetcodetest94();
@@ -2372,6 +2402,7 @@ int leetcodeTest() {
 	leetcodetest1742();
 	leetcodetest1752();
 	leetcodetest1758();
+	leetcodetest1760();
 	leetcodetest1764();
 	leetcodetest1769();
 	leetcodetest1773();
