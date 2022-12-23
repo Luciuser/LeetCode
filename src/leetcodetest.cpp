@@ -2046,6 +2046,13 @@ int leetcodetest1796()
 	return 0;
 }
 
+int leetcodetest1799()
+{
+#ifdef LEETCODE_1799
+#endif // LEETCODE_1799
+	return 0;
+}
+
 int leetcodetest1800()
 {
 #ifdef LEETCODE_1800
@@ -2119,6 +2126,13 @@ int leetcodetest1971()
 {
 #ifdef LEETCODE_1971
 #endif // LEETCODE_1971
+	return 0;
+}
+
+int leetcodetest2011()
+{
+#ifdef LEETCODE_2011
+#endif // LEETCODE_2011
 	return 0;
 }
 
@@ -2430,6 +2444,7 @@ int leetcodeTest() {
 	leetcodetest1909();
 	leetcodetest1945();
 	leetcodetest1971();
+	leetcodetest2011();
 	leetcodetest2104();
 	leetcodetest2119();
 	leetcodetestaudition0102();

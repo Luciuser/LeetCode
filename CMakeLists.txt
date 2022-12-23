@@ -229,6 +229,7 @@ endif()
  	src/leetcode1786.h
  	src/leetcode1790.h
  	src/leetcode1796.h
+ 	src/leetcode1799.h
  	src/leetcode1800.h
  	src/leetcode1805.h
  	src/leetcode1805.h
@@ -239,6 +240,7 @@ endif()
  	src/leetcode1909.h
  	src/leetcode1945.h
  	src/leetcode1971.h
+ 	src/leetcode2011.h
  	src/leetcode2104.h
  	src/leetcode2119.h
  	src/swordOfferII041.h
