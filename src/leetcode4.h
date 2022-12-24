@@ -7,9 +7,15 @@
  */
 
  /*
- * @EditTime: 2022-09-12 17:11:17
+ * @EditTime: 2022-12-23 10:40:29
  * @Editor: Bingyang Jin
- * @Description: create PRE_SLIDE_WINDOW，TIME 16ms, 70.04%, MEMORY 9.4MB and 49.45%
+ * @Description: create MERGE_SORT_WINDOW，TIME 32ms, 42.15%, MEMORY 87.6MB and 10.90%
+ */
+
+ /*
+ * @EditTime: 2022-12-23 11:17:27
+ * @Editor: Bingyang Jin
+ * @Description: create NUMBER_K_METHOD，TIME 28ms, 60.86%, MEMORY 86.9MB and 38.01%
  */
 
 #ifndef __leet_code_4__
@@ -18,7 +24,8 @@
 #include<iostream>
 #include<vector>
 
-#define MERGE_SORT_METHOD // 采用归并排序，O(m+n)，
+//#define MERGE_SORT_METHOD // 采用归并排序，O(m+n)，TIME 32ms, 42.15%, MEMORY 87.6MB and 10.90%
+#define NUMBER_K_METHOD // 寻找第k大的数，O(log(m+n))，TIME 32ms, 42.15%, MEMORY 87.6MB and 10.90%
 
 #ifdef MERGE_SORT_METHOD
 class Solution {
@@ -37,99 +44,76 @@ public:
 			}
 		}
 
-		std::vector<int> *pNums;
-		if (i1 == nums1.size()) {
-			pNums = &nums2;
+		if (i1 >= nums1.size()) {
+			for (; i2 < nums2.size(); i2++) {
+				nums.push_back(nums2[i2]);
+			}
 		}
-		else if (i2 == nums2.size()) {
-			pNums = &nums1;
+		else if (i2 >= nums2.size()) {
+			for (; i1 < nums1.size(); i1++) {
+				nums.push_back(nums1[i1]);
+			}
 		}
 
-		bool isOdd = (nums1.size() + nums2.size()) % 2 == 0 ? false : true;
-		int middle = (nums1.size() + nums2.size()) / 2;
-		int a, b;
-		if (middle < nums.size()) {
-			a = nums[middle];
+		int n = nums1.size() + nums2.size();
+		bool isOdd = n % 2 == 0 ? false : true;
+		if (isOdd) {
+			return nums[n / 2];
 		}
 		else {
-			a = (*pNums)[middle - nums.size() - 1];
-		}
-		if (isOdd == false) {
-			if (middle + 1 < nums.size()) {
-				a = nums[middle + 1];
-			}
-			else {
-				a = (*pNums)[middle - nums.size()];
-			}
-			return 1.0 * (a + b) / 2;
-		}
-		else
-		{
-			return a;
+			return 1.0 * (nums[n / 2 - 1] + nums[n / 2]) / 2;
 		}
 
 	}
 };
 #endif // MERGE_SORT_METHOD
 
-
+#ifdef NUMBER_K_METHOD
 class Solution {
 public:
 	double findMedianSortedArrays(std::vector<int>& nums1, std::vector<int>& nums2) {
-
-		int num1 = nums1.size();
-		int num2 = nums2.size();
-		if (num1 == 0) {
-			if (num2 % 2 == 0) {
-				return 1.0*(nums2[num2 / 2 - 1] + nums2[num2 / 2]) / 2;
-			}
-			else {
-				return nums2[num2 / 2];
-			}
-		// 由于总数是奇数或者偶数时计算方案不同，此处固定为偶数进行计算
-		bool isOdd = false;
-		if ((num1 + num2) % 2 == 1) {
-			// 删去 nums1 的最小值
-			isOdd = true;
-			num1--;
-			nums1.erase(nums1.begin());
+		int n = nums1.size() + nums2.size();
+		if (n % 2 == 0) {
+			int a = findKSortedArrays(nums1, nums2, 0, 0, n / 2);
+			int b = findKSortedArrays(nums1, nums2, 0, 0, n / 2 + 1);
+			return 1.0*(a + b) / 2;
+		}
+		else {
+			return findKSortedArrays(nums1, nums2, 0, 0, n / 2 + 1);
+		}
+	}
+private:
+	double findKSortedArrays(std::vector<int>& nums1, std::vector<int>& nums2, int i1, int i2, int k) {
+		if (i1 >= nums1.size()) {
+			return nums2[i2 + k - 1];
+		}
+		else if (i2 >= nums2.size()) {
+			return nums1[i1 + k - 1];
 		}
 
-		int leftNum = 0;
-		int rightNum = 0;
-		int left1 = 0;
-		int right1 = num1 - 1;
-		int left2 = 0;
-		int right2 = num2 - 1;
-		int middle1, middle2;
-
-		// 寻找数 a 和 b，使得 a 左侧共计有（num1+num2 - 2）/ 2 个数，b 右侧共计有（num1+num2 - 2）/ 2 个数
-		while (true) {
-			middle1 = (right1 - left1) / 2 + left1;
-			middle2 = (right2 - left2) / 2 + left2;
-
-			if (nums1[middle1] > nums2[middle2]) {
-				leftNum += middle2 - left2;
-				rightNum += right1 - middle1;
-				// nums1 向左二分；nums2 向右二分
-				right1 = middle1;
-				left2 = middle2;
-			}
-			else if (nums1[middle1] < nums2[middle2]) {
-				leftNum += middle1 - left1;
-				rightNum += right2 - middle2;
-				// nums1 向右二分；nums2 向左二分
-				right2 = middle2;
-				left1 = middle1;
+		if (k == 1) {
+			if (nums1[i1] < nums2[i2]) {
+				return nums1[i1];
 			}
 			else {
-				break;
+				return nums2[i2];
 			}
-			
 		}
 
+		int temp = k / 2;
+		int begin1 = i1 + temp - 1 >= nums1.size() ? nums1.size() - 1 : i1 + temp - 1;
+		int del1 = begin1 - i1 + 1;
+		int begin2 = i2 + temp - 1 >= nums2.size() ? nums2.size() - 1 : i2 + temp - 1;
+		int del2 = begin2 - i2 + 1;
+		if (nums1[begin1] < nums2[begin2]) {
+			return findKSortedArrays(nums1, nums2, begin1 + 1, i2, k - del1);
+		}
+		else {
+			return findKSortedArrays(nums1, nums2, i1, begin2 + 1, k - del2);
+		}
 
 	}
 };
+#endif // NUMBER_K_METHOD
 
 #endif // __leet_code_4__

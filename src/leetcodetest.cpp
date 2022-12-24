@@ -17,6 +17,24 @@ int leetcodetest2()
 	return 0;
 }
 
+int leetcodetest4()
+{
+#ifdef LEETCODE_4
+	//std::vector<int> nums1 = { 1,2 };
+	//std::vector<int> nums2 = { 3,4 };
+	std::vector<int> nums1 = { 1};
+	std::vector<int> nums2 = { 2,3,4,5,6 };
+	//std::vector<int> nums1 = { 1,3 };
+	//std::vector<int> nums2 = { 2 };
+
+
+	Solution solution;
+	std::cout << solution.findMedianSortedArrays(nums1, nums2) << std::endl;
+
+#endif // LEETCODE_4
+	return 0;
+}
+
 int leetcodetest5()
 {
 #ifdef LEETCODE_5
@@ -1916,6 +1934,19 @@ int leetcodetest1753()
 	return 0;
 }
 
+int leetcodetest1754()
+{
+#ifdef LEETCODE_1754
+	std::string str1 = "cabaa";
+	std::string str2 = "bcaaa";
+
+	Solution solution;
+	solution.largestMerge(str1, str2);
+
+#endif // LEETCODE_1754
+	return 0;
+}
+
 int leetcodetest1758()
 {
 #ifdef LEETCODE_1758
@@ -2240,6 +2271,7 @@ int swordOfferII115()
 
 int leetcodeTest() {
 	leetcodetest2();
+	leetcodetest4();
 	leetcodetest5();
 	leetcodetest13();
 	leetcodetest14();
@@ -2423,6 +2455,7 @@ int leetcodeTest() {
 	leetcodetest1742();
 	leetcodetest1752();
 	leetcodetest1753();
+	leetcodetest1754();
 	leetcodetest1758();
 	leetcodetest1760();
 	leetcodetest1764();
