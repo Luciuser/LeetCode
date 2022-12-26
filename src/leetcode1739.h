@@ -24,7 +24,7 @@
 #include<iostream>
 #include<vector>
 
-#define GREEDY_METHOD // 贪心法，TIME 40ms, 8.08%, MEMORY 6.4MB and 11.11%
+//#define GREEDY_METHOD // 贪心法，TIME 40ms, 8.08%, MEMORY 6.4MB and 11.11%
 #define MATH_METHOD // 数学法，O(1)，TIME 0ms, 100.00%, MEMORY 6.1MB and 13.13%
 
 #ifdef GREEDY_METHOD

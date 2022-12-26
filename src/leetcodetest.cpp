@@ -1961,6 +1961,13 @@ int leetcodetest1758()
 	return 0;
 }
 
+int leetcodetest1759()
+{
+#ifdef LEETCODE_1759
+#endif // LEETCODE_1759
+	return 0;
+}
+
 int leetcodetest1760()
 {
 #ifdef LEETCODE_1760

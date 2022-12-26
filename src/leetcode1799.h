@@ -9,7 +9,7 @@
  /*
  * @EditTime: 2022-12-21 00:36:46
  * @Editor: Bingyang Jin
- * @Description: create NORMAL_METHOD, TIME 16ms, 30.39%, MEMORY 5.7MB and 99.02%
+ * @Description: create ANSWER_METHOD, TIME 16ms, 30.39%, MEMORY 5.7MB and 99.02%
  */
 
 #ifndef __leet_code_1799__
@@ -17,30 +17,43 @@
 
 #include<iostream>
 #include<vector>
+#include<stdio.h>
 #include<algorithm>
 
 class Solution {
 public:
+
 	int maxScore(std::vector<int>& nums) {
-		std::sort(nums.begin(), nums.end(), [=](int a, int b) {
-			return a < b;
-		});
-
-
-
+		int m = nums.size();
+		std::vector<int> dp(1 << m, 0);
+		std::vector<std::vector<int>> gcd_tmp(m, std::vector<int>(m, 0));
+		for (int i = 0; i < m; ++i) {
+			for (int j = i + 1; j < m; ++j) {
+				// 计算最大公约数
+				// gcd_tmp[i][j] = std::gcd(nums[i], nums[j]);
+			}
+		}
+		int all = 1 << m;
+		for (int s = 1; s < all; ++s) {
+			// 计算t里有多少个1
+			//int t = __builtin_popcount(s);
+			int t = 0;
+			if (t & 1) {
+				continue;
+			}
+			for (int i = 0; i < m; ++i) {
+				if ((s >> i) & 1) {
+					for (int j = i + 1; j < m; ++j) {
+						if ((s >> j) & 1) {
+							dp[s] = std::max(dp[s], dp[s ^ (1 << i) ^ (1 << j)] + t / 2 * gcd_tmp[i][j]);
+						}
+					}
+				}
+			}
+		}
+		return dp[all - 1];
 	}
 private:
-	// 认为 a<b
-	int gcd(int a, int b) {
-		while (true) {
-			int temp = b % a;
-			if (temp == 0) {
-				return a;
-			}
-			b = a;
-			a = temp;
-		}
-	}
 };
 
 #endif // __leet_code_1799__
