@@ -45,6 +45,20 @@ int leetcodetest5()
 	return 0;
 }
 
+int leetcodetest10()
+{
+#ifdef LEETCODE_10
+
+	std::string s = "aa";
+	std::string p = "a*";
+
+	Solution solution;
+	solution.isMatch(s, p);
+
+#endif // LEETCODE_10
+	return 0;
+}
+
 int leetcodetest13()
 {
 #ifdef LEETCODE_13
@@ -1927,6 +1941,17 @@ int leetcodetest1742()
 	return 0;
 }
 
+int leetcodetest1750()
+{
+#ifdef LEETCODE_1750
+	std::string temp = "cabaabac";
+	Solution solution;
+	solution.minimumLength(temp);
+
+#endif // LEETCODE_1750
+	return 0;
+}
+
 int leetcodetest1752()
 {
 #ifdef LEETCODE_1752
@@ -2294,6 +2319,7 @@ int leetcodeTest() {
 	leetcodetest2();
 	leetcodetest4();
 	leetcodetest5();
+	leetcodetest10();
 	leetcodetest13();
 	leetcodetest14();
 	leetcodetest20();
@@ -2475,6 +2501,7 @@ int leetcodeTest() {
 	leetcodetest1732();
 	leetcodetest1739();
 	leetcodetest1742();
+	leetcodetest1750();
 	leetcodetest1752();
 	leetcodetest1753();
 	leetcodetest1754();
