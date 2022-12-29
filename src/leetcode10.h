@@ -7,9 +7,9 @@
  */
 
  /*
- * @EditTime: 2022-12-28 10:00:37
+ * @EditTime: 2022-12-29 11:04:03
  * @Editor: Bingyang Jin
- * @Description: create NORMAL_METHOD, TIME 24ms, 31.21%, MEMORY 12.5MB and 38.30%
+ * @Description: create DFS_METHOD, TIME 196ms, 5.16%, MEMORY 8MB and 14.47%
  */
 
 #ifndef __leet_code_10__
@@ -43,73 +43,73 @@ private:
 			return true;
 		}
 		int i = 0, j = 0;
-		char before = p[0];
 		while (true) {
 			if (i >= s.size() || j >= p.size()) {
 				break;
 			}
 
-			if (p[j] == '*') {
-				if (before == '.') {
-					if (j + 1 >= p.size()) {
-						return true;
-					}
-					std::string new_p = p.substr(j + 1, p.size() - j);
-					for (int k = i + 1; k < s.size(); k++) {
-						std::string new_s = s.substr(k, s.size() - k + 1);
-						bool success = isMatchDFS(new_s, new_p);
-						if (success) {
-							return true;
+			if (j + 1 < p.size()) {
+				if (p[j + 1] == '*') {
+					if (p[j] == '.') {
+						std::string new_p = p.substr(j + 2, p.size() - j - 1);
+						for (int k = i; k <= s.size(); k++) {
+							std::string new_s = s.substr(k, s.size() - k + 1);
+							bool success = isMatchDFS(new_s, new_p);
+							if (success) {
+								return true;
+							}
 						}
+						return false;
 					}
-					return false;
+					else {
+						std::string new_p = p.substr(j + 2, p.size() - j - 1);
+						for (int k = i; k <= s.size(); k++) {
+							std::string new_s = s.substr(k, s.size() - k + 1);
+							bool success = isMatchDFS(new_s, new_p);
+							if (success) {
+								return true;
+							}
+							if (s[k] != p[j]) {
+								break;
+							}
+						}
+						return false;
+					}
 				}
 				else {
-					std::string new_p = p.substr(j + 1, p.size() - j);
-					if (new_p == "") {
-						if (i + 1 == s.size() && s[i] == before) {
-							return true;
-						}
-						else {
-							return false;
-						}
+					if (s[i] == p[j] || p[j] == '.') {
+						i++;
+						j++;
 					}
-					for (int k = i; k < s.size(); k++) {
-						if (s[k] == before) {
-							std::string new_s = s.substr(k, s.size() - k + 1);
-							bool success = isMatchDFS(new_s, new_p);
-							if (success) {
-								return true;
-							}
-						}
-						else {
-							std::string new_s = s.substr(k, s.size() - k + 1);
-							bool success = isMatchDFS(new_s, new_p);
-							if (success) {
-								return true;
-							}
-							break;
-						}
+					else {
+						return false;
 					}
-					return false;
 				}
 			}
 			else {
+				// 当前已经读到p的最后一个字符
 				if (s[i] == p[j] || p[j] == '.') {
-					before = p[j];
 					i++;
 					j++;
 				}
 				else {
-					j++;
-					if (j >= p.size()) {
-						return false;
-					}
+					return false;
 				}
 			}
 		}
 
 		if (i == s.size() && j == p.size()) {
+			return true;
+		}
+		else if (i == s.size() && j < p.size()) {
+			while (j<p.size()){
+				if (j + 1 < p.size() && p[j+1] == '*') {
+					j += 2;
+				}
+				else {
+					return false;
+				}
+			}
 			return true;
 		}
 		else {

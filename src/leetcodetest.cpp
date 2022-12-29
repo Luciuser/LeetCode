@@ -49,8 +49,12 @@ int leetcodetest10()
 {
 #ifdef LEETCODE_10
 
-	std::string s = "aa";
-	std::string p = "a*";
+	//std::string s = "aa";
+	//std::string p = "a*";
+	std::string s = "a";
+	std::string p = "ab*";
+	//std::string s = "mississippi";
+	//std::string p = "mis*is*ip*.";
 
 	Solution solution;
 	solution.isMatch(s, p);
@@ -2213,6 +2217,13 @@ int leetcodetest2027()
 	return 0;
 }
 
+int leetcodetest2032()
+{
+#ifdef LEETCODE_2032
+#endif // LEETCODE_2032
+	return 0;
+}
+
 int leetcodetest2104()
 {
 #ifdef LEETCODE_2104
@@ -2528,6 +2539,7 @@ int leetcodeTest() {
 	leetcodetest1971();
 	leetcodetest2011();
 	leetcodetest2027();
+	leetcodetest2032();
 	leetcodetest2104();
 	leetcodetest2119();
 	leetcodetestaudition0102();
