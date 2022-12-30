@@ -375,6 +375,13 @@ int leetcodetest556()
 	return 0;
 }
 
+int leetcodetest558()
+{
+#ifdef LEETCODE_558
+#endif // LEETCODE_558
+	return 0;
+}
+
 int leetcodetest565()
 {
 #ifdef LEETCODE_565
@@ -2406,6 +2413,7 @@ int leetcodeTest() {
 	leetcodetest532();
 	leetcodetest535();
 	leetcodetest556();
+	leetcodetest558();
 	leetcodetest565();
 	leetcodetest592();
 	leetcodetest622();
