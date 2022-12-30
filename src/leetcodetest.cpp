@@ -1068,6 +1068,51 @@ int leetcodetest854()
 	return 0;
 }
 
+int leetcodetest855()
+{
+#ifdef LEETCODE_855
+	std::cout << "test 01" << std::endl;
+	//ExamRoom examRoom(10);
+	//std::cout << "    " << examRoom.seat() << std::endl;
+	//std::cout << "    " << examRoom.seat() << std::endl;
+	//std::cout << "    " << examRoom.seat() << std::endl;
+	//std::cout << "    " << examRoom.seat() << std::endl;
+	//examRoom.leave(4);
+	//std::cout << "    " << examRoom.seat() << std::endl;
+
+	//ExamRoom examRoom2(10);
+	//std::cout << "    " << examRoom2.seat() << std::endl;
+	//std::cout << "    " << examRoom2.seat() << std::endl;
+	//std::cout << "    " << examRoom2.seat() << std::endl;
+	//examRoom2.leave(0);
+	//examRoom2.leave(9);
+	//std::cout << "    " << examRoom2.seat() << std::endl;
+	//std::cout << "    " << examRoom2.seat() << std::endl;
+	//std::cout << "    " << examRoom2.seat() << std::endl;
+	//std::cout << "    " << examRoom2.seat() << std::endl;
+
+	ExamRoom examRoom2(10);
+	std::cout << "    " << examRoom2.seat() << std::endl;
+	std::cout << "    " << examRoom2.seat() << std::endl;
+	std::cout << "    " << examRoom2.seat() << std::endl;
+	examRoom2.leave(0);
+	examRoom2.leave(4);
+	std::cout << "    " << examRoom2.seat() << std::endl;
+	std::cout << "    " << examRoom2.seat() << std::endl;
+	std::cout << "    " << examRoom2.seat() << std::endl;
+	std::cout << "    " << examRoom2.seat() << std::endl;
+	std::cout << "    " << examRoom2.seat() << std::endl;
+	std::cout << "    " << examRoom2.seat() << std::endl;
+	std::cout << "    " << examRoom2.seat() << std::endl;
+	std::cout << "    " << examRoom2.seat() << std::endl;
+	std::cout << "    " << examRoom2.seat() << std::endl;
+	examRoom2.leave(0);
+	std::cout << "    " << examRoom2.seat() << std::endl;
+
+#endif // LEETCODE_855
+	return 0;
+}
+
 int leetcodetest857()
 {
 #ifdef LEETCODE_857
@@ -2423,6 +2468,7 @@ int leetcodeTest() {
 	leetcodetest829();
 	leetcodetest850();
 	leetcodetest854();
+	leetcodetest855();
 	leetcodetest857();
 	leetcodetest862();
 	leetcodetest870();

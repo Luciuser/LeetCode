@@ -1,6 +1,9 @@
 #include "leetcodetest.h"
 
 #include<iostream>
+#include<stdio.h>
+#include<time.h>
+#include<math.h>
 #include<string>
 #include<sstream>
 #include<vector>
@@ -22,6 +25,21 @@ int main() {
 	//		characterMap[s1[i] - 'a'][s2[i] - 'a'].first++;
 	//	}
 	//}
+
+	//srand((unsigned)time(NULL));
+
+	//int iter_num = 100000;
+
+	//double sum = 0;
+	//for (int i = 0; i < iter_num; i++) {
+	//	double x = rand() / double(RAND_MAX);
+	//	std::cout << "x = " << x << " ; ";
+	//	double temp = 1.0 / (exp(x) + x);
+	//	sum += temp;
+	//	std::cout << " result = " << temp << std::endl;
+	//}
+	//sum /= iter_num;
+	//std::cout << "The average answer is " << sum << std::endl;
 
 	leetcodeTest();
 

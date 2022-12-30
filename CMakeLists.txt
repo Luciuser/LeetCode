@@ -120,6 +120,7 @@ endif()
  	src/leetcode829.h
 	src/leetcode850.h
 	src/leetcode854.h
+	src/leetcode855.h
 	src/leetcode856.h
 	src/leetcode857.h
 	src/leetcode862.h
