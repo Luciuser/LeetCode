@@ -250,6 +250,7 @@ endif()
  	src/leetcode2011.h
  	src/leetcode2027.h
  	src/leetcode2032.h
+ 	src/leetcode2037.h
  	src/leetcode2104.h
  	src/leetcode2119.h
  	src/swordOfferII041.h
