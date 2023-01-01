@@ -253,6 +253,7 @@ endif()
  	src/leetcode2037.h
  	src/leetcode2104.h
  	src/leetcode2119.h
+ 	src/leetcode2351.h
  	src/swordOfferII041.h
  	src/swordOfferII114.h
  	src/swordOfferII115.h
