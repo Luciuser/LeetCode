@@ -2290,6 +2290,16 @@ int leetcodetest2037()
 	return 0;
 }
 
+int leetcodetest2042()
+{
+#ifdef LEETCODE_2042
+	std::string temp = "hello word 5 * 5";
+	Solution solution;
+	solution.areNumbersAscending(temp);
+#endif // LEETCODE_2042
+	return 0;
+}
+
 int leetcodetest2104()
 {
 #ifdef LEETCODE_2104
@@ -2617,6 +2627,7 @@ int leetcodeTest() {
 	leetcodetest2027();
 	leetcodetest2032();
 	leetcodetest2037();
+	leetcodetest2042();
 	leetcodetest2104();
 	leetcodetest2119();
 	leetcodetest2351();
