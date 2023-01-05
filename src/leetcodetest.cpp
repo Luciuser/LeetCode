@@ -2193,6 +2193,37 @@ int leetcodetest1801()
 	return 0;
 }
 
+int leetcodetest1802()
+{
+#ifdef LEETCODE_1802
+	Solution solution;
+	std::cout << solution.maxValue(6, 1, 10) << std::endl;
+	std::cout << solution.maxValue(8, 3, 1000) << std::endl;
+#endif // LEETCODE_1802
+	return 0;
+}
+
+int leetcodetest1803()
+{
+#ifdef LEETCODE_1803
+	//std::vector<int>temp = { 9,8,4,2,1 };
+	//int low = 5;
+	//int high = 14;
+	//std::vector<int>temp = { 7881, 760, 709, 2937, 1245, 720, 5187, 6361, 3793, 141, 7238 };
+	//int low = 1492;
+	//int high = 3832;
+	std::vector<int>temp = { 1,4,2,7 };
+	int low = 2;
+	int high = 6;
+
+	Solution solution;
+	std::cout << solution.countPairs(temp, low, high) << std::endl;
+
+
+#endif // LEETCODE_1803
+	return 0;
+}
+
 int leetcodetest1805()
 {
 #ifdef LEETCODE_1805
@@ -2616,6 +2647,8 @@ int leetcodeTest() {
 	leetcodetest1796();
 	leetcodetest1800();
 	leetcodetest1801();
+	leetcodetest1802();
+	leetcodetest1803();
 	leetcodetest1805();
 	leetcodetest1822();
 	leetcodetest1827();
