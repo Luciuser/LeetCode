@@ -63,6 +63,19 @@ int leetcodetest10()
 	return 0;
 }
 
+int leetcodetest11()
+{
+#ifdef LEETCODE_11
+	//std::vector<int> temp = { 1,1 };
+	std::vector<int> temp = { 1,8,6,2,5,4,8,3,7 };
+
+	Solution solution;
+	std::cout << solution.maxArea(temp) << std::endl;
+
+#endif // LEETCODE_11
+	return 0;
+}
+
 int leetcodetest13()
 {
 #ifdef LEETCODE_13
@@ -1856,6 +1869,18 @@ int leetcodetest1656()
 	return 0;
 }
 
+int leetcodetest1658()
+{
+#ifdef LEETCODE_1658
+	//std::vector<int> temp = { 1,1,4,2,3 };
+	std::vector<int> temp = { 3,2,20,1,1,3 };
+
+	Solution solution;
+	std::cout << solution.minOperations(temp, 10) << std::endl;
+#endif // LEETCODE_1658
+	return 0;
+}
+
 int leetcodetest1662()
 {
 #ifdef LEETCODE_1662
@@ -2361,6 +2386,13 @@ int leetcodetest2180()
 	return 0;
 }
 
+int leetcodetest2185()
+{
+#ifdef LEETCODE_2185
+#endif // LEETCODE_2185
+	return 0;
+}
+
 int leetcodetest2351()
 {
 #ifdef LEETCODE_2351
@@ -2452,6 +2484,7 @@ int leetcodeTest() {
 	leetcodetest4();
 	leetcodetest5();
 	leetcodetest10();
+	leetcodetest11();
 	leetcodetest13();
 	leetcodetest14();
 	leetcodetest20();
@@ -2620,6 +2653,7 @@ int leetcodeTest() {
 	leetcodetest1640();
 	leetcodetest1652();
 	leetcodetest1656();
+	leetcodetest1658();
 	leetcodetest1662();
 	leetcodetest1668();
 	leetcodetest1678();
@@ -2671,6 +2705,7 @@ int leetcodeTest() {
 	leetcodetest2104();
 	leetcodetest2119();
 	leetcodetest2180();
+	leetcodetest2185();
 	leetcodetest2351();
 	leetcodetestaudition0102();
 	leetcodetestaudition0109();
