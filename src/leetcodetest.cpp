@@ -2400,6 +2400,24 @@ int leetcodetest2351()
 	return 0;
 }
 
+int leetcodetest6306()
+{
+#ifdef LEETCODE_6306
+	//std::vector<std::vector<int>> temp = { {1,9,1,8},{10,10,10,10 } };
+	//int n = 3;
+	//int k = 2;
+
+	std::vector<std::vector<int>> temp = { {1,1,2,1},{1,1,3,1},{1,1,4,1} };
+	int n = 1;
+	int k = 3;
+
+	Solution solution;
+	std::cout << solution.findCrossingTime(n, k, temp) << std::endl;
+
+#endif // LEETCODE_6306
+	return 0;
+}
+
 int leetcodetestaudition0102()
 {
 #ifdef LEETCODE_2104_AUDITION_01_02__
@@ -2707,6 +2725,7 @@ int leetcodeTest() {
 	leetcodetest2180();
 	leetcodetest2185();
 	leetcodetest2351();
+	leetcodetest6306();
 	leetcodetestaudition0102();
 	leetcodetestaudition0109();
 	leetcodetestaudition0406();
