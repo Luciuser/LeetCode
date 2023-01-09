@@ -2260,6 +2260,13 @@ int leetcodetest1805()
 	return 0;
 }
 
+int leetcodetest1806()
+{
+#ifdef LEETCODE_1806
+#endif // LEETCODE_1806
+	return 0;
+}
+
 int leetcodetest1812()
 {
 #ifdef LEETCODE_1812
@@ -2709,6 +2716,7 @@ int leetcodeTest() {
 	leetcodetest1802();
 	leetcodetest1803();
 	leetcodetest1805();
+	leetcodetest1806();
 	leetcodetest1822();
 	leetcodetest1827();
 	leetcodetest1832();
