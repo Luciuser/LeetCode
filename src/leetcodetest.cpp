@@ -796,6 +796,16 @@ int leetcodetest749()
 	return 0;
 }
 
+int leetcodetest753()
+{
+#ifdef LEETCODE_753
+	Solution solution;
+	std::cout << solution.crackSafe(2, 2) << std::endl;
+
+#endif // LEETCODE_753
+	return 0;
+}
+
 int leetcodetest754()
 {
 #ifdef LEETCODE_754
@@ -2574,6 +2584,7 @@ int leetcodeTest() {
 	leetcodetest745();
 	leetcodetest747();
 	leetcodetest749();
+	leetcodetest753();
 	leetcodetest754();
 	leetcodetest761();
 	leetcodetest762();
