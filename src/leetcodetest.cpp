@@ -2410,6 +2410,13 @@ int leetcodetest2185()
 	return 0;
 }
 
+int leetcodetest2283()
+{
+#ifdef LEETCODE_2283
+#endif // LEETCODE_2283
+	return 0;
+}
+
 int leetcodetest2351()
 {
 #ifdef LEETCODE_2351
@@ -2743,6 +2750,7 @@ int leetcodeTest() {
 	leetcodetest2119();
 	leetcodetest2180();
 	leetcodetest2185();
+	leetcodetest2283();
 	leetcodetest2351();
 	leetcodetest6306();
 	leetcodetestaudition0102();
