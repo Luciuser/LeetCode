@@ -217,7 +217,7 @@
 //#define LEETCODE_1803
 //#define LEETCODE_1805
 //#define LEETCODE_1806
-#define LEETCODE_1807
+//#define LEETCODE_1807
 //#define LEETCODE_1812
 //#define LEETCODE_1822
 //#define LEETCODE_1827
@@ -235,6 +235,7 @@
 //#define LEETCODE_2180
 //#define LEETCODE_2185
 //#define LEETCODE_2283
+#define LEETCODE_2287
 //#define LEETCODE_2351
 //#define LEETCODE_6306
 //#define LEETCODE_2104_AUDITION_01_09__
@@ -1191,6 +1192,10 @@
 #include"leetcode2283.h"
 #endif // LEETCODE_2283
 
+#ifdef LEETCODE_2287
+#include"leetcode2287.h"
+#endif // LEETCODE_2287
+
 #ifdef LEETCODE_2351
 #include"leetcode2351.h"
 #endif // LEETCODE_2351
@@ -1471,6 +1476,7 @@ int leetcodetest2119();
 int leetcodetest2180();
 int leetcodetest2185();
 int leetcodetest2283();
+int leetcodetest2287();
 int leetcodetest2351();
 int leetcodetest6306();
 int leetcodetestaudition0102();
