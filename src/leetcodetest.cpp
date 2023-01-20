@@ -2296,13 +2296,28 @@ int leetcodetest1813()
 #ifdef LEETCODE_1813
 	//std::string s1 = "My name is Haley";
 	//std::string s2 = "My Haley";
-	std::string s1 = "A";
-	std::string s2 = "a A b A";
+	//std::string s1 = "A";
+	//std::string s2 = "a A b A";
+	std::string s1 = "Eating right now";
+	std::string s2 = "Eating";
 
 	Solution solution;
 	std::cout << solution.areSentencesSimilar(s1, s2) << std::endl;
 
 #endif // LEETCODE_1813
+	return 0;
+}
+
+int leetcodetest1817()
+{
+#ifdef LEETCODE_1817
+	std::vector<std::vector<int>> temp = { {0, 5},{1, 2},{0, 2},{0, 5},{1, 3} };
+	int k = 5;
+
+	Solution solution;
+	solution.findingUsersActiveMinutes(temp, k);
+
+#endif // LEETCODE_1817
 	return 0;
 }
 
@@ -2794,6 +2809,7 @@ int leetcodeTest() {
 	leetcodetest1806();
 	leetcodetest1807();
 	leetcodetest1813();
+	leetcodetest1817();
 	leetcodetest1819();
 	leetcodetest1822();
 	leetcodetest1827();
