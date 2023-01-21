@@ -2339,6 +2339,18 @@ int leetcodetest1822()
 	return 0;
 }
 
+int leetcodetest1824()
+{
+#ifdef LEETCODE_1824
+	std::vector<int> temp = { 0, 1, 2, 3, 0 };
+
+	Solution solution;
+	std::cout << solution.minSideJumps(temp) << std::endl;
+
+#endif // LEETCODE_1824
+	return 0;
+}
+
 int leetcodetest1827()
 {
 #ifdef LEETCODE_1827
@@ -2812,6 +2824,7 @@ int leetcodeTest() {
 	leetcodetest1817();
 	leetcodetest1819();
 	leetcodetest1822();
+	leetcodetest1824();
 	leetcodetest1827();
 	leetcodetest1832();
 	leetcodetest1909();
