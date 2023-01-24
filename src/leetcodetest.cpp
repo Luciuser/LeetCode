@@ -2358,6 +2358,20 @@ int leetcodetest1827()
 	return 0;
 }
 
+int leetcodetest1828()
+{
+#ifdef LEETCODE_1828
+	std::vector<std::vector<int>> points = { {1, 3},{3, 3},{5, 3},{2, 2} };
+	std::vector<std::vector<int>> queries = { {2, 3, 1},{4, 3, 1},{1, 1, 2} };
+
+	Solution solution;
+	solution.countPoints(points, queries);
+
+
+#endif // LEETCODE_1828
+	return 0;
+}
+
 int leetcodetest1832()
 {
 #ifdef LEETCODE_1832
@@ -2498,6 +2512,13 @@ int leetcodetest2299()
 {
 #ifdef LEETCODE_2299
 #endif // LEETCODE_2299
+	return 0;
+}
+
+int leetcodetest2303()
+{
+#ifdef LEETCODE_2303
+#endif // LEETCODE_2303
 	return 0;
 }
 
@@ -2826,6 +2847,7 @@ int leetcodeTest() {
 	leetcodetest1822();
 	leetcodetest1824();
 	leetcodetest1827();
+	leetcodetest1828();
 	leetcodetest1832();
 	leetcodetest1909();
 	leetcodetest1945();
@@ -2843,6 +2865,7 @@ int leetcodeTest() {
 	leetcodetest2287();
 	leetcodetest2293();
 	leetcodetest2299();
+	leetcodetest2303();
 	leetcodetest2351();
 	leetcodetest6306();
 	leetcodetestaudition0102();
