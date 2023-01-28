@@ -1898,6 +1898,25 @@ int leetcodetest1662()
 	return 0;
 }
 
+int leetcodetest1663()
+{
+#ifdef LEETCODE_1663
+
+	Solution solution;
+
+	std::cout << solution.getSmallestString(5, 130) << std::endl;
+
+#endif // LEETCODE_1663
+	return 0;
+}
+
+int leetcodetest1664()
+{
+#ifdef LEETCODE_1664
+#endif // LEETCODE_1664
+	return 0;
+}
+
 int leetcodetest1668()
 {
 #ifdef LEETCODE_1668
@@ -2308,6 +2327,16 @@ int leetcodetest1813()
 	return 0;
 }
 
+int leetcodetest1814()
+{
+#ifdef LEETCODE_1814
+
+	Solution solution;
+
+#endif // LEETCODE_1814
+	return 0;
+}
+
 int leetcodetest1817()
 {
 #ifdef LEETCODE_1817
@@ -2348,6 +2377,40 @@ int leetcodetest1824()
 	std::cout << solution.minSideJumps(temp) << std::endl;
 
 #endif // LEETCODE_1824
+	return 0;
+}
+
+int leetcodetest1825()
+{
+#ifdef LEETCODE_1825
+	MKAverage obj(3, 1);
+	std::cout << "null" << std::endl;
+
+	obj.addElement(3);
+	obj.addElement(1);
+	std::cout << obj.calculateMKAverage() << std::endl;
+	obj.addElement(10);
+	std::cout << obj.calculateMKAverage() << std::endl;
+	obj.addElement(5);
+	obj.addElement(5);
+	obj.addElement(5);
+	std::cout << obj.calculateMKAverage() << std::endl;
+
+	//MKAverage obj(3, 1);
+	//std::cout << "null" << std::endl;
+
+	//obj.addElement(17612);
+	//obj.addElement(74607);
+	//std::cout << obj.calculateMKAverage() << std::endl;
+	//obj.addElement(8272);
+	//obj.addElement(33433);
+	//std::cout << obj.calculateMKAverage() << std::endl;
+	//obj.addElement(15456);
+	//obj.addElement(64938);
+	//std::cout << obj.calculateMKAverage() << std::endl;
+	//obj.addElement(99741);
+
+#endif // LEETCODE_1825
 	return 0;
 }
 
@@ -2519,6 +2582,13 @@ int leetcodetest2303()
 {
 #ifdef LEETCODE_2303
 #endif // LEETCODE_2303
+	return 0;
+}
+
+int leetcodetest2309()
+{
+#ifdef LEETCODE_2309
+#endif // LEETCODE_2309
 	return 0;
 }
 
@@ -2803,6 +2873,8 @@ int leetcodeTest() {
 	leetcodetest1656();
 	leetcodetest1658();
 	leetcodetest1662();
+	leetcodetest1663();
+	leetcodetest1664();
 	leetcodetest1668();
 	leetcodetest1678();
 	leetcodetest1684();
@@ -2842,10 +2914,12 @@ int leetcodeTest() {
 	leetcodetest1806();
 	leetcodetest1807();
 	leetcodetest1813();
+	leetcodetest1814();
 	leetcodetest1817();
 	leetcodetest1819();
 	leetcodetest1822();
 	leetcodetest1824();
+	leetcodetest1825();
 	leetcodetest1827();
 	leetcodetest1828();
 	leetcodetest1832();
@@ -2866,6 +2940,7 @@ int leetcodeTest() {
 	leetcodetest2293();
 	leetcodetest2299();
 	leetcodetest2303();
+	leetcodetest2309();
 	leetcodetest2351();
 	leetcodetest6306();
 	leetcodetestaudition0102();
