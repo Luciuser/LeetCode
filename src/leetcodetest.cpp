@@ -689,6 +689,13 @@ int leetcodetest719()
 	return 0;
 }
 
+int leetcodetest729()
+{
+#ifdef LEETCODE_729
+#endif // LEETCODE_729
+	return 0;
+}
+
 int leetcodetest730()
 {
 #ifdef LEETCODE_730
@@ -1931,6 +1938,13 @@ int leetcodetest1668()
 	return 0;
 }
 
+int leetcodetest1669()
+{
+#ifdef LEETCODE_1669
+#endif // LEETCODE_1669
+	return 0;
+}
+
 int leetcodetest1678()
 {
 #ifdef LEETCODE_1678
@@ -2592,6 +2606,20 @@ int leetcodetest2309()
 	return 0;
 }
 
+int leetcodetest2315()
+{
+#ifdef LEETCODE_2315
+#endif // LEETCODE_2315
+	return 0;
+}
+
+int leetcodetest2319()
+{
+#ifdef LEETCODE_2319
+#endif // LEETCODE_2319
+	return 0;
+}
+
 int leetcodetest2351()
 {
 #ifdef LEETCODE_2351
@@ -2758,6 +2786,7 @@ int leetcodeTest() {
 	leetcodetest707();
 	leetcodetest715();
 	leetcodetest719();
+	leetcodetest729();
 	leetcodetest730();
 	leetcodetest731();
 	leetcodetest732();
@@ -2876,6 +2905,7 @@ int leetcodeTest() {
 	leetcodetest1663();
 	leetcodetest1664();
 	leetcodetest1668();
+	leetcodetest1669();
 	leetcodetest1678();
 	leetcodetest1684();
 	leetcodetest1687();
@@ -2941,6 +2971,8 @@ int leetcodeTest() {
 	leetcodetest2299();
 	leetcodetest2303();
 	leetcodetest2309();
+	leetcodetest2315();
+	leetcodetest2319();
 	leetcodetest2351();
 	leetcodetest6306();
 	leetcodetestaudition0102();
