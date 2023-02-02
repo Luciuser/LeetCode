@@ -1494,6 +1494,13 @@ int leetcodetest1108()
 	return 0;
 }
 
+int leetcodetest1129()
+{
+#ifdef LEETCODE_1129
+#endif // LEETCODE_1129
+	return 0;
+}
+
 int leetcodetest1022()
 {
 #ifdef LEETCODE_1022
@@ -1852,6 +1859,21 @@ int leetcodetest1624()
 {
 #ifdef LEETCODE_1624
 #endif // LEETCODE_1624
+	return 0;
+}
+
+int leetcodetest1632()
+{
+#ifdef LEETCODE_1632
+	std::vector<std::vector<int>> temp = { {1,2} ,{3,4} };
+	//std::vector<std::vector<int>> temp = { {7,7} ,{7,7} };
+	//std::vector<std::vector<int>> temp = { {20, -21, 14},{-19, 4, 19},{22, -47, 24},{-19, 4, 19} };
+	//std::vector<std::vector<int>> temp = { {7, -3, 6},{1, 4, 5},{9, 8, 2}};
+
+	Solution solution;
+	solution.matrixRankTransform(temp);
+
+#endif // LEETCODE_1632
 	return 0;
 }
 
@@ -2620,6 +2642,13 @@ int leetcodetest2319()
 	return 0;
 }
 
+int leetcodetest2325()
+{
+#ifdef LEETCODE_2325
+#endif // LEETCODE_2325
+	return 0;
+}
+
 int leetcodetest2351()
 {
 #ifdef LEETCODE_2351
@@ -2863,6 +2892,7 @@ int leetcodeTest() {
 	leetcodetest1089();
 	leetcodetest1106();
 	leetcodetest1108();
+	leetcodetest1129();
 	leetcodetest1162();
 	leetcodetest1172();
 	leetcodetest1175();
@@ -2896,6 +2926,7 @@ int leetcodeTest() {
 	leetcodetest1608();
 	leetcodetest1620();
 	leetcodetest1624();
+	leetcodetest1632();
 	leetcodetest1636();
 	leetcodetest1640();
 	leetcodetest1652();
@@ -2973,6 +3004,7 @@ int leetcodeTest() {
 	leetcodetest2309();
 	leetcodetest2315();
 	leetcodetest2319();
+	leetcodetest2325();
 	leetcodetest2351();
 	leetcodetest6306();
 	leetcodetestaudition0102();
