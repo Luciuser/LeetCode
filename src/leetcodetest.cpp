@@ -1501,6 +1501,13 @@ int leetcodetest1129()
 	return 0;
 }
 
+int leetcodetest1145()
+{
+#ifdef LEETCODE_1045
+#endif // LEETCODE_1045
+	return 0;
+}
+
 int leetcodetest1022()
 {
 #ifdef LEETCODE_1022
@@ -1833,6 +1840,20 @@ int leetcodetest1592()
 {
 #ifdef LEETCODE_1592
 #endif // LEETCODE_1592
+	return 0;
+}
+
+int leetcodetest1604()
+{
+#ifdef LEETCODE_1604
+
+	std::vector<std::string> keyName = { "leslie", "leslie", "leslie", "clare", "clare", "clare", "clare", "john", "aimly"};
+	std::vector<std::string> keyTime = {"13:00", "03:20", "19:00", "08:00", "18:51", "09:30", "19:49", "00:00", "13:53"};
+
+	Solution solution;
+	solution.alertNames(keyName, keyTime);
+
+#endif // LEETCODE_1604
 	return 0;
 }
 
@@ -2262,6 +2283,13 @@ int leetcodetest1796()
 	return 0;
 }
 
+int leetcodetest1798()
+{
+#ifdef LEETCODE_1798
+#endif // LEETCODE_1798
+	return 0;
+}
+
 int leetcodetest1799()
 {
 #ifdef LEETCODE_1799
@@ -2649,6 +2677,13 @@ int leetcodetest2325()
 	return 0;
 }
 
+int leetcodetest2331()
+{
+#ifdef LEETCODE_2331
+#endif // LEETCODE_2331
+	return 0;
+}
+
 int leetcodetest2351()
 {
 #ifdef LEETCODE_2351
@@ -2893,6 +2928,7 @@ int leetcodeTest() {
 	leetcodetest1106();
 	leetcodetest1108();
 	leetcodetest1129();
+	leetcodetest1145();
 	leetcodetest1162();
 	leetcodetest1172();
 	leetcodetest1175();
@@ -2923,6 +2959,7 @@ int leetcodeTest() {
 	leetcodetest1475();
 	leetcodetest1582();
 	leetcodetest1592();
+	leetcodetest1604();
 	leetcodetest1608();
 	leetcodetest1620();
 	leetcodetest1624();
@@ -2967,6 +3004,7 @@ int leetcodeTest() {
 	leetcodetest1786();
 	leetcodetest1790();
 	leetcodetest1796();
+	leetcodetest1798();
 	leetcodetest1800();
 	leetcodetest1801();
 	leetcodetest1802();
@@ -3005,6 +3043,7 @@ int leetcodeTest() {
 	leetcodetest2315();
 	leetcodetest2319();
 	leetcodetest2325();
+	leetcodetest2331();
 	leetcodetest2351();
 	leetcodetest6306();
 	leetcodetestaudition0102();
