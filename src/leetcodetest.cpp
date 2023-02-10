@@ -1660,6 +1660,20 @@ int leetcodetest1217()
 	return 0;
 }
 
+int leetcodetest1223()
+{
+#ifdef LEETCODE_1223
+
+	int n = 2;
+	std::vector<int> rollMax = { 1,1,2,2,2,3 };
+
+	Solution solution;
+	std::cout << solution.dieSimulator(n, rollMax) << std::endl;
+
+#endif // LEETCODE_1223
+	return 0;
+}
+
 int leetcodetest1224()
 {
 #ifdef LEETCODE_1224
@@ -1667,6 +1681,20 @@ int leetcodetest1224()
 	Solution solution;
 	solution.maxEqualFreq(temp);
 #endif // LEETCODE_1224
+	return 0;
+}
+
+int leetcodetest1233()
+{
+#ifdef LEETCODE_1233
+	//std::vector<std::string> folder = { "/a", "/a/b", "/c/d", "/c/d/e", "/c/f" };
+	std::vector<std::string> folder = { "/ah/al/am","/ah/al"};
+
+	Solution solution;
+	solution.removeSubfolders(folder);
+	//std::cout << solution.jobScheduling(startTime, endTime, profit) << std::endl;
+
+#endif // LEETCODE_1233
 	return 0;
 }
 
@@ -2937,7 +2965,9 @@ int leetcodeTest() {
 	leetcodetest1200();
 	leetcodetest1206();
 	leetcodetest1217();
+	leetcodetest1223();
 	leetcodetest1224();
+	leetcodetest1233();
 	leetcodetest1235();
 	leetcodetest1252();
 	leetcodetest1260();
