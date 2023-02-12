@@ -2318,6 +2318,43 @@ int leetcodetest1796()
 	return 0;
 }
 
+int leetcodetest1797()
+{
+#ifdef LEETCODE_1797
+
+	AuthenticationManager authenticationManager(13);
+	authenticationManager.renew("ajvy", 1);
+	std::cout << authenticationManager.countUnexpiredTokens(3) << std::endl;
+	std::cout << authenticationManager.countUnexpiredTokens(4) << std::endl;
+	authenticationManager.generate("fuzxq", 5);
+	authenticationManager.generate("izmry", 7);
+	authenticationManager.renew("puv", 12);
+	authenticationManager.generate("ybiqb", 13);
+	authenticationManager.generate("gm", 14);
+	std::cout << authenticationManager.countUnexpiredTokens(15) << std::endl;
+	std::cout << authenticationManager.countUnexpiredTokens(18) << std::endl;
+	std::cout << authenticationManager.countUnexpiredTokens(19) << std::endl;
+	authenticationManager.renew("ybiqb", 21);
+	std::cout << authenticationManager.countUnexpiredTokens(23) << std::endl;
+	std::cout << authenticationManager.countUnexpiredTokens(25) << std::endl;
+	std::cout << authenticationManager.countUnexpiredTokens(26) << std::endl;
+	authenticationManager.generate("aqdm", 28);
+	std::cout << authenticationManager.countUnexpiredTokens(29) << std::endl;
+	authenticationManager.renew("puv", 30);
+
+	//AuthenticationManager authenticationManager(5);
+	//authenticationManager.renew("aaa", 1);
+	//authenticationManager.generate("aaa", 2);
+	//std::cout << authenticationManager.countUnexpiredTokens(6) << std::endl;
+	//authenticationManager.generate("bbb", 7);
+	//authenticationManager.renew("aaa", 8);
+	//authenticationManager.renew("bbb", 10);
+	//std::cout << authenticationManager.countUnexpiredTokens(15) << std::endl;
+
+#endif // LEETCODE_1797
+	return 0;
+}
+
 int leetcodetest1798()
 {
 #ifdef LEETCODE_1798
@@ -3049,6 +3086,7 @@ int leetcodeTest() {
 	leetcodetest1786();
 	leetcodetest1790();
 	leetcodetest1796();
+	leetcodetest1797();
 	leetcodetest1798();
 	leetcodetest1800();
 	leetcodetest1801();
