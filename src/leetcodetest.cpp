@@ -1705,6 +1705,19 @@ int leetcodetest1233()
 	return 0;
 }
 
+int leetcodetest1234()
+{
+#ifdef LEETCODE_1234
+
+	std::string s = "QWER";
+
+	Solution solution;
+	std::cout << solution.balancedString(s) << std::endl;
+
+#endif // LEETCODE_1234
+	return 0;
+}
+
 int leetcodetest1235()
 {
 #ifdef LEETCODE_1235
@@ -3020,6 +3033,7 @@ int leetcodeTest() {
 	leetcodetest1223();
 	leetcodetest1224();
 	leetcodetest1233();
+	leetcodetest1234();
 	leetcodetest1235();
 	leetcodetest1252();
 	leetcodetest1260();
