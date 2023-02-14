@@ -28,6 +28,7 @@
 
 //#define VIOLENCE_METHOD // 暴力法，超时
 #define VIOLENCE_OPTIMIZE_METHOD // 暴力法优化测试，对于不变的行列不再进行计算，TIME 1500ms, 5.25%, MEMORY 119.2MB and 75.62%
+#define 
 
 #ifdef VIOLENCE_OPTIMIZE_METHOD
 class Solution {

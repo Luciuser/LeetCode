@@ -1494,6 +1494,16 @@ int leetcodetest1108()
 	return 0;
 }
 
+int leetcodetest1124()
+{
+#ifdef LEETCODE_1124
+	std::vector<int> hours = { 9,9,6,0,6,6,9 };
+	Solution solution;
+	std::cout << solution.longestWPI(hours) << std::endl;
+#endif // LEETCODE_1124
+	return 0;
+}
+
 int leetcodetest1129()
 {
 #ifdef LEETCODE_1129
@@ -3019,6 +3029,7 @@ int leetcodeTest() {
 	leetcodetest1089();
 	leetcodetest1106();
 	leetcodetest1108();
+	leetcodetest1124();
 	leetcodetest1129();
 	leetcodetest1138();
 	leetcodetest1145();
