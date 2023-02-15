@@ -21,14 +21,41 @@
 #ifndef __leet_code_1632_h__
 #define __leet_code_1632_h__
 
-#include<iostream>
-#include<vector>
-#include<map>
 #include<algorithm>
+#include<iostream>
+#include<map>
+#include<vector>
 
 //#define VIOLENCE_METHOD // 暴力法，超时
-#define VIOLENCE_OPTIMIZE_METHOD // 暴力法优化测试，对于不变的行列不再进行计算，TIME 1500ms, 5.25%, MEMORY 119.2MB and 75.62%
-#define 
+//#define VIOLENCE_OPTIMIZE_METHOD // 暴力法优化测试，对于不变的行列不再进行计算，TIME 1500ms, 5.25%, MEMORY 119.2MB and 75.62%
+#define TOPOLOGY_METHOD // 并查集+拓扑排序，并查集没有理解
+
+#ifdef TOPOLOGY_METHOD
+class Solution {
+private:
+
+	void print(std::vector<std::vector<int>> &matrix) {
+		std::cout << "----------------------------------------------------" << std::endl;
+		std::cout << "----------------------------------------------------" << std::endl;
+		for (int i = 0; i < matrix.size(); i++) {
+			for (int j = 0; j < matrix[i].size(); j++) {
+				std::cout << matrix[i][j] << "    ";
+			}
+			std::cout << std::endl;
+		}
+	}
+
+public:
+	std::vector<std::vector<int>> matrixRankTransform(std::vector<std::vector<int>>& matrix) {
+
+		std::vector<std::vector<int>> result(m, std::vector<int>(n, 0));
+
+		print(result);
+
+		return result;
+	}
+};
+#endif // TOPOLOGY_METHOD
 
 #ifdef VIOLENCE_OPTIMIZE_METHOD
 class Solution {

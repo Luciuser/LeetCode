@@ -174,12 +174,14 @@ endif()
  	src/leetcode1185.h
  	src/leetcode1200.h
 	src/leetcode1206.h
+	src/leetcode1210.h
 	src/leetcode1217.h
 	src/leetcode1223.h
 	src/leetcode1224.h
 	src/leetcode1233.h
 	src/leetcode1234.h
 	src/leetcode1235.h
+ 	src/leetcode1250.h
  	src/leetcode1252.h
  	src/leetcode1260.h
 	src/leetcode1282.h
