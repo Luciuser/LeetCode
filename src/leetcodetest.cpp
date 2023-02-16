@@ -94,6 +94,19 @@ int leetcodetest14()
 	return 0;
 }
 
+int leetcodetest15()
+{
+#ifdef LEETCODE_15
+
+	std::vector<int> nums = { -1,0,1,2,-1,-4 };
+
+	Solution solution;
+	solution.threeSum(nums);
+
+#endif // LEETCODE_15
+	return 0;
+}
+
 int leetcodetest20()
 {
 #ifdef LEETCODE_20
@@ -2516,6 +2529,23 @@ int leetcodetest1814()
 	return 0;
 }
 
+int leetcodetest1815()
+{
+#ifdef LEETCODE_1815
+
+	//int batch_size = 3;
+	//std::vector<int> groups = { 1,2,3,4,5,6 };
+	int batch_size = 9;
+	std::vector<int> groups = { 1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18 };
+
+
+	Solution solution;
+	std::cout << solution.maxHappyGroups(batch_size, groups) << std::endl;
+
+#endif // LEETCODE_1815
+	return 0;
+}
+
 int leetcodetest1817()
 {
 #ifdef LEETCODE_1817
@@ -2806,6 +2836,13 @@ int leetcodetest2335()
 	return 0;
 }
 
+int leetcodetest2341()
+{
+#ifdef LEETCODE_2341
+#endif // LEETCODE_2341
+	return 0;
+}
+
 int leetcodetest2351()
 {
 #ifdef LEETCODE_2351
@@ -2918,6 +2955,7 @@ int leetcodeTest() {
 	leetcodetest11();
 	leetcodetest13();
 	leetcodetest14();
+	leetcodetest15();
 	leetcodetest20();
 	leetcodetest21();
 	leetcodetest30();
@@ -3144,6 +3182,7 @@ int leetcodeTest() {
 	leetcodetest1807();
 	leetcodetest1813();
 	leetcodetest1814();
+	leetcodetest1815();
 	leetcodetest1817();
 	leetcodetest1819();
 	leetcodetest1822();
@@ -3175,6 +3214,7 @@ int leetcodeTest() {
 	leetcodetest2325();
 	leetcodetest2331();
 	leetcodetest2335();
+	leetcodetest2341();
 	leetcodetest2351();
 	leetcodetest6306();
 	leetcodetestaudition0102();

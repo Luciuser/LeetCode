@@ -18,7 +18,7 @@
  * @Description: create DYNAMIC_PROGRAMMING_METHOD, TIME 116ms, 5.52%, MEMORY 20.7MB and 16.93%
  */
 
-#ifndef __leet_code_1210_h__
+#ifndef __leet_code_1210_h__ 
 #define __leet_code_1210_h__
 
 #include<iostream>
