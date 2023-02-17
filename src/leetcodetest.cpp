@@ -107,6 +107,26 @@ int leetcodetest15()
 	return 0;
 }
 
+int leetcodetest17()
+{
+#ifdef LEETCODE_17
+#endif // LEETCODE_17
+	return 0;
+}
+
+int leetcodetest19()
+{
+#ifdef LEETCODE_19
+	ListNode *root = new ListNode(1);
+	root->next = new ListNode(2);
+
+	Solution solution;
+	solution.removeNthFromEnd(root, 2);
+
+#endif // LEETCODE_19
+	return 0;
+}
+
 int leetcodetest20()
 {
 #ifdef LEETCODE_20
@@ -1528,6 +1548,18 @@ int leetcodetest1138()
 {
 #ifdef LEETCODE_1138
 #endif // LEETCODE_1138
+	return 0;
+}
+
+int leetcodetest1139()
+{
+#ifdef LEETCODE_1139
+	std::vector<std::vector<int>> grid = { {1,1,0,0} };
+
+	Solution solution;
+	std::cout << solution.largest1BorderedSquare(grid) << std::endl;
+
+#endif // LEETCODE_1139
 	return 0;
 }
 
@@ -2956,6 +2988,7 @@ int leetcodeTest() {
 	leetcodetest13();
 	leetcodetest14();
 	leetcodetest15();
+	leetcodetest19();
 	leetcodetest20();
 	leetcodetest21();
 	leetcodetest30();
@@ -3090,6 +3123,7 @@ int leetcodeTest() {
 	leetcodetest1124();
 	leetcodetest1129();
 	leetcodetest1138();
+	leetcodetest1139();
 	leetcodetest1145();
 	leetcodetest1162();
 	leetcodetest1172();
