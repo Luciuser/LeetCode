@@ -141,6 +141,13 @@ int leetcodetest21()
 	return 0;
 }
 
+int leetcodetest22()
+{
+#ifdef LEETCODE_22
+#endif // LEETCODE_22
+	return 0;
+}
+
 int leetcodetest30()
 {
 #ifdef LEETCODE_30
@@ -1801,6 +1808,19 @@ int leetcodetest1235()
 	return 0;
 }
 
+int leetcodetest1237()
+{
+#ifdef LEETCODE_1237
+	CustomFunction f;
+	int z = 10;
+
+	Solution solution;
+	solution.findSolution(f, z);
+
+#endif // LEETCODE_1237
+	return 0;
+}
+
 int leetcodetest1250()
 {
 #ifdef LEETCODE_1250
@@ -2991,6 +3011,7 @@ int leetcodeTest() {
 	leetcodetest19();
 	leetcodetest20();
 	leetcodetest21();
+	leetcodetest22();
 	leetcodetest30();
 	leetcodetest49();
 	leetcodetest94();
@@ -3139,6 +3160,7 @@ int leetcodeTest() {
 	leetcodetest1233();
 	leetcodetest1234();
 	leetcodetest1235();
+	leetcodetest1237();
 	leetcodetest1250();
 	leetcodetest1252();
 	leetcodetest1260();
