@@ -148,10 +148,47 @@ int leetcodetest22()
 	return 0;
 }
 
+int leetcodetest23()
+{
+#ifdef LEETCODE_23
+
+	//ListNode *r1 = new ListNode(1);
+	//r1->next = new ListNode(4);
+	//r1->next->next = new ListNode(5);
+
+	//ListNode *r2 = new ListNode(1);
+	//r2->next = new ListNode(3);
+	//r2->next->next = new ListNode(4);
+	
+	//ListNode *r3 = new ListNode(2);
+	//r3->next = new ListNode(6);
+
+	//std::vector<ListNode*> lists = { r1,r2,r3 };
+
+	ListNode *r1 = nullptr;
+	ListNode *r2 = nullptr;
+
+	std::vector<ListNode*> lists = { r1,r2 };
+
+
+	Solution solution;
+	solution.mergeKLists(lists);
+
+#endif // LEETCODE_23
+	return 0;
+}
+
 int leetcodetest30()
 {
 #ifdef LEETCODE_30
 #endif // LEETCODE_30
+	return 0;
+}
+
+int leetcodetest31()
+{
+#ifdef LEETCODE_31
+#endif // LEETCODE_31
 	return 0;
 }
 
@@ -2417,6 +2454,20 @@ int leetcodetest1790()
 	return 0;
 }
 
+int leetcodetest1792()
+{
+#ifdef LEETCODE_1792
+
+	std::vector<std::vector<int>> classes = { {1,2},{3,5},{2,2} };
+	int extraStudents = 2;
+
+	Solution solution;
+	std::cout << solution.maxAverageRatio(classes, extraStudents) << std::endl;
+
+#endif // LEETCODE_1792
+	return 0;
+}
+
 int leetcodetest1796()
 {
 #ifdef LEETCODE_1796
@@ -2920,6 +2971,18 @@ int leetcodetest6306()
 	return 0;
 }
 
+int leetcodetest6364()
+{
+#ifdef LEETCODE_6364
+	std::vector<int> nums = { 3,4,4,5 };
+
+	Solution solution;
+ 	std::cout << solution.squareFreeSubsets(nums) << std::endl;
+
+#endif // LEETCODE_6364
+	return 0;
+}
+
 int leetcodetestaudition0102()
 {
 #ifdef LEETCODE_2104_AUDITION_01_02__
@@ -3012,7 +3075,9 @@ int leetcodeTest() {
 	leetcodetest20();
 	leetcodetest21();
 	leetcodetest22();
+	leetcodetest23();
 	leetcodetest30();
+	leetcodetest31();
 	leetcodetest49();
 	leetcodetest94();
 	leetcodetest171();
@@ -3226,6 +3291,7 @@ int leetcodeTest() {
 	leetcodetest1785();
 	leetcodetest1786();
 	leetcodetest1790();
+	leetcodetest1792();
 	leetcodetest1796();
 	leetcodetest1797();
 	leetcodetest1798();
@@ -3273,6 +3339,7 @@ int leetcodeTest() {
 	leetcodetest2341();
 	leetcodetest2351();
 	leetcodetest6306();
+	leetcodetest6364();
 	leetcodetestaudition0102();
 	leetcodetestaudition0109();
 	leetcodetestaudition0406();

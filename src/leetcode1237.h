@@ -1,13 +1,13 @@
 /*
  * @Author: Bingyang Jin
- * @Date: 2023-02-17 10:28:36
+ * @Date: 2023-02-18 10:28:36
  * @Editor: Bingyang Jin
  * @FilePath: /src/leetcode1237.h
  * @Description: create the file
  */
 
  /*
- * @EditTime: 2023-02-17 10:53:19
+ * @EditTime: 2023-02-18 10:53:19
  * @Editor: Bingyang Jin
  * @Description: create DOUBLE_POINTER_METHOD, TIME 0ms, 100.00%, MEMORY 6.2MB and 73.12%
  */
