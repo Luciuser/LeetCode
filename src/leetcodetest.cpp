@@ -188,6 +188,11 @@ int leetcodetest30()
 int leetcodetest31()
 {
 #ifdef LEETCODE_31
+	std::vector<int> nums = { 1,2,3 };
+	
+	Solution solution;
+	solution.nextPermutation(nums);
+
 #endif // LEETCODE_31
 	return 0;
 }
@@ -2946,6 +2951,13 @@ int leetcodetest2341()
 	return 0;
 }
 
+int leetcodetest2347()
+{
+#ifdef LEETCODE_2347
+#endif // LEETCODE_2347
+	return 0;
+}
+
 int leetcodetest2351()
 {
 #ifdef LEETCODE_2351
@@ -3337,6 +3349,7 @@ int leetcodeTest() {
 	leetcodetest2331();
 	leetcodetest2335();
 	leetcodetest2341();
+	leetcodetest2347();
 	leetcodetest2351();
 	leetcodetest6306();
 	leetcodetest6364();
