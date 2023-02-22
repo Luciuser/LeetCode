@@ -1569,55 +1569,6 @@ int leetcodetest1021()
 	return 0;
 }
 
-int leetcodetest1108()
-{
-#ifdef LEETCODE_1108
-#endif // LEETCODE_1108
-	return 0;
-}
-
-int leetcodetest1124()
-{
-#ifdef LEETCODE_1124
-	std::vector<int> hours = { 9,9,6,0,6,6,9 };
-	Solution solution;
-	std::cout << solution.longestWPI(hours) << std::endl;
-#endif // LEETCODE_1124
-	return 0;
-}
-
-int leetcodetest1129()
-{
-#ifdef LEETCODE_1129
-#endif // LEETCODE_1129
-	return 0;
-}
-
-int leetcodetest1138()
-{
-#ifdef LEETCODE_1138
-#endif // LEETCODE_1138
-	return 0;
-}
-
-int leetcodetest1139()
-{
-#ifdef LEETCODE_1139
-	std::vector<std::vector<int>> grid = { {1,1,0,0} };
-
-	Solution solution;
-	std::cout << solution.largest1BorderedSquare(grid) << std::endl;
-
-#endif // LEETCODE_1139
-	return 0;
-}
-
-int leetcodetest1145()
-{
-#ifdef LEETCODE_1045
-#endif // LEETCODE_1045
-	return 0;
-}
 
 int leetcodetest1022()
 {
@@ -1672,6 +1623,68 @@ int leetcodetest1106()
 	solution.parseBoolExpr(temp);
 
 #endif // LEETCODE_1106
+	return 0;
+}
+
+int leetcodetest1108()
+{
+#ifdef LEETCODE_1108
+#endif // LEETCODE_1108
+	return 0;
+}
+
+int leetcodetest1124()
+{
+#ifdef LEETCODE_1124
+	std::vector<int> hours = { 9,9,6,0,6,6,9 };
+	Solution solution;
+	std::cout << solution.longestWPI(hours) << std::endl;
+#endif // LEETCODE_1124
+	return 0;
+}
+
+int leetcodetest1129()
+{
+#ifdef LEETCODE_1129
+#endif // LEETCODE_1129
+	return 0;
+}
+
+int leetcodetest1138()
+{
+#ifdef LEETCODE_1138
+#endif // LEETCODE_1138
+	return 0;
+}
+
+int leetcodetest1139()
+{
+#ifdef LEETCODE_1139
+	std::vector<std::vector<int>> grid = { {1,1,0,0} };
+
+	Solution solution;
+	std::cout << solution.largest1BorderedSquare(grid) << std::endl;
+
+#endif // LEETCODE_1139
+	return 0;
+}
+
+int leetcodetest1140()
+{
+#ifdef LEETCODE_1140
+	std::vector<int> piles = { 1, 6, 7, 4, 6, 7, 9, 10, 12, 13, 4, 6, 7, 9, 1, 6, 78, 45, 1, 32, 45, 65, 12, 3, 12, 45, 78, 99, 6, 12, 3, 1, 4, 5, 56, 12, 3, 45, 78, 52 };
+
+	Solution solution;
+	std::cout << solution.stoneGameII(piles) << std::endl;
+
+#endif // LEETCODE_1140
+	return 0;
+}
+
+int leetcodetest1145()
+{
+#ifdef LEETCODE_1045
+#endif // LEETCODE_1045
 	return 0;
 }
 
@@ -1895,6 +1908,25 @@ int leetcodetest1302()
 {
 #ifdef LEETCODE_1302
 #endif // LEETCODE_1302
+	return 0;
+}
+
+int leetcodetest1326()
+{
+#ifdef LEETCODE_1326
+	//int n = 5;
+	//std::vector<int> ranges = { 3,4,1,1,0,0 };
+
+	//int n = 3;
+	//std::vector<int> ranges = { 0,0,0,0 };
+
+	int n = 9;
+	std::vector<int> ranges = { 1,3,4,5,1,0,1,5,6,4 };
+
+	Solution solution;
+	std::cout << solution.minTaps(n, ranges) << std::endl;
+
+#endif // LEETCODE_1326
 	return 0;
 }
 
@@ -3222,6 +3254,7 @@ int leetcodeTest() {
 	leetcodetest1129();
 	leetcodetest1138();
 	leetcodetest1139();
+	leetcodetest1140();
 	leetcodetest1145();
 	leetcodetest1162();
 	leetcodetest1172();
@@ -3243,6 +3276,7 @@ int leetcodeTest() {
 	leetcodetest1260();
 	leetcodetest1282();
 	leetcodetest1302();
+	leetcodetest1326();
 	leetcodetest1331();
 	leetcodetest1374();
 	leetcodetest1399();
