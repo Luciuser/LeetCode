@@ -1876,6 +1876,15 @@ int leetcodetest1237()
 	return 0;
 }
 
+int leetcodetest1238()
+{
+#ifdef LEETCODE_1238
+	Solution solution;
+	solution.circularPermutation(2, 3);
+#endif // LEETCODE_1238
+	return 0;
+}
+
 int leetcodetest1250()
 {
 #ifdef LEETCODE_1250
@@ -3271,6 +3280,7 @@ int leetcodeTest() {
 	leetcodetest1234();
 	leetcodetest1235();
 	leetcodetest1237();
+	leetcodetest1238();
 	leetcodetest1250();
 	leetcodetest1252();
 	leetcodetest1260();
