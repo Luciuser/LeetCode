@@ -174,6 +174,7 @@ endif()
  	src/leetcode1138.h
  	src/leetcode1139.h
  	src/leetcode1140.h
+ 	src/leetcode1144.h
  	src/leetcode1145.h
  	src/leetcode1162.h
  	src/leetcode1172.h
@@ -191,8 +192,10 @@ endif()
 	src/leetcode1235.h
 	src/leetcode1237.h
 	src/leetcode1238.h
+	src/leetcode1247.h
  	src/leetcode1250.h
  	src/leetcode1252.h
+ 	src/leetcode1255.h
  	src/leetcode1260.h
 	src/leetcode1282.h
  	src/leetcode1302.h
@@ -322,6 +325,10 @@ endif()
  	src/leetcode6362.h
  	src/leetcode6364.h
  	src/leetcode6365.h
+ 	src/leetcode6366.h
+ 	src/leetcode6367.h
+ 	src/leetcode6368.h
+ 	src/leetcode6369.h
  	src/swordOfferII041.h
  	src/swordOfferII114.h
  	src/swordOfferII115.h

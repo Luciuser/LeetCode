@@ -150,6 +150,7 @@
 //#define LEETCODE_1138
 //#define LEETCODE_1139
 //#define LEETCODE_1140
+#define LEETCODE_1144
 //#define LEETCODE_1145
 //#define LEETCODE_1162
 //#define LEETCODE_1172
@@ -167,6 +168,7 @@
 //#define LEETCODE_1235
 //#define LEETCODE_1237
 //#define LEETCODE_1238
+//#define LEETCODE_1247
 //#define LEETCODE_1250
 //#define LEETCODE_1252
 //#define LEETCODE_1260
@@ -285,9 +287,10 @@
 //#define LEETCODE_2341
 //#define LEETCODE_2347
 //#define LEETCODE_2351
-#define LEETCODE_2357
+//#define LEETCODE_2357
 //#define LEETCODE_6306
 //#define LEETCODE_6364
+//#define LEETCODE_6366
 //#define LEETCODE_2104_AUDITION_01_09__
 //#define LEETCODE_2104_AUDITION_01_02__
 //#define LEETCODE_2104_AUDITION_04_06__
@@ -902,6 +905,10 @@
 #include"leetcode1140.h"
 #endif // LEETCODE_1140
 
+#ifdef LEETCODE_1144
+#include"leetcode1144.h"
+#endif // LEETCODE_1144
+
 #ifdef LEETCODE_1145
 #include"leetcode1145.h"
 #endif // LEETCODE_1145
@@ -969,6 +976,10 @@
 #ifdef LEETCODE_1238
 #include"leetcode1238.h"
 #endif // LEETCODE_1238
+
+#ifdef LEETCODE_1247
+#include"leetcode1247.h"
+#endif // LEETCODE_1247
 
 #ifdef LEETCODE_1250
 #include"leetcode1250.h"
@@ -1454,6 +1465,10 @@
 #include"leetcode6364.h"
 #endif // LEETCODE_6364
 
+#ifdef LEETCODE_6366
+#include"leetcode6366.h"
+#endif // LEETCODE_6366
+
 #ifdef LEETCODE_2104_AUDITION_01_02__
 #include"audition0102.h"
 #endif // LEETCODE_2104_AUDITION_01_02__
@@ -1641,6 +1656,7 @@ int leetcodetest1129();
 int leetcodetest1138();
 int leetcodetest1139();
 int leetcodetest1140();
+int leetcodetest1144();
 int leetcodetest1145();
 int leetcodetest1162();
 int leetcodetest1172();
@@ -1658,6 +1674,7 @@ int leetcodetest1234();
 int leetcodetest1235();
 int leetcodetest1237();
 int leetcodetest1238();
+int leetcodetest1247();
 int leetcodetest1250();
 int leetcodetest1252();
 int leetcodetest1260();
@@ -1779,6 +1796,7 @@ int leetcodetest2351();
 int leetcodetest2357();
 int leetcodetest6306();
 int leetcodetest6364();
+int leetcodetest6366();
 int leetcodetestaudition0102();
 int leetcodetestaudition0109();
 int leetcodetestaudition0406();

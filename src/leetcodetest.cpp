@@ -1681,6 +1681,19 @@ int leetcodetest1140()
 	return 0;
 }
 
+int leetcodetest1144()
+{
+#ifdef LEETCODE_1144
+
+	std::vector<int> nums = { 10,4,4,10,10,6,2,3 };
+
+	Solution solution;
+	std::cout << solution.movesToMakeZigzag(nums) << std::endl;
+
+#endif // LEETCODE_1144
+	return 0;
+}
+
 int leetcodetest1145()
 {
 #ifdef LEETCODE_1045
@@ -1882,6 +1895,13 @@ int leetcodetest1238()
 	Solution solution;
 	solution.circularPermutation(2, 3);
 #endif // LEETCODE_1238
+	return 0;
+}
+
+int leetcodetest1247()
+{
+#ifdef LEETCODE_1247
+#endif // LEETCODE_1247
 	return 0;
 }
 
@@ -3043,6 +3063,18 @@ int leetcodetest6364()
 	return 0;
 }
 
+int leetcodetest6366()
+{
+#ifdef LEETCODE_6366
+	std::vector<std::vector<int>> temp = { {0, 1, 3, 2},{5, 1, 2, 5},{4, 3, 8, 6} };
+
+	Solution solution;
+	std::cout << solution.minimumTime(temp) << std::endl;
+
+#endif // LEETCODE_6366
+	return 0;
+}
+
 int leetcodetestaudition0102()
 {
 #ifdef LEETCODE_2104_AUDITION_01_02__
@@ -3271,6 +3303,7 @@ int leetcodeTest() {
 	leetcodetest1138();
 	leetcodetest1139();
 	leetcodetest1140();
+	leetcodetest1144();
 	leetcodetest1145();
 	leetcodetest1162();
 	leetcodetest1172();
@@ -3288,6 +3321,7 @@ int leetcodeTest() {
 	leetcodetest1235();
 	leetcodetest1237();
 	leetcodetest1238();
+	leetcodetest1247();
 	leetcodetest1250();
 	leetcodetest1252();
 	leetcodetest1260();
@@ -3405,6 +3439,7 @@ int leetcodeTest() {
 	leetcodetest2357();
 	leetcodetest6306();
 	leetcodetest6364();
+	leetcodetest6366();
 	leetcodetestaudition0102();
 	leetcodetestaudition0109();
 	leetcodetestaudition0406();
