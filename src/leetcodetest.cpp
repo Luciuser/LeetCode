@@ -1919,6 +1919,19 @@ int leetcodetest1252()
 	return 0;
 }
 
+int leetcodetest1255()
+{
+#ifdef LEETCODE_1255
+
+	int target = 6;
+	std::vector<std::vector<int>> types = { {6, 1},{3, 2},{2, 3} };
+
+	Solution solution;
+
+#endif // LEETCODE_1255
+	return 0;
+}
+
 int leetcodetest1260()
 {
 #ifdef LEETCODE_1260
@@ -2075,6 +2088,13 @@ int leetcodetest1475()
 	return 0;
 }
 
+int leetcodetest1487()
+{
+#ifdef LEETCODE_1487
+#endif // LEETCODE_1487
+	return 0;
+}
+
 int leetcodetest1582()
 {
 #ifdef LEETCODE_1582
@@ -2086,6 +2106,13 @@ int leetcodetest1592()
 {
 #ifdef LEETCODE_1592
 #endif // LEETCODE_1592
+	return 0;
+}
+
+int leetcodetest1599()
+{
+#ifdef LEETCODE_1599
+#endif // LEETCODE_1599
 	return 0;
 }
 
@@ -3033,6 +3060,13 @@ int leetcodetest2357()
 	return 0;
 }
 
+int leetcodetest2363()
+{
+#ifdef LEETCODE_2363
+#endif // LEETCODE_2363
+	return 0;
+}
+
 int leetcodetest6306()
 {
 #ifdef LEETCODE_6306
@@ -3048,6 +3082,19 @@ int leetcodetest6306()
 	std::cout << solution.findCrossingTime(n, k, temp) << std::endl;
 
 #endif // LEETCODE_6306
+	return 0;
+}
+
+int leetcodetest6310()
+{
+#ifdef LEETCODE_6310
+	int target = 6;
+	std::vector<std::vector<int>> types = { {6,1},{3,2},{2,3} };
+
+	Solution solution;
+	std::cout << solution.waysToReachTarget(target, types) << std::endl;
+
+#endif // LEETCODE_6310
 	return 0;
 }
 
@@ -3324,6 +3371,7 @@ int leetcodeTest() {
 	leetcodetest1247();
 	leetcodetest1250();
 	leetcodetest1252();
+	leetcodetest1255();
 	leetcodetest1260();
 	leetcodetest1282();
 	leetcodetest1302();
@@ -3342,8 +3390,10 @@ int leetcodeTest() {
 	leetcodetest1460();
 	leetcodetest1470();
 	leetcodetest1475();
+	leetcodetest1487();
 	leetcodetest1582();
 	leetcodetest1592();
+	leetcodetest1599();
 	leetcodetest1604();
 	leetcodetest1608();
 	leetcodetest1620();
@@ -3437,7 +3487,9 @@ int leetcodeTest() {
 	leetcodetest2347();
 	leetcodetest2351();
 	leetcodetest2357();
+	leetcodetest2363();
 	leetcodetest6306();
+	leetcodetest6310();
 	leetcodetest6364();
 	leetcodetest6366();
 	leetcodetestaudition0102();
