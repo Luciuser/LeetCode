@@ -228,6 +228,7 @@ endif()
 	src/leetcode1636.h
 	src/leetcode1640.h
 	src/leetcode1652.h
+	src/leetcode1653.h
 	src/leetcode1656.h
 	src/leetcode1658.h
 	src/leetcode1662.h

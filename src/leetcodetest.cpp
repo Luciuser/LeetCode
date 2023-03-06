@@ -2195,6 +2195,18 @@ int leetcodetest1652()
 	return 0;
 }
 
+int leetcodetest1653()
+{
+#ifdef LEETCODE_1653
+	std::string s = "bbaaaaabb";
+	
+	Solution solution;
+	std::cout << solution.minimumDeletions(s) << std::endl;
+
+#endif // LEETCODE_1653
+	return 0;
+}
+
 int leetcodetest1656()
 {
 #ifdef LEETCODE_1656
@@ -3402,6 +3414,7 @@ int leetcodeTest() {
 	leetcodetest1636();
 	leetcodetest1640();
 	leetcodetest1652();
+	leetcodetest1653();
 	leetcodetest1656();
 	leetcodetest1658();
 	leetcodetest1662();
