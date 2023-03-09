@@ -136,6 +136,7 @@
 //#define LEETCODE_953
 //#define LEETCODE_961
 //#define LEETCODE_965
+//#define LEETCODE_982
 //#define LEETCODE_998
 //#define LEETCODE_1021
 //#define LEETCODE_1022
@@ -143,6 +144,7 @@
 //#define LEETCODE_1051
 //#define LEETCODE_1052
 //#define LEETCODE_1089
+//#define LEETCODE_1096
 //#define LEETCODE_1106
 //#define LEETCODE_1108
 //#define LEETCODE_1124
@@ -192,7 +194,7 @@
 //#define LEETCODE_1487
 //#define LEETCODE_1582
 //#define LEETCODE_1592
-#define LEETCODE_1599
+//#define LEETCODE_1599
 //#define LEETCODE_1604
 //#define LEETCODE_1608
 //#define LEETCODE_1620
@@ -201,7 +203,7 @@
 //#define LEETCODE_1636
 //#define LEETCODE_1640
 //#define LEETCODE_1652
-#define LEETCODE_1653
+//#define LEETCODE_1653
 //#define LEETCODE_1656
 //#define LEETCODE_1658
 //#define LEETCODE_1662
@@ -293,6 +295,7 @@
 //#define LEETCODE_2351
 //#define LEETCODE_2357
 //#define LEETCODE_2363
+#define LEETCODE_2379
 //#define LEETCODE_6306
 //#define LEETCODE_6310
 //#define LEETCODE_6364
@@ -303,6 +306,7 @@
 //#define LEETCODE_2104_AUDITION_17_09__
 //#define LEETCODE_2104_AUDITION_17_11__
 //#define LEETCODE_2104_AUDITION_17_19__
+//#define SWORD_OFFER_047
 //#define SWORD_OFFER_II_041
 //#define SWORD_OFFER_II_114
 //#define SWORD_OFFER_II_115
@@ -855,6 +859,10 @@
 #include"leetcode965.h"
 #endif // LEETCODE_965
 
+#ifdef LEETCODE_982
+#include"leetcode982.h"
+#endif // LEETCODE_982
+
 #ifdef LEETCODE_998
 #include"leetcode998.h"
 #endif // LEETCODE_998
@@ -882,6 +890,10 @@
 #ifdef LEETCODE_1089
 #include"leetcode1089.h"
 #endif // LEETCODE_1089
+
+#ifdef LEETCODE_1096
+#include"leetcode1096.h"
+#endif // LEETCODE_1096
 
 #ifdef LEETCODE_1106
 #include"leetcode1106.h"
@@ -1479,6 +1491,10 @@
 #include"leetcode2363.h"
 #endif // LEETCODE_2363
 
+#ifdef LEETCODE_2379
+#include"leetcode2379.h"
+#endif // LEETCODE_2379
+
 #ifdef LEETCODE_6306
 #include"leetcode6306.h"
 #endif // LEETCODE_6306
@@ -1518,6 +1534,10 @@
 #ifdef LEETCODE_2104_AUDITION_17_19__
 #include"audition1719.h"
 #endif // LEETCODE_2104_AUDITION_17_19__
+
+#ifdef SWORD_OFFER_047
+#include"swordOffer047.h"
+#endif // SWORD_OFFER_047
 
 #ifdef SWORD_OFFER_II_041
 #include"swordOfferII041.h"
@@ -1668,6 +1688,7 @@ int leetcodetest951();
 int leetcodetest953();
 int leetcodetest961();
 int leetcodetest965();
+int leetcodetest982();
 int leetcodetest998();
 int leetcodetest1021();
 int leetcodetest1022();
@@ -1675,6 +1696,7 @@ int leetcodetest1037();
 int leetcodetest1051();
 int leetcodetest1052();
 int leetcodetest1089();
+int leetcodetest1096();
 int leetcodetest1106();
 int leetcodetest1108();
 int leetcodetest1124();
@@ -1825,6 +1847,7 @@ int leetcodetest2347();
 int leetcodetest2351();
 int leetcodetest2357();
 int leetcodetest2363();
+int leetcodetest2379();
 int leetcodetest6306();
 int leetcodetest6310();
 int leetcodetest6364();
@@ -1835,6 +1858,7 @@ int leetcodetestaudition0406();
 int leetcodetestaudition1709();
 int leetcodetestaudition1711();
 int leetcodetestaudition1719();
+int swordOffer047();
 int swordOfferII041();
 int swordOfferII114();
 int swordOfferII115();

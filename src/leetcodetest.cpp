@@ -1555,6 +1555,18 @@ int leetcodetest965()
 	return 0;
 }
 
+int leetcodetest982()
+{
+#ifdef LEETCODE_982
+	std::vector<int> nums = { 2,1,3 };
+
+	Solution solution;
+	std::cout << solution.countTriplets(nums) << std::endl;
+
+#endif // LEETCODE_982
+	return 0;
+}
+
 int leetcodetest998()
 {
 #ifdef LEETCODE_998
@@ -1611,6 +1623,13 @@ int leetcodetest1089()
 	}
 #endif // LEETCODE_1089
 
+	return 0;
+}
+
+int leetcodetest1096()
+{
+#ifdef LEETCODE_1096
+#endif // LEETCODE_1096
 	return 0;
 }
 
@@ -3079,6 +3098,19 @@ int leetcodetest2363()
 	return 0;
 }
 
+int leetcodetest2379()
+{
+#ifdef LEETCODE_2379
+	std::string temp = "WBWBBBW";
+	int k = 2;
+
+	Solution solution;
+	std::cout << solution.minimumRecolors(temp, k) << std::endl;
+
+#endif // LEETCODE_2379
+	return 0;
+}
+
 int leetcodetest6306()
 {
 #ifdef LEETCODE_6306
@@ -3184,6 +3216,18 @@ int leetcodetestaudition1719()
 	Solution solution;
 	solution.missingTwo(temp);
 #endif // AUDITION_17_19
+	return 0;
+}
+
+int swordOffer047()
+{
+#ifdef SWORD_OFFER_047
+	std::vector<std::vector<int>> temp = { {1, 2, 5},{3, 2, 1} };
+
+	Solution solution;
+	solution.maxValue(temp);
+
+#endif // SWORD_OFFER_047
 	return 0;
 }
 
@@ -3348,6 +3392,7 @@ int leetcodeTest() {
 	leetcodetest953();
 	leetcodetest961();
 	leetcodetest965();
+	leetcodetest982();
 	leetcodetest998();
 	leetcodetest1021();
 	leetcodetest1022();
@@ -3355,6 +3400,7 @@ int leetcodeTest() {
 	leetcodetest1051();
 	leetcodetest1052();
 	leetcodetest1089();
+	leetcodetest1096();
 	leetcodetest1106();
 	leetcodetest1108();
 	leetcodetest1124();
@@ -3501,6 +3547,7 @@ int leetcodeTest() {
 	leetcodetest2351();
 	leetcodetest2357();
 	leetcodetest2363();
+	leetcodetest2379();
 	leetcodetest6306();
 	leetcodetest6310();
 	leetcodetest6364();
@@ -3511,6 +3558,7 @@ int leetcodeTest() {
 	leetcodetestaudition1709();
 	leetcodetestaudition1711();
 	leetcodetestaudition1719();
+	swordOffer047();
 	swordOfferII041();
 	swordOfferII114();
 	swordOfferII115();
