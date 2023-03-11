@@ -13,6 +13,7 @@ endif()
  	src/audition0102.h
 	src/audition0109.h
  	src/audition0406.h
+ 	src/audition1705.h
  	src/audition1709.h
  	src/audition1711.h
 	src/audition1719.h
@@ -219,6 +220,7 @@ endif()
 	src/leetcode1475.h
 	src/leetcode1487.h
 	src/leetcode1582.h
+	src/leetcode1590.h
 	src/leetcode1592.h
 	src/leetcode1598.h
 	src/leetcode1599.h

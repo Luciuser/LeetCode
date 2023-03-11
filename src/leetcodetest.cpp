@@ -2121,6 +2121,18 @@ int leetcodetest1582()
 	return 0;
 }
 
+int leetcodetest1590()
+{
+#ifdef LEETCODE_1590
+	std::vector<int> temp = { 6,3,5,2 };
+	int p = 9;
+
+	Solution solution;
+	solution.minSubarray(temp, p);
+#endif // LEETCODE_1590
+	return 0;
+}
+
 int leetcodetest1592()
 {
 #ifdef LEETCODE_1592
@@ -3192,6 +3204,18 @@ int leetcodetestaudition0406()
 	return 0;
 }
 
+int leetcodetestaudition1705()
+{
+#ifdef LEETCODE_2104_AUDITION_17_05__
+	std::vector<std::string> temp = { "A","1","B","C","D","2","3","4","E","5","F","G","6","7","H","I","J","K","L","M" };
+
+	Solution solution;
+	solution.findLongestSubarray(temp);
+
+#endif // LEETCODE_2104_AUDITION_17_05__
+	return 0;
+}
+
 int leetcodetestaudition1709()
 {
 #ifdef LEETCODE_2104_AUDITION_17_09__
@@ -3450,6 +3474,7 @@ int leetcodeTest() {
 	leetcodetest1475();
 	leetcodetest1487();
 	leetcodetest1582();
+	leetcodetest1590();
 	leetcodetest1592();
 	leetcodetest1599();
 	leetcodetest1604();
@@ -3555,6 +3580,7 @@ int leetcodeTest() {
 	leetcodetestaudition0102();
 	leetcodetestaudition0109();
 	leetcodetestaudition0406();
+	leetcodetestaudition1705();
 	leetcodetestaudition1709();
 	leetcodetestaudition1711();
 	leetcodetestaudition1719();
