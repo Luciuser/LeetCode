@@ -197,6 +197,13 @@ int leetcodetest31()
 	return 0;
 }
 
+int leetcodetest42()
+{
+#ifdef LEETCODE_42
+#endif // LEETCODE_42
+	return 0;
+}
+
 int leetcodetest49()
 {
 #ifdef LEETCODE_49
@@ -3123,6 +3130,14 @@ int leetcodetest2379()
 	return 0;
 }
 
+int leetcodetest2383()
+{
+#ifdef LEETCODE_2383
+
+#endif // LEETCODE_2383
+	return 0;
+}
+
 int leetcodetest6306()
 {
 #ifdef LEETCODE_6306
@@ -3151,6 +3166,18 @@ int leetcodetest6310()
 	std::cout << solution.waysToReachTarget(target, types) << std::endl;
 
 #endif // LEETCODE_6310
+	return 0;
+}
+
+int leetcodetest6318()
+{
+#ifdef LEETCODE_6318
+	//std::vector<std::vector<int>> task = { {2, 3, 1},{4, 5, 1},{1, 5, 2} };
+	std::vector<std::vector<int>> task = { {8, 19, 1},{3, 20, 1},{1, 20, 2},{6, 13, 3} };
+
+	Solution solution;
+	std::cout << solution.findMinimumTime(task);
+#endif // LEETCODE_6318
 	return 0;
 }
 
@@ -3297,6 +3324,7 @@ int leetcodeTest() {
 	leetcodetest23();
 	leetcodetest30();
 	leetcodetest31();
+	leetcodetest42();
 	leetcodetest49();
 	leetcodetest94();
 	leetcodetest171();
@@ -3573,8 +3601,10 @@ int leetcodeTest() {
 	leetcodetest2357();
 	leetcodetest2363();
 	leetcodetest2379();
+	leetcodetest2383();
 	leetcodetest6306();
 	leetcodetest6310();
+	leetcodetest6318();
 	leetcodetest6364();
 	leetcodetest6366();
 	leetcodetestaudition0102();
