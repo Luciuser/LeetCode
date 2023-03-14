@@ -224,8 +224,10 @@ endif()
 	src/leetcode1590.h
 	src/leetcode1592.h
 	src/leetcode1598.h
-	src/leetcode1599.h
+	src/leetcode1599.h 
 	src/leetcode1604.h
+	src/leetcode1605.h
+	src/leetcode1606.h
 	src/leetcode1608.h
 	src/leetcode1620.h
 	src/leetcode1624.h
