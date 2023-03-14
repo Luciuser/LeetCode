@@ -36,8 +36,10 @@ endif()
  	src/leetcode30.h
  	src/leetcode31.h
  	src/leetcode42.h
+ 	src/leetcode46.h
  	src/leetcode49.h
  	src/leetcode94.h
+	src/leetcode146.h
 	src/leetcode171.h
  	src/leetcode174.h
  	src/leetcode215.h
@@ -354,7 +356,9 @@ endif()
  	src/swordOfferII041.h
  	src/swordOfferII114.h
  	src/swordOfferII115.h
- 	src/leetcodetest.h
+ 	src/acmtest.h
+ 	src/acmtest.cpp
+    src/leetcodetest.h
  	src/leetcodetest.cpp
  	src/main.cpp)
 

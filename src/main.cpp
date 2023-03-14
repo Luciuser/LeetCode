@@ -1,4 +1,5 @@
 #include "leetcodetest.h"
+#include "acmtest.h"
 
 #include<iostream>
 #include<stdio.h>
@@ -41,7 +42,11 @@ int main() {
 	//sum /= iter_num;
 	//std::cout << "The average answer is " << sum << std::endl;
 
+	ACMTest acmTest;
+	acmTest.cin_cout_test();
+
 	leetcodeTest();
+
 
 	return 0;
 }
