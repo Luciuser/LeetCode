@@ -335,6 +335,10 @@ endif()
  	src/leetcode6308.h
  	src/leetcode6309.h
  	src/leetcode6310.h
+ 	src/leetcode6315.h
+ 	src/leetcode6316.h
+ 	src/leetcode6317.h
+ 	src/leetcode6318.h
  	src/leetcode6362.h
  	src/leetcode6364.h
  	src/leetcode6365.h

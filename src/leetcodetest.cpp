@@ -3154,6 +3154,18 @@ int leetcodetest6310()
 	return 0;
 }
 
+int leetcodetest6318()
+{
+#ifdef LEETCODE_6318
+	//std::vector<std::vector<int>> task = { {2, 3, 1},{4, 5, 1},{1, 5, 2} };
+	std::vector<std::vector<int>> task = { {8, 19, 1},{3, 20, 1},{1, 20, 2},{6, 13, 3} };
+
+	Solution solution;
+	std::cout << solution.findMinimumTime(task);
+#endif // LEETCODE_6318
+	return 0;
+}
+
 int leetcodetest6364()
 {
 #ifdef LEETCODE_6364
@@ -3575,6 +3587,7 @@ int leetcodeTest() {
 	leetcodetest2379();
 	leetcodetest6306();
 	leetcodetest6310();
+	leetcodetest6318();
 	leetcodetest6364();
 	leetcodetest6366();
 	leetcodetestaudition0102();
