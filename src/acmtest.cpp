@@ -2,7 +2,10 @@
 
 #include<algorithm>
 #include<iostream>
+#include<queue>
 #include<vector>
+#include<unordered_map>
+#include<unordered_set>
 
 ACMTest::ACMTest() {
 }
@@ -11,7 +14,9 @@ ACMTest::~ACMTest() {
 }
 
 void ACMTest::cin_cout_test() {
-    cin_cout_46_test();
+    //scanf_test();
+    //cin_cout_46_test();
+    //cin_cout_743_test();
 
     return;
 }
@@ -91,4 +96,73 @@ void ACMTest::cin_cout_46_test() {
     }
 
     return;
+}
+
+void ACMTest::cin_cout_743_test() {
+    struct MyPair {
+        bool operator()(const std::pair<int, int>& a, const std::pair<int, int>& b) const {
+            return a.second > b.second;
+        }
+    };
+
+    int time_num;
+    std::cin >> time_num;
+
+    std::unordered_map<int, std::vector<std::pair<int, int>>> edge; // 每个与每个点相连接的其他点及其边的value，pair 为 [终点，value]
+    std::priority_queue<std::pair<int, int>, std::vector<std::pair<int, int>>, MyPair> q; // 存储当前最短边的节点，pair 为 [终点，value]
+
+    // 装载链表
+    for (int i = 0; i < time_num; i++) {
+        int begin;
+        int end;
+        int value;
+        std::cin >> begin >> end >> value;
+        edge[begin].push_back(std::pair<int, int>(end, value));
+    }
+    int n, k;
+    std::cin >> n >> k;
+
+    // 从源节点开始，进行初始化
+    std::unordered_set<int> nodes_receive; // 收到信号的节点
+    nodes_receive.emplace(k);
+    for (int i = 0; i < edge[k].size(); i++) {
+        q.emplace(edge[k][i]);
+    }
+
+    // 每次装载最近的一个节点
+    int sum = 0;
+    while (true) {
+        if (q.size() == 0) {
+            break;
+        }
+
+        auto pair_temp = q.top();
+        q.pop();
+        int end = pair_temp.first;
+
+        if (nodes_receive.count(end) == 0) {
+            nodes_receive.emplace(end);
+            int value = pair_temp.second;
+            if (nodes_receive.size() == n) {
+                std::cout << "the answer is: " << value << std::endl;
+                return;
+            }
+
+            for (int i = 0; i < edge[end].size(); i++) {
+                q.emplace(std::pair<int, int>(edge[end][i].first, edge[end][i].second + value));
+            }
+        }
+    }
+
+    std::cout << "the answer is: -1" << std::endl;
+    return;
+
+}
+
+void ACMTest::scanf_test() {
+    int a, c;
+    double b;
+    scanf_s("%d%lf%d", &a, &b, &c);
+
+    printf("a = %d, b = %f, c = %d\n", a, b, c);
 }

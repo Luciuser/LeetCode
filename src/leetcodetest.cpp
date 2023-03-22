@@ -219,6 +219,13 @@ int leetcodetest49()
 	return 0;
 }
 
+int leetcodetest55()
+{
+#ifdef LEETCODE_55
+#endif // LEETCODE_55
+	return 0;
+}
+
 int leetcodetest94()
 {
 #ifdef LEETCODE_94
@@ -867,6 +874,28 @@ int leetcodetest741()
 	Solution solution;
 	std::cout << solution.cherryPickup(temp) << std::endl;
 #endif // LEETCODE_7451
+	return 0;
+}
+
+int leetcodetest743()
+{
+#ifdef LEETCODE_743
+	//std::vector<std::vector<int>> times = { {2,1,1},{2,3,1},{3,4,1} };
+	//int n = 4;
+	//int k = 2;
+
+	//std::vector<std::vector<int>> times = { {1,2,1} };
+	//int n = 2;
+	//int k = 2;
+
+	std::vector<std::vector<int>> times = { {1, 2, 3},{3, 4, 1},{1, 3, 4},{2, 4, 3},{3, 1, 3},{4, 5, 5} };
+	int n = 5;
+	int k = 3;
+
+	Solution solution;
+	std::cout << solution.networkDelayTime(times, n, k) << std::endl;
+
+#endif // LEETCODE_743
 	return 0;
 }
 
@@ -1595,6 +1624,17 @@ int leetcodetest998()
 	return 0;
 }
 
+int leetcodetest1012()
+{
+#ifdef LEETCODE_1012
+
+	Solution solution;
+	solution.numDupDigitsAtMostN(100);
+
+#endif // LEETCODE_1012
+	return 0;
+}
+
 int leetcodetest1021()
 {
 #ifdef LEETCODE_1021
@@ -2196,6 +2236,32 @@ int leetcodetest1608()
 	return 0;
 }
 
+int leetcodetest1615()
+{
+#ifdef LEETCODE_1615
+	//int n = 8;
+	//std::vector<std::vector<int>> temp = { {0, 1},{1, 2},{2, 3},{2, 4},{5, 6},{5, 7} };
+
+	//int n = 4;
+	//std::vector<std::vector<int>> temp = { {0, 1},{0, 3},{1, 2},{1, 3} };
+
+	int n = 2;
+	std::vector<std::vector<int>> temp = { {1, 0} };
+
+	Solution solution;
+	std::cout << solution.maximalNetworkRank(n, temp) << std::endl;
+
+#endif // LEETCODE_1615
+	return 0;
+}
+
+int leetcodetest1616()
+{
+#ifdef LEETCODE_1616
+#endif // LEETCODE_1616
+	return 0;
+}
+
 int leetcodetest1620()
 {
 #ifdef LEETCODE_1620
@@ -2212,6 +2278,13 @@ int leetcodetest1624()
 {
 #ifdef LEETCODE_1624
 #endif // LEETCODE_1624
+	return 0;
+}
+
+int leetcodetest1625()
+{
+#ifdef LEETCODE_1625
+#endif // LEETCODE_1625
 	return 0;
 }
 
@@ -3159,6 +3232,36 @@ int leetcodetest2383()
 	return 0;
 }
 
+int leetcodetest2389()
+{
+#ifdef LEETCODE_2389
+
+	//std::vector<int> nums = { 4,5,2,1 };
+	//std::vector<int> queries = { 3,10,21 };
+
+	std::vector<int> nums = { 736411, 184882, 914641, 37925, 214915 };
+	std::vector<int> queries = { 331244, 273144, 118983, 118252, 305688, 718089, 665450 };
+
+	Solution solution;
+	solution.answerQueries(nums, queries);
+
+#endif // LEETCODE_2389
+	return 0;
+}
+
+int leetcodetest2488()
+{
+#ifdef LEETCODE_2488
+	std::vector<int> nums = { 2,5,1,4,3,6 };
+	int k = 1;
+
+	Solution solution;
+	std::cout << solution.countSubarrays(nums, k) << std::endl;
+
+#endif // LEETCODE_2488
+	return 0;
+}
+
 int leetcodetest6306()
 {
 #ifdef LEETCODE_6306
@@ -3348,6 +3451,7 @@ int leetcodeTest() {
 	leetcodetest42();
 	leetcodetest46();
 	leetcodetest49();
+	leetcodetest55();
 	leetcodetest94();
 	leetcodetest146();
 	leetcodetest171();
@@ -3405,6 +3509,7 @@ int leetcodeTest() {
 	leetcodetest732();
 	leetcodetest735();
 	leetcodetest741();
+	leetcodetest743();
 	leetcodetest745();
 	leetcodetest747();
 	leetcodetest749();
@@ -3469,6 +3574,7 @@ int leetcodeTest() {
 	leetcodetest965();
 	leetcodetest982();
 	leetcodetest998();
+	leetcodetest1012();
 	leetcodetest1021();
 	leetcodetest1022();
 	leetcodetest1037();
@@ -3531,8 +3637,11 @@ int leetcodeTest() {
 	leetcodetest1604();
 	leetcodetest1605();
 	leetcodetest1608();
+	leetcodetest1615();
+	leetcodetest1616();
 	leetcodetest1620();
 	leetcodetest1624();
+	leetcodetest1625();
 	leetcodetest1632();
 	leetcodetest1636();
 	leetcodetest1640();
@@ -3626,6 +3735,8 @@ int leetcodeTest() {
 	leetcodetest2363();
 	leetcodetest2379();
 	leetcodetest2383();
+	leetcodetest2389();
+	leetcodetest2488();
 	leetcodetest6306();
 	leetcodetest6310();
 	leetcodetest6318();

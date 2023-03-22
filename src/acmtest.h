@@ -12,6 +12,8 @@ public:
 private:
 
 	void cin_cout_46_test();
+	void cin_cout_743_test();
+	void scanf_test();
 };
 
 
