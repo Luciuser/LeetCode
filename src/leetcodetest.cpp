@@ -2175,6 +2175,20 @@ int leetcodetest1487()
 	return 0;
 }
 
+int leetcodetest1574()
+{
+#ifdef LEETCODE_1574
+
+	//std::vector<int> temp = { 1,2,3,10,0,7,8,9 };
+	std::vector<int> temp = { 1,2,3,3,10,1,3,3,5 };
+
+	Solution solution;
+	std::cout << solution.findLengthOfShortestSubarray(temp) << std::endl;
+
+#endif // LEETCODE_1574
+	return 0;
+}
+
 int leetcodetest1582()
 {
 #ifdef LEETCODE_1582
@@ -2285,6 +2299,20 @@ int leetcodetest1625()
 {
 #ifdef LEETCODE_1625
 #endif // LEETCODE_1625
+	return 0;
+}
+
+int leetcodetest1630()
+{
+#ifdef LEETCODE_1630
+	std::vector<int> nums = { -12, -9, -3, -12, -6, 15, 20, -25, -20, -15, -10 };
+	std::vector<int> l = { 0, 1, 6, 4, 8, 7 };
+	std::vector<int> r = { 4,4,9,7,9,10 };
+
+	Solution solution;
+	solution.checkArithmeticSubarrays(nums, l, r);
+
+#endif // LEETCODE_1630
 	return 0;
 }
 
@@ -3249,6 +3277,20 @@ int leetcodetest2389()
 	return 0;
 }
 
+int leetcodetest2395()
+{
+#ifdef LEETCODE_2395
+#endif // LEETCODE_2395
+	return 0;
+}
+
+int leetcodetest2469()
+{
+#ifdef LEETCODE_2469
+#endif // LEETCODE_2469
+	return 0;
+}
+
 int leetcodetest2488()
 {
 #ifdef LEETCODE_2488
@@ -3630,6 +3672,7 @@ int leetcodeTest() {
 	leetcodetest1470();
 	leetcodetest1475();
 	leetcodetest1487();
+	leetcodetest1574();
 	leetcodetest1582();
 	leetcodetest1590();
 	leetcodetest1592();
@@ -3642,6 +3685,7 @@ int leetcodeTest() {
 	leetcodetest1620();
 	leetcodetest1624();
 	leetcodetest1625();
+	leetcodetest1630();
 	leetcodetest1632();
 	leetcodetest1636();
 	leetcodetest1640();
@@ -3736,6 +3780,8 @@ int leetcodeTest() {
 	leetcodetest2379();
 	leetcodetest2383();
 	leetcodetest2389();
+	leetcodetest2395();
+	leetcodetest2469();
 	leetcodetest2488();
 	leetcodetest6306();
 	leetcodetest6310();

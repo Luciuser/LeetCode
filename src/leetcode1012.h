@@ -40,22 +40,22 @@ public:
         // 初始条件为：
         //              dp[0][i] = 0;
 
-        // 动态规划
-        std::vector < std::vector<int> > dp(10, std::vector<int>(11, 0));
-        // 进行动态规划递推
-        for (int n = 1; n <= 9; n++) {
-            for (int i = 9; i >= 1; i--) {
-                dp[n][i] = i * pow(10, n-1) + (10 - i) * dp[n - 1][i + 1];
-                std::cout << "n  i  " << n << " " << i << " : " << dp[n][i]  << std::endl;
-            }
-        }
-        // 打表
-        std::vector<int> table(10, 0);
-        table[1] = 9;
-        for (int index = 2; index <= 9; index++) {
-            table[index] = dp[index][1];
-            std::cout << table[index] << std::endl;
-        }
+        //// 动态规划
+        //std::vector < std::vector<int> > dp(10, std::vector<int>(11, 0));
+        //// 进行动态规划递推
+        //for (int n = 1; n <= 9; n++) {
+        //    for (int i = 9; i >= 1; i--) {
+        //        dp[n][i] = i * pow(10, n-1) + (10 - i) * dp[n - 1][i + 1];
+        //        std::cout << "n  i  " << n << " " << i << " : " << dp[n][i]  << std::endl;
+        //    }
+        //}
+        //// 打表
+        //std::vector<int> table(10, 0);
+        //table[1] = 9;
+        //for (int index = 2; index <= 9; index++) {
+        //    table[index] = dp[index][1];
+        //    std::cout << table[index] << std::endl;
+        //}
 
         // 第二部分，基于打好的表进行计算
         // 打好的表如下所示：
