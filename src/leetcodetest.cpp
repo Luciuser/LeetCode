@@ -197,6 +197,19 @@ int leetcodetest31()
 	return 0;
 }
 
+int leetcodetest32()
+{
+#ifdef LEETCODE_32
+
+	std::string s = ")()())";
+
+	Solution solution;
+	std::cout << solution.longestValidParentheses(s) << std::endl;
+
+#endif // LEETCODE_32
+	return 0;
+}
+
 int leetcodetest42()
 {
 #ifdef LEETCODE_42
@@ -3246,6 +3259,13 @@ int leetcodetest2363()
 	return 0;
 }
 
+int leetcodetest2367()
+{
+#ifdef LEETCODE_2367
+#endif // LEETCODE_2367
+	return 0;
+}
+
 int leetcodetest2379()
 {
 #ifdef LEETCODE_2379
@@ -3497,6 +3517,7 @@ int leetcodeTest() {
 	leetcodetest23();
 	leetcodetest30();
 	leetcodetest31();
+	leetcodetest32();
 	leetcodetest42();
 	leetcodetest46();
 	leetcodetest49();
@@ -3785,6 +3806,7 @@ int leetcodeTest() {
 	leetcodetest2351();
 	leetcodetest2357();
 	leetcodetest2363();
+	leetcodetest2367();
 	leetcodetest2379();
 	leetcodetest2383();
 	leetcodetest2389();
