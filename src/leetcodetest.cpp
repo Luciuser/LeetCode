@@ -210,6 +210,19 @@ int leetcodetest32()
 	return 0;
 }
 
+int leetcodetest33()
+{
+#ifdef LEETCODE_33
+	std::vector<int> nums = { 1,2,3,4,5 };
+	int target = 2;
+
+	Solution solution;
+	std::cout << solution.search(nums, target) << std::endl;
+
+#endif // LEETCODE_33
+	return 0;
+}
+
 int leetcodetest42()
 {
 #ifdef LEETCODE_42
@@ -1227,6 +1240,13 @@ int leetcodetest829()
 	std::cout << solution.consecutiveNumbersSum(6) << std::endl;
 
 #endif // LEETCODE_829
+	return 0;
+}
+
+int leetcodetest831()
+{
+#ifdef LEETCODE_831
+#endif // LEETCODE_831
 	return 0;
 }
 
@@ -3518,6 +3538,7 @@ int leetcodeTest() {
 	leetcodetest30();
 	leetcodetest31();
 	leetcodetest32();
+	leetcodetest33();
 	leetcodetest42();
 	leetcodetest46();
 	leetcodetest49();
@@ -3611,6 +3632,7 @@ int leetcodeTest() {
 	leetcodetest827();
 	leetcodetest828();
 	leetcodetest829();
+	leetcodetest831();
 	leetcodetest850();
 	leetcodetest854();
 	leetcodetest855();
