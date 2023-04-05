@@ -223,6 +223,19 @@ int leetcodetest33()
 	return 0;
 }
 
+int leetcodetest34()
+{
+#ifdef LEETCODE_34
+	std::vector<int> nums = { 5, 7, 7, 8, 8, 10 };
+	int target = 8;
+
+	Solution solution;
+	solution.searchRange(nums, target);
+
+#endif // LEETCODE_34
+	return 0;
+}
+
 int leetcodetest42()
 {
 #ifdef LEETCODE_42
@@ -1657,6 +1670,19 @@ int leetcodetest998()
 	return 0;
 }
 
+int leetcodetest1000()
+{
+#ifdef LEETCODE_1000
+	std::vector<int> stones = { 3,2,4,1 };
+	int k = 2;
+
+	Solution solution;
+	std::cout << solution.mergeStones(stones, k) << std::endl;
+
+#endif // LEETCODE_1000
+	return 0;
+}
+
 int leetcodetest1012()
 {
 #ifdef LEETCODE_1012
@@ -1690,6 +1716,13 @@ int leetcodetest1037()
 	return 0;
 }
 
+int leetcodetest1039()
+{
+#ifdef LEETCODE_1039
+#endif // LEETCODE_1039
+	return 0;
+}
+
 int leetcodetest1051()
 {
 #ifdef LEETCODE_1051
@@ -1701,6 +1734,19 @@ int leetcodetest1052()
 {
 #ifdef LEETCODE_1052
 #endif // LEETCODE_1052
+	return 0;
+}
+
+int leetcodetest1053()
+{
+#ifdef LEETCODE_1053
+	
+	std::vector<int> arr = { 3,2,1 };
+	
+	Solution solution;
+	solution.prevPermOpt1(arr);
+
+#endif // LEETCODE_1053
 	return 0;
 }
 
@@ -3539,6 +3585,7 @@ int leetcodeTest() {
 	leetcodetest31();
 	leetcodetest32();
 	leetcodetest33();
+	leetcodetest34();
 	leetcodetest42();
 	leetcodetest46();
 	leetcodetest49();
@@ -3666,12 +3713,15 @@ int leetcodeTest() {
 	leetcodetest965();
 	leetcodetest982();
 	leetcodetest998();
+	leetcodetest1000();
 	leetcodetest1012();
 	leetcodetest1021();
 	leetcodetest1022();
 	leetcodetest1037();
+	leetcodetest1039();
 	leetcodetest1051();
 	leetcodetest1052();
+	leetcodetest1053();
 	leetcodetest1089();
 	leetcodetest1096();
 	leetcodetest1106();

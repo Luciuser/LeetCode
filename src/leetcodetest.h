@@ -18,7 +18,8 @@
 //#define LEETCODE_30
 //#define LEETCODE_31
 //#define LEETCODE_32
-#define LEETCODE_33
+//#define LEETCODE_33
+#define LEETCODE_34
 //#define LEETCODE_42
 //#define LEETCODE_46
 //#define LEETCODE_49
@@ -146,12 +147,15 @@
 //#define LEETCODE_965
 //#define LEETCODE_982
 //#define LEETCODE_998
+//#define LEETCODE_1000
 //#define LEETCODE_1012
 //#define LEETCODE_1021
 //#define LEETCODE_1022
 //#define LEETCODE_1037
+//#define LEETCODE_1039
 //#define LEETCODE_1051
 //#define LEETCODE_1052
+//#define LEETCODE_1053
 //#define LEETCODE_1089
 //#define LEETCODE_1096
 //#define LEETCODE_1106
@@ -407,6 +411,10 @@
 #ifdef LEETCODE_33
 #include"leetcode33.h"
 #endif // LEETCODE_33
+
+#ifdef LEETCODE_34
+#include"leetcode34.h"
+#endif // LEETCODE_34
 
 #ifdef LEETCODE_42
 #include"leetcode42.h"
@@ -924,6 +932,10 @@
 #include"leetcode998.h"
 #endif // LEETCODE_998
 
+#ifdef LEETCODE_1000
+#include"leetcode1000.h"
+#endif // LEETCODE_1000
+
 #ifdef LEETCODE_1012
 #include"leetcode1012.h"
 #endif // LEETCODE_1012
@@ -940,6 +952,10 @@
 #include"leetcode1037.h"
 #endif // LEETCODE_1037
 
+#ifdef LEETCODE_1039
+#include"leetcode1039.h"
+#endif // LEETCODE_1039
+
 #ifdef LEETCODE_1051
 #include"leetcode1051.h"
 #endif // LEETCODE_1051
@@ -947,6 +963,10 @@
 #ifdef LEETCODE_1052
 #include"leetcode1052.h"
 #endif // LEETCODE_1052
+
+#ifdef LEETCODE_1053
+#include"leetcode1053.h"
+#endif // LEETCODE_1053
 
 #ifdef LEETCODE_1089
 #include"leetcode1089.h"
@@ -1694,6 +1714,7 @@ int leetcodetest30();
 int leetcodetest31();
 int leetcodetest32();
 int leetcodetest33();
+int leetcodetest34();
 int leetcodetest42();
 int leetcodetest46();
 int leetcodetest49();
@@ -1823,12 +1844,15 @@ int leetcodetest961();
 int leetcodetest965();
 int leetcodetest982();
 int leetcodetest998();
+int leetcodetest1000();
 int leetcodetest1012();
 int leetcodetest1021();
 int leetcodetest1022();
 int leetcodetest1037();
+int leetcodetest1039();
 int leetcodetest1051();
 int leetcodetest1052();
+int leetcodetest1053();
 int leetcodetest1089();
 int leetcodetest1096();
 int leetcodetest1106();
