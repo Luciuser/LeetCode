@@ -236,6 +236,21 @@ int leetcodetest34()
 	return 0;
 }
 
+int leetcodetest39()
+{
+#ifdef LEETCODE_39
+	//std::vector<int> candidates = { 2,3,6,7 };
+	//int target = 7;
+	std::vector<int> candidates = { 2,3,5 };
+	int target = 8;
+
+
+	Solution solution;
+	solution.combinationSum(candidates, target);
+#endif // LEETCODE_39
+	return 0;
+}
+
 int leetcodetest42()
 {
 #ifdef LEETCODE_42
@@ -3593,6 +3608,7 @@ int leetcodeTest() {
 	leetcodetest32();
 	leetcodetest33();
 	leetcodetest34();
+	leetcodetest39();
 	leetcodetest42();
 	leetcodetest46();
 	leetcodetest49();

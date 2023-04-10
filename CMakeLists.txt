@@ -38,6 +38,7 @@ endif()
  	src/leetcode32.h
  	src/leetcode33.h
  	src/leetcode34.h
+ 	src/leetcode39.h
  	src/leetcode42.h
  	src/leetcode46.h
  	src/leetcode49.h
