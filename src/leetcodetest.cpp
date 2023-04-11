@@ -265,11 +265,21 @@ int leetcodetest46()
 	return 0;
 }
 
+int leetcodetest48()
+{
+#ifdef LEETCODE_48
+	std::vector<std::vector<int>> matrix = { {1,2,3},{4,5,6},{7,8,9} };
+
+	Solution solution;
+	solution.rotate(matrix);
+#endif // LEETCODE_48
+	return 0;
+}
+
 int leetcodetest49()
 {
 #ifdef LEETCODE_49
 #endif // LEETCODE_49
-	
 	return 0;
 }
 
@@ -1742,6 +1752,13 @@ int leetcodetest1039()
 {
 #ifdef LEETCODE_1039
 #endif // LEETCODE_1039
+	return 0;
+}
+
+int leetcodetest1041()
+{
+#ifdef LEETCODE_1041
+#endif // LEETCODE_1041
 	return 0;
 }
 
@@ -3611,6 +3628,7 @@ int leetcodeTest() {
 	leetcodetest39();
 	leetcodetest42();
 	leetcodetest46();
+	leetcodetest48();
 	leetcodetest49();
 	leetcodetest55();
 	leetcodetest94();
@@ -3743,6 +3761,7 @@ int leetcodeTest() {
 	leetcodetest1022();
 	leetcodetest1037();
 	leetcodetest1039();
+	leetcodetest1041();
 	leetcodetest1051();
 	leetcodetest1052();
 	leetcodetest1053();

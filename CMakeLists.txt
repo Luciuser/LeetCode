@@ -41,6 +41,7 @@ endif()
  	src/leetcode39.h
  	src/leetcode42.h
  	src/leetcode46.h
+ 	src/leetcode48.h
  	src/leetcode49.h
  	src/leetcode55.h
  	src/leetcode94.h
@@ -180,6 +181,7 @@ endif()
  	src/leetcode1022.h
  	src/leetcode1037.h
  	src/leetcode1039.h
+ 	src/leetcode1041.h
  	src/leetcode1051.h
  	src/leetcode1052.h
  	src/leetcode1053.h
