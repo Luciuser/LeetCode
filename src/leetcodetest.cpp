@@ -283,6 +283,13 @@ int leetcodetest49()
 	return 0;
 }
 
+int leetcodetest53()
+{
+#ifdef LEETCODE_53
+#endif // LEETCODE_53
+	return 0;
+}
+
 int leetcodetest55()
 {
 #ifdef LEETCODE_55
@@ -1896,6 +1903,13 @@ int leetcodetest1145()
 {
 #ifdef LEETCODE_1045
 #endif // LEETCODE_1045
+	return 0;
+}
+
+int leetcodetest1147()
+{
+#ifdef LEETCODE_1047
+#endif // LEETCODE_1047
 	return 0;
 }
 
@@ -3630,6 +3644,7 @@ int leetcodeTest() {
 	leetcodetest46();
 	leetcodetest48();
 	leetcodetest49();
+	leetcodetest53();
 	leetcodetest55();
 	leetcodetest94();
 	leetcodetest146();
@@ -3776,6 +3791,7 @@ int leetcodeTest() {
 	leetcodetest1140();
 	leetcodetest1144();
 	leetcodetest1145();
+	leetcodetest1147();
 	leetcodetest1162();
 	leetcodetest1172();
 	leetcodetest1175();
