@@ -297,6 +297,13 @@ int leetcodetest55()
 	return 0;
 }
 
+int leetcodetest56()
+{
+#ifdef LEETCODE_56
+#endif // LEETCODE_56
+	return 0;
+}
+
 int leetcodetest94()
 {
 #ifdef LEETCODE_94
@@ -3430,6 +3437,18 @@ int leetcodetest2395()
 	return 0;
 }
 
+int leetcodetest2404()
+{
+#ifdef LEETCODE_2404
+	std::vector<int> number = {4, 0,1,2,0,0,0,2,4,4,1 };
+
+	Solution solution;
+	std::cout << solution.mostFrequentEven(number) << std::endl;
+
+#endif // LEETCODE_2404
+	return 0;
+}
+
 int leetcodetest2469()
 {
 #ifdef LEETCODE_2469
@@ -3646,6 +3665,7 @@ int leetcodeTest() {
 	leetcodetest49();
 	leetcodetest53();
 	leetcodetest55();
+	leetcodetest56();
 	leetcodetest94();
 	leetcodetest146();
 	leetcodetest171();
@@ -3942,6 +3962,7 @@ int leetcodeTest() {
 	leetcodetest2383();
 	leetcodetest2389();
 	leetcodetest2395();
+	leetcodetest2404();
 	leetcodetest2469();
 	leetcodetest2488();
 	leetcodetest6306();
