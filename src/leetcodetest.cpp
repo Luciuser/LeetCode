@@ -1762,6 +1762,18 @@ int leetcodetest1022()
 	return 0;
 }
 
+int leetcodetest1023()
+{
+#ifdef LEETCODE_1023
+	std::vector<std::string> queries = { "FooBar", "FooBarTest", "FootBall", "FrameBuffer", "ForceFeedBack" };
+	std::string pattern = "FB";
+
+	Solution solution;
+	solution.camelMatch(queries, pattern);
+#endif // LEETCODE_1023
+	return 0;
+}
+
 int leetcodetest1037()
 {
 #ifdef LEETCODE_1037
@@ -3802,6 +3814,7 @@ int leetcodeTest() {
 	leetcodetest1019();
 	leetcodetest1021();
 	leetcodetest1022();
+	leetcodetest1023();
 	leetcodetest1037();
 	leetcodetest1039();
 	leetcodetest1041();
