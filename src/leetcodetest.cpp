@@ -1795,6 +1795,19 @@ int leetcodetest1041()
 	return 0;
 }
 
+int leetcodetest1042()
+{
+#ifdef LEETCODE_1042
+	int n = 3;
+	std::vector<std::vector<int>> paths = { {1,2},{2,3},{3,1} };
+
+	Solution solution;
+	solution.gardenNoAdj(n, paths);
+
+#endif // LEETCODE_1042
+	return 0;
+}
+
 int leetcodetest1051()
 {
 #ifdef LEETCODE_1051
@@ -3818,6 +3831,7 @@ int leetcodeTest() {
 	leetcodetest1037();
 	leetcodetest1039();
 	leetcodetest1041();
+	leetcodetest1042();
 	leetcodetest1051();
 	leetcodetest1052();
 	leetcodetest1053();
