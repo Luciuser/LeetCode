@@ -3305,6 +3305,20 @@ int leetcodetest2104()
 	return 0;
 }
 
+int leetcodetest2106()
+{
+#ifdef LEETCODE_2106
+	std::vector<std::vector<int>> fruits = { {2,8},{6,3},{8,6} };
+	int startPos = 5;
+	int k = 4;
+	
+	Solution solution;
+	std::cout << solution.maxTotalFruits(fruits, startPos, k) << std::endl;
+
+#endif // LEETCODE_2106
+	return 0;
+}
+
 int leetcodetest2119()
 {
 #ifdef LEETCODE_2119
@@ -4012,6 +4026,7 @@ int leetcodeTest() {
 	leetcodetest2037();
 	leetcodetest2042();
 	leetcodetest2104();
+	leetcodetest2106();
 	leetcodetest2119();
 	leetcodetest2180();
 	leetcodetest2185();
