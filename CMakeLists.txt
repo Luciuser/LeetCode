@@ -232,6 +232,7 @@ endif()
  	src/leetcode1326.h
  	src/leetcode1331.h
  	src/leetcode1374.h
+ 	src/leetcode1375.h
  	src/leetcode1399.h
  	src/leetcode1403.h
  	src/leetcode1408.h
