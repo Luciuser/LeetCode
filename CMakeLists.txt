@@ -227,6 +227,7 @@ endif()
  	src/leetcode1252.h
  	src/leetcode1255.h
  	src/leetcode1260.h
+ 	src/leetcode1262.h
 	src/leetcode1282.h
  	src/leetcode1302.h
  	src/leetcode1326.h
@@ -396,6 +397,7 @@ endif()
  	src/swordOfferII041.h
  	src/swordOfferII114.h
  	src/swordOfferII115.h
+ 	src/lcp41.h
  	src/acmtest.h
  	src/acmtest.cpp
     src/leetcodetest.h

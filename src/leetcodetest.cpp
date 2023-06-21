@@ -3727,6 +3727,17 @@ int swordOfferII115()
 	return 0;
 }
 
+int lcp41()
+{
+#ifdef LCP_41
+	std::vector<std::string> chessborad = { ".X.", ".O.", "XO." };
+	Solution solution;
+	std::cout << solution.flipChess(chessborad) << std::endl;
+
+#endif // LCP_41
+	return 0;
+}
+
 int leetcodeTest() {
 	leetcodetest2();
 	leetcodetest4();
@@ -4079,6 +4090,7 @@ int leetcodeTest() {
 	swordOfferII041();
 	swordOfferII114();
 	swordOfferII115();
+	lcp41();
 
 	return 0;
 }

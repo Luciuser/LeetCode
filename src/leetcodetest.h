@@ -207,7 +207,7 @@
 //#define LEETCODE_1326
 //#define LEETCODE_1331
 //#define LEETCODE_1374
-#define LEETCODE_1375
+//#define LEETCODE_1375
 //#define LEETCODE_1399
 //#define LEETCODE_1403
 //#define LEETCODE_1408
@@ -357,6 +357,8 @@
 //#define SWORD_OFFER_II_041
 //#define SWORD_OFFER_II_114
 //#define SWORD_OFFER_II_115
+#define LCP_41
+
 
 #ifdef LEETCODE_2
 #include"leetcode2.h"
@@ -1786,6 +1788,10 @@
 #include"swordOfferII115.h"
 #endif // SWORD_OFFER_II_115
 
+#ifdef LCP_41
+#include"lcp41.h"
+#endif // LCP_41
+
 int leetcodetest2();
 int leetcodetest4();
 int leetcodetest5();
@@ -2144,6 +2150,7 @@ int swordOffer047();
 int swordOfferII041();
 int swordOfferII114();
 int swordOfferII115();
+int lcp41();
 
 int leetcodeTest();
 
