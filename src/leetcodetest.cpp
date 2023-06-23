@@ -3557,6 +3557,13 @@ int leetcodetest2488()
 	return 0;
 }
 
+int leetcodetest2496()
+{
+#ifdef LEETCODE_2496
+#endif // LEETCODE_2496
+	return 0;
+}
+
 int leetcodetest6306()
 {
 #ifdef LEETCODE_6306
@@ -3689,6 +3696,13 @@ int leetcodetestaudition1719()
 	return 0;
 }
 
+int audition1619()
+{
+#ifdef AUDITION_16_19
+#endif // AUDITION_16_19
+	return 0;
+}
+
 int swordOffer047()
 {
 #ifdef SWORD_OFFER_047
@@ -3739,6 +3753,7 @@ int lcp41()
 }
 
 int leetcodeTest() {
+	audition1619();
 	leetcodetest2();
 	leetcodetest4();
 	leetcodetest5();
@@ -4074,6 +4089,7 @@ int leetcodeTest() {
 	leetcodetest2469();
 	leetcodetest2475();
 	leetcodetest2488();
+	leetcodetest2496();
 	leetcodetest6306();
 	leetcodetest6310();
 	leetcodetest6318();
