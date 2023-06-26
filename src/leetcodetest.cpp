@@ -3551,6 +3551,13 @@ int leetcodetest2475()
 	return 0;
 }
 
+int leetcodetest2485()
+{
+#ifdef LEETCODE_2485
+#endif // LEETCODE_2485
+	return 0;
+}
+
 int leetcodetest2488()
 {
 #ifdef LEETCODE_2488

@@ -342,6 +342,7 @@
 //#define LEETCODE_2404
 //#define LEETCODE_2469
 //#define LEETCODE_2475
+#define LEETCODE_2485
 //#define LEETCODE_2488
 //#define LEETCODE_2496
 //#define LEETCODE_6306
@@ -1730,6 +1731,10 @@
 #include"leetcode2475.h"
 #endif // LEETCODE_2475
 
+#ifdef LEETCODE_2485
+#include"leetcode2485.h"
+#endif // LEETCODE_2485
+
 #ifdef LEETCODE_2488
 #include"leetcode2488.h"
 #endif // LEETCODE_2488
@@ -2148,6 +2153,7 @@ int leetcodetest2395();
 int leetcodetest2404();
 int leetcodetest2469();
 int leetcodetest2475();
+int leetcodetest2485();
 int leetcodetest2488();
 int leetcodetest2496();
 int leetcodetest6306();
