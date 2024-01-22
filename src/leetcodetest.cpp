@@ -325,6 +325,13 @@ int leetcodetest70()
 	return 0;
 }
 
+int leetcodetest83()
+{
+#ifdef LEETCODE_83
+#endif // LEETCODE_83
+	return 0;
+}
+
 int leetcodetest94()
 {
 #ifdef LEETCODE_94
@@ -3359,6 +3366,13 @@ int leetcodetest2180()
 	return 0;
 }
 
+int leetcodetest2182()
+{
+#ifdef LEETCODE_2182
+#endif // LEETCODE_2182
+	return 0;
+}
+
 int leetcodetest2185()
 {
 #ifdef LEETCODE_2185
@@ -3586,6 +3600,30 @@ int leetcodetest2496()
 	return 0;
 }
 
+int leetcodetest2719()
+{
+#ifdef LEETCODE_2719
+
+	//std::string num1 = "2831";
+	//std::string num2 = "7651";
+
+	//int min_sum = 30;
+	//int max_sum = 99;
+
+	std::string num1 = "5230";
+	std::string num2 = "9999";
+
+	int min_sum = 8;
+	int max_sum = 46;
+
+	Solution solution;
+	int result = solution.count(num1, num2, min_sum, max_sum);
+	
+	std::cout << result << std::endl;
+#endif // LEETCODE_2719
+	return 0;
+}
+
 int leetcodetest6306()
 {
 #ifdef LEETCODE_6306
@@ -3805,6 +3843,7 @@ int leetcodeTest() {
 	leetcodetest62();
 	leetcodetest64();
 	leetcodetest70();
+	leetcodetest83();
 	leetcodetest94();
 	leetcodetest146();
 	leetcodetest171();
@@ -4087,6 +4126,7 @@ int leetcodeTest() {
 	leetcodetest2106();
 	leetcodetest2119();
 	leetcodetest2180();
+	leetcodetest2182();
 	leetcodetest2185();
 	leetcodetest2283();
 	leetcodetest2287();
@@ -4114,6 +4154,7 @@ int leetcodeTest() {
 	leetcodetest2475();
 	leetcodetest2488();
 	leetcodetest2496();
+	leetcodetest2719();
 	leetcodetest6306();
 	leetcodetest6310();
 	leetcodetest6318();
