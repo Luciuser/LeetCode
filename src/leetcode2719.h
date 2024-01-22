@@ -118,7 +118,7 @@ public:
 		std::string zeros(temp, '0');
 		num1 = zeros+num1;
 
-		record = std::vector<std::vector<std::vector<long long>>>(23, std::vector<std::vector<long long>>(23 * 9, std::vector<long long>(29 * 9, -1)));
+		record = std::vector<std::vector<std::vector<long long>>>(24, std::vector<std::vector<long long>>(24 * 9, std::vector<long long>(24 * 9, -1)));
 
 		return dfs(num1, num2, min_sum, max_sum);
 	}
@@ -133,13 +133,13 @@ private:
 		if (max_sum < 0) {
 			return 0;
 		}
-		if (1 < n && n <= 10) {
-			int first_number = num2[0] - '0';
-			int sum_max_temp = first_number + 9 * (n - 1);
-			if (sum_max_temp <= min_sum) {
-				return sum_max_temp == min_sum ? 1 : 0;
-			}
-		}
+		//if (1 < n && n <= 10) {
+		//	int first_number = num2[0] - '0';
+		//	int sum_max_temp = first_number + 9 * (n - 1);
+		//	if (sum_max_temp < min_sum) {
+		//		return 0;
+		//	}
+		//}
 
 		// 递归跳出判断
 		if (n == 1) {
@@ -169,14 +169,16 @@ private:
 			sum = sum % MOD;
 		}
 		// 当首位取中间时
-		for (int i = begin + 1; i <= end - 1; i++) {
-			sum += calculate(n, min_sum - i, max_sum - i);
+		for (int i = begin + 1; i < end; i++) {
+			sum += calculate_standard(n - 1, min_sum - i, max_sum - i);
 			if (sum > MOD) {
 				sum = sum % MOD;
 			}
 		}
 		// 当首位取end时
-		sum += dfs(str_end_num1, str_end_num2, min_sum - end, max_sum - end);
+		if (begin != end) {
+			sum += dfs(str_end_num1, str_end_num2, min_sum - end, max_sum - end);
+		}
 		if (sum > MOD) {
 			sum = sum % MOD;
 		}
@@ -184,8 +186,8 @@ private:
 		return sum;
 	}
 
-	// 计算从“0……0”到“9……9”中总共多少个数
-	long long calculate(int n, int min, int max) {
+	// 计算n位数字（“0……0”到“9……9”）中，其数位和在[min, max]之间总共多少个数
+	long long calculate_standard(int n, int min, int max) {
 		int a = min;
 		int b = max;
 		// 归一化
@@ -196,8 +198,13 @@ private:
 			b = n * 9;
 		}
 
-		// 特殊情况，返回 0
+		// 归一化特殊情况，返回 0
 		if (n * 9 < a || b < 0) {
+			return 0;
+		}
+
+		if (a > b) {
+			std::cout << "Error!" << std::endl;
 			return 0;
 		}
 
@@ -239,7 +246,7 @@ private:
 		// 非特殊情况，迭代计算
 		long long sum = 0;
 		for (int i = 0; i <= 9; i++) {
-			sum += calculate(n - 1, a - i, b - i);
+			sum += calculate_standard(n - 1, a - i, b - i);
 			if (sum > MOD) {
 				sum = sum % MOD;
 			}

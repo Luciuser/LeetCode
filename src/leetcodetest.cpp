@@ -775,6 +775,13 @@ int leetcodetest669()
 	return 0;
 }
 
+int leetcodetest670()
+{
+#ifdef LEETCODE_670
+#endif // LEETCODE_670
+	return 0;
+}
+
 int leetcodetest672()
 {
 #ifdef LEETCODE_672
@@ -3502,6 +3509,13 @@ int leetcodetest2367()
 	return 0;
 }
 
+int leetcodetest2376()
+{
+#ifdef LEETCODE_2376
+#endif // LEETCODE_2376
+	return 0;
+}
+
 int leetcodetest2379()
 {
 #ifdef LEETCODE_2379
@@ -3610,11 +3624,11 @@ int leetcodetest2719()
 	//int min_sum = 30;
 	//int max_sum = 99;
 
-	std::string num1 = "5230";
-	std::string num2 = "9999";
+	std::string num1 = "965";
+	std::string num2 = "8111";
 
-	int min_sum = 8;
-	int max_sum = 46;
+	int min_sum = 12;
+	int max_sum = 45;
 
 	Solution solution;
 	int result = solution.count(num1, num2, min_sum, max_sum);
@@ -3886,6 +3900,7 @@ int leetcodeTest() {
 	leetcodetest667();
 	leetcodetest668();
 	leetcodetest669();
+	leetcodetest670();
 	leetcodetest672();
 	leetcodetest675();
 	leetcodetest676();
@@ -4145,6 +4160,7 @@ int leetcodeTest() {
 	leetcodetest2357();
 	leetcodetest2363();
 	leetcodetest2367();
+	leetcodetest2376();
 	leetcodetest2379();
 	leetcodetest2383();
 	leetcodetest2389();
