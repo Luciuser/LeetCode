@@ -385,6 +385,10 @@ endif()
  	src/leetcode2488.h
  	src/leetcode2496.h
  	src/leetcode2719.h
+ 	src/leetcode2765.h
+ 	src/leetcode2808.h
+ 	src/leetcode2859.h
+ 	src/leetcode2865.h
  	src/leetcode6283.h
  	src/leetcode6284.h
  	src/leetcode6285.h
@@ -408,6 +412,7 @@ endif()
  	src/swordOfferII041.h
  	src/swordOfferII114.h
  	src/swordOfferII115.h
+ 	src/lcp24.h
  	src/lcp41.h
  	src/acmtest.h
  	src/acmtest.cpp

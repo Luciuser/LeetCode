@@ -3638,6 +3638,39 @@ int leetcodetest2719()
 	return 0;
 }
 
+int leetcodetest2765()
+{
+#ifdef LEETCODE_2765
+	//std::vector<int> nums = { 2,3,4,3,4 };
+	std::vector<int> nums = { 21, 9, 5};
+
+	Solution solution;
+	std::cout << solution.alternatingSubarray(nums) << std::endl;
+
+#endif // LEETCODE_2765
+	return 0;
+}
+
+int leetcodetest2808()
+{
+#ifdef LEETCODE_2808
+
+	std::vector<int> nums = { 2,1,3,3,2 };
+
+	Solution solution;
+	std::cout << solution.minimumSeconds(nums) << std::endl;
+
+#endif // LEETCODE_2808
+	return 0;
+}
+
+int leetcodetest2865()
+{
+#ifdef LEETCODE_2865
+#endif // LEETCODE_2865
+	return 0;
+}
+
 int leetcodetest6306()
 {
 #ifdef LEETCODE_6306
@@ -3812,6 +3845,17 @@ int swordOfferII115()
 {
 #ifdef SWORD_OFFER_II_115
 #endif // SWORD_OFFER_II_115	return 0;
+	return 0;
+}
+
+int lcp24()
+{
+#ifdef LCP_24
+	std::vector<std::string> chessborad = { ".X.", ".O.", "XO." };
+	Solution solution;
+	std::cout << solution.flipChess(chessborad) << std::endl;
+
+#endif // LCP_24
 	return 0;
 }
 
@@ -4171,6 +4215,9 @@ int leetcodeTest() {
 	leetcodetest2488();
 	leetcodetest2496();
 	leetcodetest2719();
+	leetcodetest2765();
+	leetcodetest2808();
+	leetcodetest2865();
 	leetcodetest6306();
 	leetcodetest6310();
 	leetcodetest6318();
@@ -4187,6 +4234,7 @@ int leetcodeTest() {
 	swordOfferII041();
 	swordOfferII114();
 	swordOfferII115();
+	lcp24();
 	lcp41();
 
 	return 0;
